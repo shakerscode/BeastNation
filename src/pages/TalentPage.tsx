@@ -55,14 +55,16 @@ export const TalentPage = () => {
 
   return (
     <>
-      <div className="pt-24 pb-12 bg-gray-100 dark:bg-gray-900 w-full">
+      <div className="md:pt-32 pt-24 pb-12 bg-gray-100 dark:bg-gray-900 w-full">
         <div className="container mx-auto text-center px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">Our Talent</h1>
+            <h1 className="text-3xl md:text-4xl font-bold font-display mb-4">
+              Our <span className="text-gradient">Talent</span>
+            </h1>
             <p className="text-gray-600 dark:text-gray-400">
               Discover our diverse roster of talented creators and influencers
               across various industries. Filter by category or search to find

@@ -8,7 +8,6 @@ import ProductFeatures from "@/components/home/ProductFeatures";
 import ServicesSection from "@/components/home/ServicesSection";
 import StatsSection from "@/components/home/StatsSection";
 import TalentSection from "@/components/home/TalentSection";
-import { Footer } from "@/components/layout/Footer";
 
 export const HomePage = () => {
   return (
