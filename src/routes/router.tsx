@@ -3,6 +3,7 @@ import { RootLayout } from "@/components/layout/RootLayout";
 import { AboutPage } from "@/pages/AboutPage";
 import { ContactPage } from "@/pages/ContactPage";
 import { HomePage } from "@/pages/HomePage";
+import InfluencerBlog from "@/pages/InfluencerBlog";
 import NotFound from "@/pages/NotFound";
 import { TalentDetailPage } from "@/pages/TalentDetailPage";
 import { TalentPage } from "@/pages/TalentPage";
@@ -29,6 +30,16 @@ export const router = createBrowserRouter([
             hydrateFallbackElement: <CommonLoading />,
           },
         ],
+      },
+      {
+        path: "influencer-blogs",
+        hydrateFallbackElement: <CommonLoading />,
+        Component: InfluencerBlog,
+      },
+      {
+        path: "influencer-lists",
+        hydrateFallbackElement: <CommonLoading />,
+        Component: InfluencerBlog,
       },
       {
         path: "about",
