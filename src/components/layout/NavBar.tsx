@@ -31,17 +31,24 @@ const Navbar = () => {
   ];
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 px-4 md:px-8 py-4 ${
-      isScrolled
-        ? "bg-beast-500 dark:bg-gray-900 shadow-md py-3"
-        : "bg-transparent py-5"
-    }`}>
-      <div className="glass max-w-7xl mx-auto flex items-center justify-between">
-        <div className="flex items-center space-x-4 px-4 py-3">
-          <div className="text-2xl font-bold text-gradient">BEAST</div>
-          <div className="h-6 w-px bg-white/20 hidden md:block" />
-          <div className="hidden md:block text-sm font-medium text-white/70">
-            Influencer Marketing Agency
+    <header className={`fixed top-0 left-0 right-0 z-50 px-4 md:px-8 py-4 `}>
+      <div
+        className={`glass max-w-7xl mx-auto flex items-center justify-between transition-all ease-in-out duration-300 ${
+          isScrolled ? " bg-beast-accent" : "bg-transparent"
+        }`}
+      >
+        <div className="flex items-center space-x-2 px-4 py-3">
+          <div className="bg-white text-3xl font-bold text-[#4c0fa1] p-1.5 rounded-lg">
+            TN
+          </div>
+          <div
+            className={`text-3xl font-bold   ${
+              isScrolled
+                ? "text-beast-purple-light"
+                : "text-gradient"
+            }`}
+          >
+            Trendy<span className="text-white">Nation</span>{" "}
           </div>
         </div>
 
@@ -56,7 +63,14 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
-          <Button size="sm" className="bg-primary-gradient shadow-glow w-full">
+          <Button
+            size="sm"
+            className={`shadow-glow w-full hover:shadow-glow-lg text-base p-5 ${
+              isScrolled
+                ? "bg-white text-beast-purple-dark hover:bg-white hover:text-beast-purple-dark"
+                : "bg-primary-gradient "
+            }`}
+          >
             Get In Touch
           </Button>
         </nav>
@@ -87,7 +101,11 @@ const Navbar = () => {
             ))}
             <Button
               size="sm"
-              className="bg-primary-gradient shadow-glow w-full"
+              className={`shadow-glow w-full ${
+                isScrolled
+                  ? "bg-white text-beast-purple-dark"
+                  : "bg-primary-gradient "
+              }`}
             >
               Get In Touch
             </Button>
