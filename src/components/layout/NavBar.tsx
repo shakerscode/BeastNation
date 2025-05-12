@@ -37,7 +37,7 @@ const Navbar = () => {
         }`}
       >
         <div className="flex items-center space-x-2 px-4 py-3">
-          <div className="bg-white text-3xl font-bold text-[#4c0fa1] p-1.5 rounded-lg">
+          <div className="bg-white text-xl md:text-3xl font-bold text-[#4c0fa1] p-1.5 rounded-lg">
             TN
           </div>
           <div

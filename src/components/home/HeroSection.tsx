@@ -32,16 +32,16 @@ const HeroSection = () => {
   }, []);
   
   return (
-    <section className="relative pt-40 overflow-hidden">
+    <section className="relative pt-16 md:pt-40 overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-beast-accent to-transparent opacity-30" />
-        <div className="absolute top-2/4 left-[480px] w-72 h-72 rounded-full bg-beast-purple-dark blur-[100px] animate-pulse-gentle" />
-        <div className="absolute bottom-[20%] right-1/4 w-96 h-96 rounded-full bg-beast-purple blur-[120px] animate-pulse-gentle" style={{animationDelay: '1s'}} />
+        <div className="absolute top-0 md:top-2/4 -right-20 md:left-[480px] w-48 md:w-72 h-48 md:h-72 rounded-full bg-beast-purple-dark blur-[100px] animate-pulse-gentle" />
+        <div className="absolute bottom-10 md:bottom-[20%] md:right-1/4 w-40 md:w-96 h-40 md:h-96 rounded-full bg-beast-purple blur-[120px] animate-pulse-gentle" style={{animationDelay: '1s'}} />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[600px]">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:h-[600px]">
+        <div className="flex flex-col lg:flex-row items-center justify-between md:gap-12">
           {/* Left Column: Text Content */}
           <div className="w-full lg:w-1/2 space-y-1.5 mt-14">
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-white/10 border border-white/20 text-sm font-medium text-white/80 mb-4">
@@ -53,7 +53,7 @@ const HeroSection = () => {
               <span className="text-gradient">Powering</span> The Next <br /> <p className='mt-2'>Generation Of</p> <span className="text-gradient">Creators</span>
             </h1>
             
-            <p className="text-lg text-white/80 max-w-xl">
+            <p className="text-base md:text-lg text-white/80 max-w-xl">
               We combine technology, creativity, and data to help brands and creators build meaningful connections and drive exceptional results.
             </p>
             
@@ -69,11 +69,11 @@ const HeroSection = () => {
           </div>
           
           {/* Right Column: Service Cards */}
-          <div className="w-full lg:w-1/2 relative h-[400px] flex items-center justify-center">
+          <div className="w-full lg:w-1/2 relative h-[450px] mb-10 md:mb-0 md:h-[400px] flex items-center justify-start md:justify-center">
             {services.map((service, index) => (
               <div
                 key={service.title}
-                className={`absolute glass w-[400px] h-[250px] p-6 rounded-xl transition-all duration-500 shadow-glow border border-white/20 ${
+                className={`absolute glass md:w-[400px] md:h-[250px] p-6 rounded-xl transition-all duration-500 shadow-glow border border-white/20 ${
                   index === activeIndex 
                     ? "z-20 opacity-100 translate-y-0 rotate-0" 
                     : index === (activeIndex + 1) % services.length 
