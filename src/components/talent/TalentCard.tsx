@@ -16,6 +16,7 @@ export const TalentCard = ({ talent, index }: TalentCardProps) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3, delay: index * 0.1 }}
       className="relative group"
+      title="Click to view details"
     >
       <Link
         to={`/talent/${talent.id}`}
@@ -37,7 +38,7 @@ export const TalentCard = ({ talent, index }: TalentCardProps) => {
               {talent.categories.map((category) => (
                 <span
                   key={category}
-                  className="text-xs bg-beast-500/70 px-2 py-1 rounded"
+                  className="text-xs bg-beast-purple-dark px-2 py-1 rounded"
                 >
                   {category}
                 </span>
