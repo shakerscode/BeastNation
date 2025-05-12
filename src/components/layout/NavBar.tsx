@@ -42,13 +42,13 @@ const Navbar = () => {
             TN
           </div>
           <div
-            className={`text-3xl font-bold   ${
+            className={`text-3xl font-bold hidden md:block  ${
               isScrolled
                 ? "text-beast-purple-light"
                 : "text-gradient"
             }`}
           >
-            Trendy<span className="text-white">Nation</span>{" "}
+            Trendy<span className="text-white">Nation</span>
           </div>
         </div>
 
@@ -83,7 +83,7 @@ const Navbar = () => {
             onClick={() => setIsOpen(!isOpen)}
             className="text-white hover:bg-white/10"
           >
-            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-8 w-8" strokeWidth={2.5} />}
           </Button>
         </div>
 
