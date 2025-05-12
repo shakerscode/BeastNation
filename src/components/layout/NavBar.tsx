@@ -6,8 +6,7 @@ import { Link } from "react-router";
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false); 
 
   // Track scroll position to add background on scroll
   useEffect(() => {
@@ -58,7 +57,7 @@ const Navbar = () => {
             <Link
               key={link.name}
               to={link.path}
-              className="text-gray-200 font-medium dark:text-gray-200 hover:text-beast-700 dark:hover:text-beast-400 transition-colors"
+              className="text-gray-200 text-sm font-medium dark:text-gray-200 hover:text-beast-700 dark:hover:text-beast-400 transition-colors"
             >
               {link.name}
             </Link>
