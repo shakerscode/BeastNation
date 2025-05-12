@@ -130,7 +130,7 @@ export default {
 				"slide-in": "slide-in 0.3s ease-out",
 				'marquee': 'marquee 30s linear infinite',
 				'float': 'float 6s ease-in-out infinite',
-				'pulse-gentle': 'pulse-gentle 3s ease-in-out infinite'
+				'pulse-gentle': 'pulse-gentle 4s ease-in-out infinite'
 			},
 			boxShadow: {
 				'glow': '0 0 20px rgba(132, 69, 255, 0.3)',
