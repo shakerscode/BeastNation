@@ -8,10 +8,7 @@ const clients = [
 const ClientLogos = () => {
   return (
     <section className="py-12 overflow-hidden bg-beast-black/30">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="text-center mb-8">
-          <h2 className="text-xl font-medium text-white/70">Trusted by global brands</h2>
-        </div>
+      <div className="max-w-7xl mx-auto px-4"> 
         
         <div className="relative">
           {/* Gradient fades on edges */}
@@ -26,19 +23,19 @@ const ClientLogos = () => {
                   key={client}
                   className="mx-8 h-16 w-32 flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
                 >
-                  <div className="font-bold text-xl">{client}</div>
+                  <div className="font-bold text-2xl whitespace-nowrap">{client}</div>
                 </div>
               ))}
             </div>
             
             {/* Duplicate for seamless looping */}
-            <div className="flex items-center justify-around min-w-full animate-marquee">
+            <div className="flex items-center justify-around min-w-full animate-marquee ml-[20%]">
               {clients.map((client) => (
                 <div 
                   key={`dup-${client}`}
                   className="mx-8 h-16 w-32 flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
                 >
-                  <div className="font-bold text-xl">{client}</div>
+                  <div className="font-bold text-2xl whitespace-nowrap">{client}</div>
                 </div>
               ))}
             </div>
