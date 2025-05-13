@@ -841,3 +841,26 @@ const videos = [
     duration: "4:55",
   },
 ];
+
+export const bulletPoints = [
+  {
+    title: "Scaling Creator Marketing with Intention:",
+    content:
+      "Brands that invest in integrating technology, rights management, and platform-specific strategies will outperform competitors in scalability and cost-efficiency.",
+  },
+  {
+    title: "Driving ROI Through Targeted Campaigns:",
+    content:
+      "Precision drives better ROI by focusing efforts on high-value opportunities, from careful creator selection to optimizing consumer touchpoints.",
+  },
+  {
+    title: "Creators as Strategic Partners, Not Just Amplifiers:",
+    content:
+      "Building true partnerships with creators enhances campaign authenticity, fosters trust, and unlocks new forms of value across platforms and industries.",
+  },
+  {
+    title: "2025 Creator Economy Playbook:",
+    content:
+      "We've handpicked the creator trends that will drive the greatest impact for brands.",
+  },
+];
