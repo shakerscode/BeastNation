@@ -5,6 +5,13 @@ import { ContactPage } from "@/pages/ContactPage";
 import { HomePage } from "@/pages/HomePage";
 import InfluencerBlog from "@/pages/InfluencerBlog";
 import InfluencerMarketingTrendsReport from "@/pages/InfluencerMarketingTrendsReport";
+import AllServices from "@/pages/marketing_services/AllServices";
+import BusinessIntelligence from "@/pages/marketing_services/BusinessIntelligence";
+import CommunityManagement from "@/pages/marketing_services/CommunityManagement";
+import ExperientialMarketing from "@/pages/marketing_services/ExperientialMarketing";
+import InfluencerMarketing from "@/pages/marketing_services/InfluencerMarketing";
+import PerformanceMarketing from "@/pages/marketing_services/PerformanceMarketing";
+import SocialContentStudio from "@/pages/marketing_services/SocialContentStudio";
 import NotFound from "@/pages/NotFound";
 import { TalentDetailPage } from "@/pages/TalentDetailPage";
 import { TalentPage } from "@/pages/TalentPage";
@@ -28,7 +35,40 @@ export const router = createBrowserRouter([
           {
             path: ":id",
             Component: TalentDetailPage,
-            hydrateFallbackElement: <CommonLoading />,
+          },
+        ],
+      },
+      {
+        path: "services",
+        hydrateFallbackElement: <CommonLoading />,
+        children: [
+          {
+            index: true,
+            Component: AllServices,
+          },
+          {
+            path: "influencer-marketing",
+            Component: InfluencerMarketing,
+          },
+          {
+            path: "performance-marketing",
+            Component: PerformanceMarketing,
+          },
+          {
+            path: "social-content-studio",
+            Component: SocialContentStudio,
+          },
+          {
+            path: "experiential-marketing",
+            Component: ExperientialMarketing,
+          },
+          {
+            path: "community-management",
+            Component: CommunityManagement,
+          },
+          {
+            path: "business-intelligence",
+            Component: BusinessIntelligence,
           },
         ],
       },

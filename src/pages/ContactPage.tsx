@@ -165,18 +165,18 @@ export const ContactPage = () => {
                     <h3 className="font-bold text-lg mb-1">Email Us</h3>
                     <p className="text-gray-600 dark:text-gray-400">
                       <a
-                        href="mailto:info@beastnation.com"
+                        href="mailto:info@trenynation.com"
                         className="hover:text-beast-700 dark:hover:text-beast-400"
                       >
-                        info@beastnation.com
+                        info@trenynation.com
                       </a>
                     </p>
                     <p className="text-gray-600 dark:text-gray-400">
                       <a
-                        href="mailto:partnerships@beastnation.com"
+                        href="mailto:partnerships@trenynation.com"
                         className="hover:text-beast-700 dark:hover:text-beast-400"
                       >
-                        partnerships@beastnation.com
+                        partnerships@trenynation.com
                       </a>
                     </p>
                   </div>

@@ -12,10 +12,10 @@ export const AboutPage = () => {
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              About BeastNation
+              About TrendyNation
             </h1>
             <p className="text-gray-600 dark:text-gray-400">
-              BeastNation is a premier talent management agency connecting
+              TrendyNation is a premier talent management agency connecting
               exceptional creators with leading brands for impactful
               collaborations.
             </p>
@@ -46,7 +46,7 @@ export const AboutPage = () => {
                 Our Mission
               </h2>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
-                At BeastNation, we're dedicated to empowering content creators
+                At TrendyNation, we're dedicated to empowering content creators
                 and influencers to build sustainable careers while helping
                 brands connect with authentic voices that resonate with their
                 target audiences.
@@ -119,7 +119,7 @@ export const AboutPage = () => {
               className="space-y-4 text-gray-700 dark:text-gray-300"
             >
               <p>
-                BeastNation was founded in 2015 with a vision to revolutionize
+                TrendyNation was founded in 2015 with a vision to revolutionize
                 the creator economy by providing comprehensive support to
                 influencers while delivering exceptional value to brand
                 partners.
@@ -135,7 +135,7 @@ export const AboutPage = () => {
                 500 companies and leading consumer brands around the world.
               </p>
               <p>
-                Today, BeastNation represents over 200 creators across various
+                Today, TrendyNation represents over 200 creators across various
                 platforms and content categories, with a combined reach of more
                 than 50 million followers.
               </p>
@@ -150,7 +150,7 @@ export const AboutPage = () => {
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Our Values</h2>
             <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              These core principles guide everything we do at BeastNation.
+              These core principles guide everything we do at TrendyNation.
             </p>
           </div>
 
