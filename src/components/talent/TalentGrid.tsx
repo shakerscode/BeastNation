@@ -62,7 +62,7 @@ export const TalentGrid = () => {
               variant={currentPage === index + 1 ? "default" : "outline"}
               className={
                 currentPage === index + 1
-                  ? "bg-beast-600 hover:bg-beast-700"
+                  ? "bg-beast-purple-dark hover:bg-beast-accent"
                   : "border"
               }
               onClick={() => setCurrentPage(index + 1)}

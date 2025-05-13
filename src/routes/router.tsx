@@ -4,6 +4,7 @@ import { AboutPage } from "@/pages/AboutPage";
 import { ContactPage } from "@/pages/ContactPage";
 import { HomePage } from "@/pages/HomePage";
 import InfluencerBlog from "@/pages/InfluencerBlog";
+import InfluencerMarketingTrendsReport from "@/pages/InfluencerMarketingTrendsReport";
 import NotFound from "@/pages/NotFound";
 import { TalentDetailPage } from "@/pages/TalentDetailPage";
 import { TalentPage } from "@/pages/TalentPage";
@@ -40,6 +41,16 @@ export const router = createBrowserRouter([
         path: "influencer-lists",
         hydrateFallbackElement: <CommonLoading />,
         Component: InfluencerBlog,
+      },
+      {
+        path: "influencer-marketing-trends-report",
+        hydrateFallbackElement: <CommonLoading />,
+        Component: InfluencerMarketingTrendsReport,
+      },
+      {
+        path: "community-white-paper",
+        hydrateFallbackElement: <CommonLoading />,
+        Component: InfluencerMarketingTrendsReport,
       },
       {
         path: "about",
