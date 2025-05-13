@@ -53,7 +53,7 @@ const FeaturedContent = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true, amount: 0.3 }}
-            className="text-xl md:text-5xl font-bold font-display mb-1.5 md:mb-4"
+            className="text-3xl md:text-5xl font-bold font-display mb-1.5 md:mb-4"
           >
             Featured <span className="text-gradient">Content</span>
           </motion.h2>
@@ -63,7 +63,7 @@ const FeaturedContent = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
             viewport={{ once: true, amount: 0.3 }}
-            className="text-white/70 max-w-xl md:max-w-2xl text-sm md:text-base"
+            className="text-white/70 max-w-xl md:max-w-2xl text-base md:text-lg"
           >
             Explore our most popular videos showcasing the latest trends,
             insights, and success stories in the creator economy.{" "}
@@ -101,7 +101,7 @@ const FeaturedContent = () => {
                 transition={{ duration: 0.6, delay: i * 0.1 }}
                 viewport={{ once: true, amount: 0.2 }}
                 key={video.id}
-                className="glass-dark bg-black/30 group relative cursor-pointer overflow-hidden rounded-xl h-[400px]"
+                className="glass-dark bg-black/30 group relative cursor-pointer overflow-hidden rounded-xl h-[300px] md:h-[400px]"
                 // onClick={() => setSelectedVideo(video.id)}
               >
                 <div className="aspect-video overflow-hidden">

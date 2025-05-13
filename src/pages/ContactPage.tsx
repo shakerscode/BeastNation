@@ -1,3 +1,4 @@
+import ContactSection from "@/components/contact/ContactSection";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -46,25 +47,9 @@ export const ContactPage = () => {
   };
 
   return (
-    <div className="bg-white dark:bg-black">
-      {/* Hero Section */}
-      <section className="pt-24 pb-12 bg-gray-100 dark:bg-gray-900">
-        <div className="container mx-auto px-4 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">Contact Us</h1>
-            <p className="text-gray-600 dark:text-gray-400">
-              Have questions about our talent or interested in collaborating?
-              We'd love to hear from you. Get in touch with our team.
-            </p>
-          </motion.div>
-        </div>
-      </section>
-
+    <div className="bg-white dark:bg-black mt-10">
       {/* Contact Form and Information */}
+ 
       <section className="py-12 md:py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -217,6 +202,7 @@ export const ContactPage = () => {
           </div>
         </div>
       </section>
+ 
 
       {/* Map Section */}
       <section className="py-12">
