@@ -6,7 +6,7 @@ import { Link } from "react-router";
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
-  const [isScrolled, setIsScrolled] = useState(false); 
+  const [isScrolled, setIsScrolled] = useState(false);
 
   // Track scroll position to add background on scroll
   useEffect(() => {
@@ -38,31 +38,27 @@ const Navbar = () => {
   ];
 
   return (
- 
     <header className={`fixed top-0 left-0 right-0 z-50 px-4 md:px-8 py-4 `}>
       <div
-        className={`glass max-w-7xl mx-auto flex items-center justify-between transition-all ease-in-out duration-300 ${
+        className={`glass max-w-7xl 2xl:max-w-[1536px] mx-auto flex items-center justify-between transition-all ease-in-out duration-300 ${
           isScrolled ? " bg-beast-accent" : "bg-transparent"
         }`}
       >
-        <div className="flex items-center space-x-2 px-4 py-3">
+        <Link to={"/"} className="flex items-center space-x-2 px-4 py-3">
           <div className="bg-white text-xl md:text-3xl font-bold text-[#4c0fa1] p-1.5 rounded-lg">
             TN
           </div>
           <div
             className={`text-3xl font-bold hidden md:block  ${
-              isScrolled
-                ? "text-beast-purple-light"
-                : "text-gradient"
+              isScrolled ? "text-beast-purple-light" : "text-gradient"
             }`}
           >
             Trendy<span className="text-white">Nation</span>
- 
           </div>
-        </div>
+        </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8 pr-4"> 
+        <nav className="hidden md:flex items-center gap-8 pr-4">
           {navLinks.map((link) =>
             link.children ? (
               <div key={link.name} className="relative group">
@@ -95,7 +91,6 @@ const Navbar = () => {
           <Button
             size="sm"
             className="bg-primary-gradient hover:bg-beast-purple shadow-glow w-full"
- 
           >
             Get In Touch
           </Button>
@@ -109,7 +104,11 @@ const Navbar = () => {
             onClick={() => setIsOpen(!isOpen)}
             className="text-white hover:bg-white/10"
           >
-            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-8 w-8" strokeWidth={2.5} />}
+            {isOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-8 w-8" strokeWidth={2.5} />
+            )}
           </Button>
         </div>
 
@@ -145,13 +144,12 @@ const Navbar = () => {
               )
             )}
             <Button
-              size="sm" 
+              size="sm"
               className={`shadow-glow w-full ${
                 isScrolled
                   ? "bg-white text-beast-purple-dark"
                   : "bg-primary-gradient "
               }`}
- 
             >
               Get In Touch
             </Button>

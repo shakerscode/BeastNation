@@ -82,7 +82,7 @@ export const Footer = () => {
             <address className="not-italic text-gray-600 dark:text-gray-400">
               <p>123 Creator Avenue</p>
               <p>Los Angeles, CA 90210</p>
-              <p className="mt-4">info@beastnation.com</p>
+              <p className="mt-4">info@trendynation.com</p>
               <p>(555) 123-4567</p>
             </address>
           </div>
