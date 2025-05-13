@@ -15,7 +15,6 @@ import { useLocation } from "react-router";
 
 export const InfluencerBlog = () => {
   const { pathname } = useLocation();
-  console.log(pathname);
   const [searchQuery, setSearchQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
