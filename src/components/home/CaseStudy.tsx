@@ -17,10 +17,20 @@ const CaseStudy = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true, amount: 0.3 }}
-                className="text-beast-purple-light font-medium mb-2"
+                className="flex items-center justify-start gap-2 mb-2"
               >
-                FEATURED CASE STUDY
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  className="text-beast-purple-light font-medium"
+                >
+                  FEATURED CASE STUDY
+                </motion.div>
+                <div className="w-48 h-[2px] bg-beast-purple-light rounded-lg "></div>
               </motion.div>
+
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -32,13 +42,6 @@ const CaseStudy = () => {
                 <br />
                 Influencer Strategy
               </motion.h2>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.6 }}
-                viewport={{ once: true, amount: 0.3 }}
-                className="w-20 h-1 bg-primary-gradient rounded-full mb-8"
-              ></motion.div>
             </div>
 
             <div className="space-y-6">
