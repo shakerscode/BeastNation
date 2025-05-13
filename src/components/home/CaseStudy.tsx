@@ -44,13 +44,13 @@ const CaseStudy = () => {
               </motion.h2>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-4 md:space-y-6">
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.7 }}
                 viewport={{ once: true, amount: 0.3 }}
-                className="text-white/80"
+                className="text-white/80 text-base md:text-lg"
               >
                 We partnered with Spotify to reimagine their approach to creator
                 partnerships, resulting in a 220% increase in engagement and 40%

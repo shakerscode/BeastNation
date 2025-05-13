@@ -12,7 +12,7 @@ import { influencer } from "@/constans/fakeInfluencers";
 
 const TalentSection = () => {
   return (
-    <section id="talent" className="py-20 relative">
+    <section id="talent" className="py-10 md:py-20 relative">
       {/* Gradient  */}
       <div className="-z-20 absolute bottom-0 -right-10 w-48 md:w-80 h-96 md:h-96 rounded-full bg-beast-purple-dark blur-[100px] animate-pulse-gentle" />
 
@@ -41,7 +41,7 @@ const TalentSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true, amount: 0.3 }}
-            className="text-3xl md:text-5xl font-bold font-display mb-4 max-w-5xl text-center"
+            className="text-3xl md:text-5xl font-bold font-display mb-4 w-full md:max-w-5xl text-center"
           >
             Elevating <span className="text-gradient">Brands</span> Through
             Creator Excellence
@@ -52,7 +52,7 @@ const TalentSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
             viewport={{ once: true, amount: 0.3 }}
-            className="text-white/70 text-lg max-w-3xl text-center"
+            className="text-white/70 max-w-3xl text-center text-base md:text-lg"
           >
             We connect you with world-class influence's who embody your vision,
             spark real conversations, and deliver lasting impact across digital
@@ -83,10 +83,10 @@ const FeaturedWork = () => {
   const [prevIndex, setPrevIndex] = useState(0);
 
   const prevSlide = () => {
-    setPrevIndex((prevIndex) =>
-      prevIndex === 0 ? influencer.length - 1 : prevIndex - 1
-    );
+    setPrevIndex(index);
+    setIndex((prev) => (prev === 0 ? influencer.length - 1 : prev - 1));
   };
+  
 
   const nextSlide = () => {
     setIndex((prevIndex) =>
@@ -106,8 +106,8 @@ const FeaturedWork = () => {
   const previous = influencer[prevIndex];
 
   return (
-    <section className="flex flex-col md:flex-row items-start justify-between py-6 px-16 w-full relative">
-      <div className="flex flex-col absolute right-10 top-[50%] gap-4">
+    <section className="flex flex-col md:flex-row items-start justify-between md:py-6 md:px-16 w-full relative">
+      <div className="flex flex-col absolute right-0 md:right-10 top-[55%] md:top-[50%] gap-4">
         <motion.button
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -131,7 +131,7 @@ const FeaturedWork = () => {
       </div>
 
       {/* Image section  */}
-      <div className="md:w-[450px] h-[650px] relative">
+      <div className="w-[300px] md:w-[450px] h-[400px] md:h-[650px] relative mx-auto md:mx-0">
         {/* Previous image (visible on exit) */}
         <motion.img
           key={`prev-${previous.imageUrl}`}
@@ -153,7 +153,7 @@ const FeaturedWork = () => {
         />
       </div>
       {/* Text section  */}
-      <div className="md:max-w-2xl md:mb-0 w-full h-full p-10 mt-10">
+      <div className="md:max-w-2xl md:mb-0 w-full h-full md:p-10 mt-10">
         <div className="h-full">
           {/* Index */}
           <div className="flex items-center gap-1 mb-2">
@@ -179,9 +179,9 @@ const FeaturedWork = () => {
             exit={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true, amount: 0.2 }}
-            className="text-4xl md:text-6xl lg:text-[80px] leading-[90px] font-bold font-display mt-4"
+            className="text-4xl md:text-6xl lg:text-[80px] md:leading-[90px] font-bold font-display mt-4"
           >
-            {current?.firstName} <br />
+            {current?.firstName} <br className="hidden md:block"/>
             <span className="text-beast-purple-light">{current?.lastName}</span>
           </motion.h2>
 
@@ -192,7 +192,7 @@ const FeaturedWork = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true, amount: 0.2 }}
-            className="text-xl font-semibold text-white/80 mt-6"
+            className="text-xl font-semibold text-white/80 mt-4 md:mt-6"
           >
             {current?.tagline}
           </motion.h4>
@@ -204,7 +204,7 @@ const FeaturedWork = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
             viewport={{ once: true, amount: 0.2 }}
-            className="text-white/70 mt-4 max-w-xl"
+            className="text-white/70 mt-4 max-w-xl text-sm md:text-base"
           >
             {current?.description}
           </motion.p>

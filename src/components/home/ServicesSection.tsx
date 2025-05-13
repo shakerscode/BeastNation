@@ -59,13 +59,31 @@ const ServicesSection = () => {
       <div className="-z-20 absolute top-0 -right-20 w-48 md:w-80 h-48 md:h-80 rounded-full bg-beast-purple-dark blur-[100px] animate-pulse-gentle" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
-        <div className="text-center mb-5 md:mb-24">
+        <div className="flex flex-col items-center justify-start gap-2 mb-2">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="text-beast-purple-light font-medium uppercase"
+          >
+            What we offer
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="w-48 h-[2px] bg-beast-purple-light rounded-lg "
+          ></motion.div>
+        </div>
+        <div className="text-center mb-5 md:mb-10">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true, amount: 0.3 }}
-            className="text-xl md:text-5xl font-bold font-display mb-2.5"
+            className="text-3xl md:text-5xl font-bold font-display mb-2.5"
           >
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#8445ff] to-[#4c0fa1]">
               Services{" "}
@@ -77,7 +95,7 @@ const ServicesSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
             viewport={{ once: true, amount: 0.3 }}
-            className="text-white/70 max-w-2xl mx-auto"
+            className="text-white/70 max-w-2xl mx-auto text-base md:text-lg px-2 md:px-0"
           >
             Comprehensive solutions to elevate your brand in the digital
             landscape and creator economy.
@@ -194,7 +212,7 @@ const ServicesSection = () => {
                 </div>
 
                 <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-                <p className="text-gray-400 mb-6">{service.description}</p>
+                <p className="text-gray-400 mb-6 text-sm md:text-base">{service.description}</p>
 
                 <Button variant="ghost" className="text-[#8445ff]">
                   Learn More →
