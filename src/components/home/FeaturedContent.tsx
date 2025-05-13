@@ -53,7 +53,7 @@ const FeaturedContent = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true, amount: 0.3 }}
-            className="text-xl md:text-5xl font-bold font-display mb-1.5 md:mb-4"
+            className="text-3xl md:text-5xl font-bold font-display mb-1.5 md:mb-4"
           >
             Featured <span className="text-gradient">Content</span>
           </motion.h2>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, MoveRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 const CaseStudy = () => {
@@ -26,7 +26,7 @@ const CaseStudy = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
                 viewport={{ once: true, amount: 0.3 }}
-                className="text-3xl md:text-4xl font-bold font-display mb-4"
+                className="text-3xl md:text-5xl font-bold font-display mb-4"
               >
                 Transforming <span className="text-gradient">Spotify's</span>{" "}
                 <br />
@@ -122,11 +122,18 @@ const CaseStudy = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 1.7 }}
                 viewport={{ once: true, amount: 0.3 }}
-                className="pt-4"
+                className="pt-4 flex items-center gap-4"
               >
                 <Button className="bg-primary-gradient">
                   View Full Case Study
-                  <ExternalLink className="ml-2 h-4 w-4" />
+                  <ExternalLink className="ml-2 h-4 w-4" strokeWidth={2.5} />
+                </Button>
+                <Button
+                  variant="outline"
+                  className="group border-white/20 hover:bg-white/10 text-base transition-all ease-in-out duration-300 flex items-center"
+                >
+                  See More
+                  <MoveRight className="ml-2 h-4 w-4 transform transition-transform duration-300 group-hover:translate-x-1 " />
                 </Button>
               </motion.div>
             </div>
