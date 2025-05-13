@@ -1,5 +1,3 @@
-import React from "react";
-
 const clients = [
   "Adidas",
   "Amazon",
@@ -16,7 +14,7 @@ const clients = [
 const ClientLogos = () => {
   return (
     <section className="py-12 overflow-hidden bg-beast-black/30">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4">
         <div className="relative">
           {/* Edge fade */}
           <div className="absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-background to-transparent z-10" />

@@ -23,7 +23,40 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: "Home", path: "/" },
+    {
+      name: "Marketing Services",
+      path: "#",
+      children: [
+        {
+          name: "All Services",
+          path: "/services",
+        },
+        {
+          name: "Influencer Marketing",
+          path: "/services/influencer-marketing",
+        },
+        {
+          name: "Performance Marketing",
+          path: "/services/performance-marketing",
+        },
+        {
+          name: "Social Content Studio",
+          path: "/services/social-content-studio",
+        },
+        {
+          name: "Experiential Marketing",
+          path: "/services/experiential-marketing",
+        },
+        {
+          name: "Community Management",
+          path: "/services/community-management",
+        },
+        {
+          name: "Business Intelligence",
+          path: "/services/business-intelligence",
+        },
+      ],
+    },
     { name: "Talent", path: "/talent" },
     {
       name: "Resources",
@@ -62,15 +95,15 @@ const Navbar = () => {
           {navLinks.map((link) =>
             link.children ? (
               <div key={link.name} className="relative group">
-                <span className="cursor-pointer font-medium hover:text-beast-700 dark:hover:text-beast-400 transition-colors">
+                <span className="cursor-pointer text-nowrap font-medium hover:text-beast-700 dark:hover:text-beast-400 transition-colors">
                   {link.name}
                 </span>
-                <div className="absolute -left-6 shadow-2xl text-white mt-2 w-48 bg-beast-accent rounded-md opacity-0 group-hover:opacity-100 scale-95 group-hover:scale-100 transform transition duration-200 origin-top z-50">
+                <div className="absolute -left-6 shadow-2xl text-white mt-2 min-w-48 bg-beast-accent rounded-md opacity-0 group-hover:opacity-100 scale-95 group-hover:scale-100 transform transition duration-200 origin-top z-50">
                   {link.children.map((sublink) => (
                     <Link
                       key={sublink.name}
                       to={sublink.path}
-                      className="block px-4 py-2 text-base text-white hover:bg-beast-purple-dark hover:text-beast-700"
+                      className="block px-4 py-2 text-base text-nowrap text-white hover:bg-beast-purple-dark hover:text-beast-700"
                     >
                       {sublink.name}
                     </Link>
@@ -114,7 +147,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="absolute top-full left-0 right-0 glass mt-2 py-4 px-6 flex flex-col space-y-4 md:hidden">
+          <div className="absolute top-full left-0 right-0 glass bg-beast-accent mt-2 py-4 px-6 flex flex-col space-y-4 md:hidden">
             {navLinks.map((link) =>
               link.children ? (
                 <div key={link.name} className="relative group">
