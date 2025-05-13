@@ -1,5 +1,5 @@
 import { ReportContent } from "@/components/reports/ReportContent";
-import { ReportHeading } from "@/components/reports/reportHeading";
+import { ReportHeading } from "@/components/reports/ReportHeading";
 import { SocialFirstGrowthForm } from "@/components/reports/SocialFirstGrowthForm";
 import { useEffect } from "react";
 import { useLocation } from "react-router";

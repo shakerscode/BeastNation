@@ -1,4 +1,4 @@
-# Welcome to your BeastNation
+# Welcome to your TrendyNation
 
 ## Project info
 
