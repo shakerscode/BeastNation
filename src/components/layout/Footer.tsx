@@ -1,21 +1,16 @@
-import {
-  FaInstagram,
-  FaLinkedin,
-  FaTiktok,
-  FaTwitter,
-  FaYoutube,
-} from "react-icons/fa";
+import { featuredResources, quickLinks } from "@/constans/navLinks";
+import { FaInstagram, FaTiktok, FaTwitter, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router";
 
 export const Footer = () => {
   return (
-    <footer className="bg-gray-100 dark:bg-gray-900 pt-12 pb-8">
+    <footer className="bg-gray-100 dark:bg-gray-900 pt-12 pb-6">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <Link to="/" className="inline-block mb-4">
-              <span className="text-xl font-bold text-beast-700 dark:text-beast-400">
-                Beast<span className="text-black dark:text-white">Nation</span>
+              <span className="text-xl font-bold text-beast-purple-dark dark:text-beast-400">
+                Trendy<span className="text-black dark:text-white">Nation</span>
               </span>
             </Link>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
@@ -23,112 +18,62 @@ export const Footer = () => {
               impactful collaborations.
             </p>
             <div className="flex gap-4">
-              <a
-                href="#"
-                className="text-gray-600 dark:text-gray-400 hover:text-beast-700 dark:hover:text-beast-400"
+              <Link
+                to={"#"}
+                className="text-gray-600 dark:text-gray-400 hover:text-beast-purple-dark dark:hover:text-beast-400"
               >
                 <FaInstagram size={20} />
-              </a>
-              <a
-                href="#"
-                className="text-gray-600 dark:text-gray-400 hover:text-beast-700 dark:hover:text-beast-400"
+              </Link>
+              <Link
+                to={"#"}
+                className="text-gray-600 dark:text-gray-400 hover:text-beast-purple-dark dark:hover:text-beast-400"
               >
                 <FaTiktok size={20} />
-              </a>
-              <a
-                href="#"
-                className="text-gray-600 dark:text-gray-400 hover:text-beast-700 dark:hover:text-beast-400"
+              </Link>
+              <Link
+                to={"#"}
+                className="text-gray-600 dark:text-gray-400 hover:text-beast-purple-dark dark:hover:text-beast-400"
               >
                 <FaYoutube size={20} />
-              </a>
-              <a
-                href="#"
-                className="text-gray-600 dark:text-gray-400 hover:text-beast-700 dark:hover:text-beast-400"
+              </Link>
+              <Link
+                to={"#"}
+                className="text-gray-600 dark:text-gray-400 hover:text-beast-purple-dark dark:hover:text-beast-400"
               >
                 <FaTwitter size={20} />
-              </a>
-              <a
-                href="#"
-                className="text-gray-600 dark:text-gray-400 hover:text-beast-700 dark:hover:text-beast-400"
-              >
-                <FaLinkedin size={20} />
-              </a>
+              </Link>
             </div>
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Navigation</h3>
+            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li>
-                <Link
-                  to="/"
-                  className="text-gray-600 dark:text-gray-400 hover:text-beast-700 dark:hover:text-beast-400"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/talent"
-                  className="text-gray-600 dark:text-gray-400 hover:text-beast-700 dark:hover:text-beast-400"
-                >
-                  Talent
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/about"
-                  className="text-gray-600 dark:text-gray-400 hover:text-beast-700 dark:hover:text-beast-400"
-                >
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/contact"
-                  className="text-gray-600 dark:text-gray-400 hover:text-beast-700 dark:hover:text-beast-400"
-                >
-                  Contact
-                </Link>
-              </li>
+              {quickLinks.map((nav) => (
+                <li key={nav.name}>
+                  <Link
+                    to={nav.path}
+                    className="text-gray-600 hover:underline dark:text-gray-400 hover:text-beast-purple-dark dark:hover:text-beast-400"
+                  >
+                    {nav.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Resources</h3>
+            <h3 className="text-lg font-semibold mb-4">Featured Resources</h3>
             <ul className="space-y-2">
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 dark:text-gray-400 hover:text-beast-700 dark:hover:text-beast-400"
-                >
-                  For Brands
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 dark:text-gray-400 hover:text-beast-700 dark:hover:text-beast-400"
-                >
-                  For Creators
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 dark:text-gray-400 hover:text-beast-700 dark:hover:text-beast-400"
-                >
-                  Case Studies
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 dark:text-gray-400 hover:text-beast-700 dark:hover:text-beast-400"
-                >
-                  Blog
-                </a>
-              </li>
+              {featuredResources.map((nav) => (
+                <li key={nav.name}>
+                  <Link
+                    to={nav.path}
+                    className="text-gray-600 dark:text-gray-400 hover:underline hover:text-beast-purple-dark dark:hover:text-beast-400"
+                  >
+                    {nav.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -145,7 +90,7 @@ export const Footer = () => {
 
         <div className="mt-12 pt-6 border-t border-gray-200 dark:border-gray-800">
           <p className="text-center text-gray-600 dark:text-gray-400">
-            &copy; {new Date().getFullYear()} BeastNation. All rights reserved.
+            &copy; {new Date().getFullYear()} TrendyNation. All rights reserved.
           </p>
         </div>
       </div>

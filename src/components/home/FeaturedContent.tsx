@@ -1,69 +1,28 @@
-import React, { useEffect, useRef, useState } from "react";
+import { videos } from "@/utils/fakeData";
 import { motion } from "framer-motion";
-import { ArrowRight, Play, X } from "lucide-react";
-
-// Sample video data
-const videos = [
-  {
-    id: 1,
-    title: "Viral Campaign Strategy",
-    creator: "Emma Johnson",
-    thumbnail:
-      "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=800&auto=format",
-    views: "1.2M",
-    duration: "3:45",
-  },
-  {
-    id: 2,
-    title: "Influencer Marketing Secrets",
-    creator: "Alex Thompson",
-    thumbnail:
-      "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=800&auto=format",
-    views: "875K",
-    duration: "5:12",
-  },
-  {
-    id: 3,
-    title: "Building Your Creator Brand",
-    creator: "Sara Williams",
-    thumbnail:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format",
-    views: "1.5M",
-    duration: "4:30",
-  },
-  {
-    id: 4,
-    title: "Social Media Analytics Mastery",
-    creator: "Mark Davis",
-    thumbnail:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format",
-    views: "950K",
-    duration: "6:18",
-  },
-  {
-    id: 5,
-    title: "Content Creation Workshop",
-    creator: "Priya Sharma",
-    thumbnail:
-      "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format",
-    views: "720K",
-    duration: "8:45",
-  },
-  {
-    id: 6,
-    title: "TikTok Growth Hacking",
-    creator: "James Wilson",
-    thumbnail:
-      "https://www.mediamister.com/blog/wp-content/uploads/2022/02/How-to-Grow-Your-TikTok-Account-Fast.jpg",
-    views: "2.1M",
-    duration: "4:55",
-  },
-];
+import { ArrowRight } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 
 const FeaturedContent = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const innerRef = useRef<HTMLDivElement>(null);
   const [scrollRange, setScrollRange] = useState({ top: 0, height: 0 });
+
+  useEffect(() => {
+    const updateScrollRange = () => {
+      if (!containerRef.current) return;
+      const rect = containerRef.current.getBoundingClientRect();
+      const top = window.scrollY + rect.top;
+      const height = window.innerHeight;
+      setScrollRange({ top, height });
+    };
+
+    updateScrollRange();
+    window.addEventListener("resize", updateScrollRange);
+    return () => {
+      window.removeEventListener("resize", updateScrollRange);
+    };
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -79,20 +38,9 @@ const FeaturedContent = () => {
       innerRef.current.scrollTop = maxScroll * progress;
     };
 
-    const updateScrollRange = () => {
-      if (!containerRef.current) return;
-      const rect = containerRef.current.getBoundingClientRect();
-      const top = window.scrollY + rect.top;
-      const height = window.innerHeight;
-      setScrollRange({ top, height });
-    };
-
-    updateScrollRange();
     window.addEventListener("scroll", handleScroll);
-    window.addEventListener("resize", updateScrollRange);
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("resize", updateScrollRange);
     };
   }, [scrollRange]);
 
@@ -129,7 +77,9 @@ const FeaturedContent = () => {
           viewport={{ once: true, amount: 0.3 }}
           className="flex items-center gap-2 cursor-pointer hover:text-beast-purple-light duration-300 transition-all ease-in-out text-base font-medium"
         >
-          <span className="whitespace-nowrap text-sm md:text-base">View All</span>
+          <span className="whitespace-nowrap text-sm md:text-base">
+            View All
+          </span>
           <ArrowRight className="w-4 md:w-6 h-4 md:h-6" />
         </motion.div>
       </div>
