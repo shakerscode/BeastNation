@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
-
+  const navigate = useNavigate();
   const [isScrolled, setIsScrolled] = useState(false);
 
   // Track scroll position to add background on scroll
@@ -121,6 +121,7 @@ const Navbar = () => {
           )}
 
           <Button
+            onClick={() => navigate("/contact")}
             size="sm"
             className="bg-primary-gradient hover:bg-beast-purple shadow-glow w-full"
           >
@@ -176,6 +177,7 @@ const Navbar = () => {
               )
             )}
             <Button
+              onClick={() => navigate("/contact")}
               size="sm"
               className={`shadow-glow w-full ${
                 isScrolled
