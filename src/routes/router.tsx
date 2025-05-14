@@ -1,5 +1,6 @@
 import CommonLoading from "@/components/common/CommonLoading";
 import { RootLayout } from "@/components/layout/RootLayout";
+import ArticlePage from "@/components/resources/newsDetails/NewsArticleDetails";
 import { AboutPage } from "@/pages/AboutPage";
 import { ContactPage } from "@/pages/ContactPage";
 import { HomePage } from "@/pages/HomePage";
@@ -111,8 +112,11 @@ export const router = createBrowserRouter([
         children: [
           {
             path: "news-press-releases",
-            hydrateFallbackElement: <CommonLoading />,
-            element: <NewsAndPress />,
+            Component: NewsAndPress,
+          },
+          {
+            path: "news-press-releases/:slug",
+            Component: ArticlePage,
           },
         ],
       },
