@@ -97,9 +97,11 @@ const MarketingHeroSection = ({
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.8 }}
             >
-              <Button className="bg-primary-gradient text-white hover:shadow-glow transition-shadow px-8 py-6 text-lg font-medium">
-                Get In Touch
-              </Button>
+              <Link to={"/contact"}>
+                <Button className="bg-primary-gradient text-white hover:shadow-glow transition-shadow px-8 py-6 text-lg font-medium">
+                  Get In Touch
+                </Button>
+              </Link>
             </motion.div>
           </div>
 
