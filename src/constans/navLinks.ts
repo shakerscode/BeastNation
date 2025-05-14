@@ -35,3 +35,50 @@ export const quickLinks = [
     path: "/contact",
   },
 ];
+
+export const navLinks = [
+  {
+    name: "Marketing Services",
+    path: "#",
+    children: [
+      {
+        name: "All Services",
+        path: "/services",
+      },
+      {
+        name: "Influencer Marketing",
+        path: "/services/influencer-marketing",
+      },
+      {
+        name: "Performance Marketing",
+        path: "/services/performance-marketing",
+      },
+      {
+        name: "Social Content Studio",
+        path: "/services/social-content-studio",
+      },
+      {
+        name: "Experiential Marketing",
+        path: "/services/experiential-marketing",
+      },
+      {
+        name: "Community Management",
+        path: "/services/community-management",
+      },
+      {
+        name: "Business Intelligence",
+        path: "/services/business-intelligence",
+      },
+    ],
+  },
+  { name: "Talent", path: "/talent" },
+  {
+    name: "Resources",
+    path: "#",
+    children: [
+      { name: "Influencer List", path: "/influencer-lists" },
+      { name: "Influencer Blogs", path: "/influencer-blogs" },
+    ],
+  },
+  { name: "About", path: "/about" },
+];

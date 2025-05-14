@@ -1,7 +1,37 @@
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { navLinks } from "@/constans/navLinks";
+import { Menu, Search, X } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router";
+import { motion } from "framer-motion";
+
+const mobileMenuVariants = {
+  hidden: {
+    x: "100%",
+    opacity: 0,
+    transition: { duration: 0.5, ease: "easeInOut" },
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+      when: "beforeChildren",
+      staggerChildren: 0.08,
+    },
+  },
+  exit: {
+    x: "100%",
+    opacity: 0,
+    transition: { duration: 0.4, ease: "easeOut" },
+  },
+};
+
+const linkVariant = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
+};
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -21,53 +51,6 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const navLinks = [
-    {
-      name: "Marketing Services",
-      path: "#",
-      children: [
-        {
-          name: "All Services",
-          path: "/services",
-        },
-        {
-          name: "Influencer Marketing",
-          path: "/services/influencer-marketing",
-        },
-        {
-          name: "Performance Marketing",
-          path: "/services/performance-marketing",
-        },
-        {
-          name: "Social Content Studio",
-          path: "/services/social-content-studio",
-        },
-        {
-          name: "Experiential Marketing",
-          path: "/services/experiential-marketing",
-        },
-        {
-          name: "Community Management",
-          path: "/services/community-management",
-        },
-        {
-          name: "Business Intelligence",
-          path: "/services/business-intelligence",
-        },
-      ],
-    },
-    { name: "Talent", path: "/talent" },
-    {
-      name: "Resources",
-      path: "#",
-      children: [
-        { name: "Influencer List", path: "/influencer-lists" },
-        { name: "Influencer Blogs", path: "/influencer-blogs" },
-      ],
-    },
-    { name: "About", path: "/about" },
-  ];
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 px-4 md:px-8 py-4 `}>
@@ -137,58 +120,166 @@ const Navbar = () => {
             onClick={() => setIsOpen(!isOpen)}
             className="text-white hover:bg-white/10"
           >
-            {isOpen ? (
-              <X className="h-6 w-6" />
-            ) : (
-              <Menu className="h-8 w-8" strokeWidth={2.5} />
-            )}
+            <Menu className="h-8 w-8" strokeWidth={2.5} />
           </Button>
         </div>
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="absolute top-full left-0 right-0 glass bg-beast-accent mt-2 py-4 px-6 flex flex-col space-y-4 md:hidden">
-            {navLinks.map((link) =>
-              link.children ? (
-                <div key={link.name} className="relative group">
-                  <span className="cursor-pointer font-medium hover:text-beast-700 dark:hover:text-beast-400 transition-colors">
-                    {link.name}
-                  </span>
-                  <div className="absolute -left-6 shadow-2xl text-white mt-2 w-48 bg-beast-accent rounded-md opacity-0 group-hover:opacity-100 scale-95 group-hover:scale-100 transform transition duration-200 origin-top z-50">
-                    {link.children.map((sublink) => (
-                      <Link
-                        key={sublink.name}
-                        to={sublink.path}
-                        className="block px-4 py-2 text-base text-white hover:bg-beast-purple-dark hover:text-beast-700"
-                      >
-                        {sublink.name}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              ) : (
-                <Link
-                  key={link.name}
-                  to={link.path}
-                  className="font-medium hover:text-beast-700 dark:hover:text-beast-400 transition-colors"
-                >
-                  {link.name}
-                </Link>
-              )
-            )}
-            <Button
-              onClick={() => navigate("/contact")}
-              size="sm"
-              className={`shadow-glow w-full ${
-                isScrolled
-                  ? "bg-white text-beast-purple-dark"
-                  : "bg-primary-gradient "
-              }`}
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            variants={mobileMenuVariants}
+            className="fixed -top-[18px] -right-[17px] z-50 w-[100vw] rounded-none bg-black/70 px-4 py-6 glass md:hidden flex flex-col space-y-4 h-screen"
+          >
+            {/* Header (Search + Close) */}
+            <div className="flex items-center justify-between mb-4 gap-4">
+              <div className="flex items-center gap-3 w-full">
+                <Search className="h-4 w-4" />
+                <input
+                  type="text"
+                  name="search"
+                  id="search"
+                  placeholder="Search"
+                  className="outline-none text-sm w-full placeholder:text-sm bg-transparent transition-all ease-in-out duration-300 focus:border-b border-b-beast-white"
+                />
+              </div>
+              <button
+                onClick={() => setIsOpen(false)}
+                className="text-white hover:bg-white/10 bg-black/50 p-1.5 rounded-lg"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+
+            {/* Navigation Links */}
+            <motion.div
+              className="flex flex-col justify-center items-center text-3xl gap-4"
+              variants={mobileMenuVariants}
             >
-              Get In Touch
-            </Button>
-          </div>
+              {navLinks.map((link) =>
+                link.children ? (
+                  <motion.div
+                    key={link.name}
+                    className="relative group"
+                    variants={linkVariant}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    <span className="cursor-pointer font-medium hover:text-beast-700 dark:hover:text-beast-400 transition-colors">
+                      {link.name}
+                    </span>
+                    <div className="absolute left-0 mt-2 w-48 bg-beast-accent shadow-2xl rounded-md opacity-0 group-hover:opacity-100 scale-95 group-hover:scale-100 transform transition duration-200 origin-top z-50">
+                      {link.children.map((sublink) => (
+                        <Link
+                          key={sublink.name}
+                          to={sublink.path}
+                          className="block px-4 py-2 text-base text-white hover:bg-beast-purple-dark hover:text-beast-700"
+                        >
+                          {sublink.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </motion.div>
+                ) : (
+                  <motion.div onClick={() => setIsOpen(false)} key={link.name} variants={linkVariant}>
+                    <Link
+                      to={link.path}
+                      className="font-medium hover:text-beast-700 dark:hover:text-beast-400 transition-colors"
+                    >
+                      {link.name}
+                    </Link>
+                  </motion.div>
+                )
+              )}
+              <motion.div variants={linkVariant}>
+                <Button
+                  onClick={() => {
+                    setIsOpen(false);
+                    navigate("/contact");
+                  }}
+                  size="sm"
+                  className={`shadow-glow w-full ${
+                    isScrolled
+                      ? "bg-white text-beast-purple-dark"
+                      : "bg-primary-gradient"
+                  }`}
+                >
+                  Get In Touch
+                </Button>
+              </motion.div>
+            </motion.div>
+          </motion.div>
         )}
+
+        {/* <div
+          className={clsx(
+            "absolute px-4 rounded-none w-5/6 glass bg-black/70 py-4 flex flex-col space-y-4 md:hidden min-h-screen z-50 transition-all duration-500 ease-in-out transform",
+            isOpen
+              ? "translate-x-0 opacity-100 -top-4 -right-5"
+              : "translate-x-full opacity-0 -top-4 -right-96"
+          )}
+        >
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <Search className="h-4 w-4" />
+              <input
+                type="text"
+                name="search"
+                id="search"
+                placeholder="Search"
+                className="outline-none text-sm placeholder:text-sm bg-transparent transition-all ease-in-out duration-300 focus:border-b border-b-beast-white"
+              />
+            </div>
+            <div className="md:hidden">
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="text-white hover:bg-white/10 bg-black/50 p-1.5 rounded-lg"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+          </div>
+          {navLinks.map((link) =>
+            link.children ? (
+              <div key={link.name} className="relative group">
+                <span className="cursor-pointer font-medium hover:text-beast-700 dark:hover:text-beast-400 transition-colors">
+                  {link.name}
+                </span>
+                <div className="absolute -left-6 shadow-2xl text-white mt-2 w-48 bg-beast-accent rounded-md opacity-0 group-hover:opacity-100 scale-95 group-hover:scale-100 transform transition duration-200 origin-top z-50">
+                  {link.children.map((sublink) => (
+                    <Link
+                      key={sublink.name}
+                      to={sublink.path}
+                      className="block px-4 py-2 text-base text-white hover:bg-beast-purple-dark hover:text-beast-700"
+                    >
+                      {sublink.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <Link
+                key={link.name}
+                to={link.path}
+                className="font-medium hover:text-beast-700 dark:hover:text-beast-400 transition-colors"
+              >
+                {link.name}
+              </Link>
+            )
+          )}
+          <Button
+            onClick={() => navigate("/contact")}
+            size="sm"
+            className={`shadow-glow w-full ${
+              isScrolled
+                ? "bg-white text-beast-purple-dark"
+                : "bg-primary-gradient "
+            }`}
+          >
+            Get In Touch
+          </Button>
+        </div> */}
       </div>
     </header>
   );
