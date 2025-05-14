@@ -12,6 +12,7 @@ import ExperientialMarketing from "@/pages/marketing_services/ExperientialMarket
 import InfluencerMarketing from "@/pages/marketing_services/InfluencerMarketing";
 import PerformanceMarketing from "@/pages/marketing_services/PerformanceMarketing";
 import SocialContentStudio from "@/pages/marketing_services/SocialContentStudio";
+import NewsAndPress from "@/pages/NewsAndPress";
 import NotFound from "@/pages/NotFound";
 import { TalentDetailPage } from "@/pages/TalentDetailPage";
 import { TalentPage } from "@/pages/TalentPage";
@@ -101,6 +102,19 @@ export const router = createBrowserRouter([
         path: "contact",
         hydrateFallbackElement: <CommonLoading />,
         Component: ContactPage,
+      },
+
+      // New routes
+      {
+        path: "resources",
+        hydrateFallbackElement: <CommonLoading />,
+        children: [
+          {
+            path: "news-press-releases",
+            hydrateFallbackElement: <CommonLoading />,
+            element: <NewsAndPress />,
+          },
+        ],
       },
     ],
   },

@@ -2,8 +2,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { useThemeStore } from "@/store/useThemeStore";
 import { useEffect } from "react";
 import { Outlet } from "react-router";
-import { Footer } from "./Footer"; 
-import Navbar from "./NavBar";
+import { Footer } from "./Footer";
+import Navbar from "./NavBar"; 
 
 export const RootLayout = () => {
   const { theme } = useThemeStore();

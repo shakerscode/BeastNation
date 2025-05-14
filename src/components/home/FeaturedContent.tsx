@@ -3,8 +3,10 @@ import { ArrowRight } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import CommonSubHeading from "../common/CommonSubHeading";
 import { content } from "@/constants/fakeContent";
+import { useNavigate } from "react-router";
 
 const FeaturedContent = () => {
+  const navigate = useNavigate();
   const containerRef = useRef<HTMLDivElement>(null);
   const innerRef = useRef<HTMLDivElement>(null);
   const [scrollRange, setScrollRange] = useState({ top: 0, height: 0 });
@@ -57,7 +59,10 @@ const FeaturedContent = () => {
             viewport={{ once: true, amount: 0.3 }}
             className="text-3xl md:text-5xl font-bold font-display mb-1.5 md:mb-4"
           >
-            Latest <span className="text-beast-purple-light">Buzz & Breakthroughs</span>
+            Latest{" "}
+            <span className="text-beast-purple-light">
+              Buzz & Breakthroughs
+            </span>
           </motion.h2>
 
           <motion.p
@@ -74,6 +79,7 @@ const FeaturedContent = () => {
         </div>
 
         <motion.div
+          onClick={() => navigate("/resources/news-press-releases")}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
