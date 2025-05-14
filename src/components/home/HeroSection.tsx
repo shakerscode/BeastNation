@@ -69,9 +69,9 @@ const HeroSection = () => {
               viewport={{ once: true, amount: 0.2 }}
               className="text-4xl md:text-6xl font-bold font-display "
             >
-              <span className="text-gradient">Powering</span> The Next <br />{" "}
+              <span className="text-beast-purple-light">Powering</span> The Next <br />{" "}
               <p className="mt-2">Generation Of</p>{" "}
-              <span className="text-gradient">Creators</span>
+              <span className="text-beast-purple-light">Creators</span>
             </motion.h1>
 
             <motion.p

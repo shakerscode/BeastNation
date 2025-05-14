@@ -1,7 +1,8 @@
-import { videos } from "@/utils/fakeData";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import CommonSubHeading from "../common/CommonSubHeading";
+import { content } from "@/constants/fakeContent";
 
 const FeaturedContent = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -48,6 +49,7 @@ const FeaturedContent = () => {
     <div className="py-20">
       <div className="mb-12 flex items-start md:items-center justify-between max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="text-start">
+          <CommonSubHeading subHead="Press & Media" />
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -55,7 +57,7 @@ const FeaturedContent = () => {
             viewport={{ once: true, amount: 0.3 }}
             className="text-3xl md:text-5xl font-bold font-display mb-1.5 md:mb-4"
           >
-            Featured <span className="text-gradient">Content</span>
+            Latest <span className="text-beast-purple-light">Buzz & Breakthroughs</span>
           </motion.h2>
 
           <motion.p
@@ -65,8 +67,9 @@ const FeaturedContent = () => {
             viewport={{ once: true, amount: 0.3 }}
             className="text-white/70 max-w-xl md:max-w-2xl text-base md:text-lg"
           >
-            Explore our most popular videos showcasing the latest trends,
-            insights, and success stories in the creator economy.{" "}
+            Dive into our most talked-about press features, product launches,
+            and media moments that are shaping the future of the creator
+            economy.
           </motion.p>
         </div>
 
@@ -94,20 +97,20 @@ const FeaturedContent = () => {
           className="scroll-inner overflow-y-auto h-full flex flex-col gap-4"
         >
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 h-[600px] overflow-y-scroll px-4 md:px-28 lg:px-[140px] scrollbar-hidden">
-            {videos.map((video, i) => (
+            {content.map((data, i) => (
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: i * 0.1 }}
                 viewport={{ once: true, amount: 0.2 }}
-                key={video.id}
+                key={data.id}
                 className="glass-dark bg-black/30 group relative cursor-pointer overflow-hidden rounded-xl h-[300px] md:h-[400px]"
                 // onClick={() => setSelectedVideo(video.id)}
               >
                 <div className="aspect-video overflow-hidden">
                   <img
-                    src={video.thumbnail}
-                    alt={video.title}
+                    src={data.thumbnail}
+                    alt={data.title}
                     className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
@@ -115,9 +118,9 @@ const FeaturedContent = () => {
                 <div className="absolute bottom-0 left-0 right-0 p-4">
                   <div className="flex justify-between items-center ">
                     <div>
-                      <h3 className="font-medium text-lg">{video.title}</h3>
+                      <h3 className="font-medium text-lg">{data.title}</h3>
                       <p className="text-sm font-medium text-beast-purple-light">
-                        {video.creator}
+                        {data.creator}
                       </p>
                     </div>
                   </div>

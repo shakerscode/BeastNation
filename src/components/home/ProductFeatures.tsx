@@ -64,7 +64,7 @@ const ProductFeatures = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
                 viewport={{ once: true, amount: 0.3 }}
-                className="text-3xl md:text-5xl font-bold font-display pb-4 w-full text-gradient "
+                className="text-3xl md:text-5xl font-bold font-display pb-4 w-full text-beast-purple-light "
               >
                 Reimagined
               </motion.h2>

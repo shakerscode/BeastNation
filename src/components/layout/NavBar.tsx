@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { navLinks } from "@/constans/navLinks";
+import { navLinks } from "@/constants/navLinks";
 import { Menu, Search, X } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router";
@@ -77,7 +77,7 @@ const Navbar = () => {
           {navLinks.map((link) =>
             link.children ? (
               <div key={link.name} className="relative group">
-                <span className="cursor-pointer text-nowrap font-medium hover:text-beast-700 dark:hover:text-beast-400 transition-colors">
+                <span className="cursor-pointer text-nowrap font-medium hover:text-beast-700 dark:hover:text-beast-400 transition-colors text-sm">
                   {link.name}
                 </span>
                 <div className="absolute -left-6 shadow-2xl text-white mt-2 min-w-48 bg-beast-accent rounded-md opacity-0 group-hover:opacity-100 scale-95 group-hover:scale-100 transform transition duration-200 origin-top z-50">
@@ -85,7 +85,7 @@ const Navbar = () => {
                     <Link
                       key={sublink.name}
                       to={sublink.path}
-                      className="block px-4 py-2 text-base text-nowrap text-white hover:bg-beast-purple-dark hover:text-beast-700"
+                      className="block text-sm px-4 py-2 text-base text-nowrap text-white hover:bg-beast-purple-dark hover:text-beast-700"
                     >
                       {sublink.name}
                     </Link>
@@ -96,7 +96,7 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 to={link.path}
-                className="font-medium hover:text-beast-700 dark:hover:text-beast-400 transition-colors"
+                className="font-medium text-sm hover:text-beast-700 dark:hover:text-beast-400 transition-colors"
               >
                 {link.name}
               </Link>

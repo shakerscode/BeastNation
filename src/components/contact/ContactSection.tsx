@@ -14,7 +14,7 @@ const ContactSection = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold font-display mb-4">Let's <span className="text-gradient">Collaborate</span></h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-display mb-4">Let's <span className="text-beast-purple-light">Collaborate</span></h2>
           <p className="text-white/70 max-w-2xl mx-auto">Ready to transform your brand's presence in the creator economy? Our team of experts is here to help you succeed.</p>
         </div>
         

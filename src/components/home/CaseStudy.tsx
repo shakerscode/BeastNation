@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, MoveRight } from "lucide-react";
 import { motion } from "framer-motion";
+import CommonSubHeading from "../common/CommonSubHeading";
 
 const CaseStudy = () => {
   return (
@@ -12,24 +13,7 @@ const CaseStudy = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
             <div className="mb-6">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                viewport={{ once: true, amount: 0.3 }}
-                className="flex items-center justify-start gap-2 mb-2"
-              >
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.2 }}
-                  viewport={{ once: true, amount: 0.3 }}
-                  className="text-beast-purple-light font-medium"
-                >
-                  FEATURED CASE STUDY
-                </motion.div>
-                <div className="w-48 h-[2px] bg-beast-purple-light rounded-lg "></div>
-              </motion.div>
+              <CommonSubHeading subHead="FEATURED CASE STUDY" />
 
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
@@ -38,7 +22,8 @@ const CaseStudy = () => {
                 viewport={{ once: true, amount: 0.3 }}
                 className="text-3xl md:text-5xl font-bold font-display mb-4"
               >
-                Transforming <span className="text-gradient">Spotify's</span>{" "}
+                Transforming{" "}
+                <span className="text-beast-purple-light">Spotify's</span>{" "}
                 <br />
                 Influencer Strategy
               </motion.h2>
