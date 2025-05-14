@@ -1,8 +1,17 @@
 import { Link, useParams } from "react-router";
 import { Facebook, Linkedin, Twitter, Mail } from "lucide-react";
+import { useEffect } from "react";
 
 const ArticlePage = () => {
   const { slug } = useParams();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",  
+    });
+  }, [slug]);
 
   const title = slug?.replace("-", " ");
   const newTitle = title

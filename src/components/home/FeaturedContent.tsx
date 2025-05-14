@@ -49,7 +49,7 @@ const FeaturedContent = () => {
 
   return (
     <div className="py-20">
-      <div className="mb-12 flex items-start md:items-center justify-between max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
+      <div className="mb-6 flex items-end justify-between max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="text-start">
           <CommonSubHeading subHead="Press & Media" />
           <motion.h2
@@ -77,14 +77,13 @@ const FeaturedContent = () => {
             economy.
           </motion.p>
         </div>
-
         <motion.div
           onClick={() => navigate("/resources/news-press-releases")}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
           viewport={{ once: true, amount: 0.3 }}
-          className="flex items-center gap-2 cursor-pointer hover:text-beast-purple-light duration-300 transition-all ease-in-out text-base font-medium"
+          className="w-fit md:flex items-center hidden gap-2 cursor-pointer hover:text-beast-purple-light duration-300 transition-all ease-in-out text-base font-medium"
         >
           <span className="whitespace-nowrap text-sm md:text-base">
             View All
@@ -98,6 +97,19 @@ const FeaturedContent = () => {
         className="h-[600px] overflow-hidden relative"
         id="content"
       >
+        <motion.div
+          onClick={() => navigate("/resources/news-press-releases")}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          viewport={{ once: true, amount: 0.3 }}
+          className="w-fit ml-auto flex items-center mb-5 md:mb-8 mr-4 md:hidden gap-2 cursor-pointer hover:text-beast-purple-light duration-300 transition-all ease-in-out text-base font-medium"
+        >
+          <span className="whitespace-nowrap text-sm md:text-base">
+            View All
+          </span>
+          <ArrowRight className="w-4 md:w-6 h-4 md:h-6" />
+        </motion.div>
         <div
           ref={innerRef}
           className="scroll-inner overflow-y-auto h-full flex flex-col gap-4"
