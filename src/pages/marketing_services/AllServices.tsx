@@ -1,5 +1,7 @@
 import ClientLogos from "@/components/home/ClientLogos";
+import CommonSubFooter from "@/components/marketing_services/CommonSubFooter";
 import MarketingHeroSection from "@/components/marketing_services/MarketingHeroSection";
+import WhatWeOffer from "@/components/marketing_services/WhatWeOffer";
 import AllServiceImg from "/img/services/main_services.png";
 
 const AllServices = () => {
@@ -11,6 +13,11 @@ const AllServices = () => {
         img={AllServiceImg}
       />
       <ClientLogos />
+      <WhatWeOffer />
+      <CommonSubFooter
+        title={"Heavy lifting, offloaded"}
+        description={"Ready to consolidate your marketing efforts?"}
+      />
     </div>
   );
 };
