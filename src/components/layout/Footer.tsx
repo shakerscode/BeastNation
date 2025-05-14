@@ -1,4 +1,4 @@
-import { featuredResources, quickLinks } from "@/constans/navLinks";
+import { featuredResources, quickLinks } from "@/constants/navLinks";
 import { FaInstagram, FaTiktok, FaTwitter, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router";
 

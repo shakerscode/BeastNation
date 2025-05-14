@@ -70,9 +70,9 @@ export const InfluencerBlog = () => {
             <h1 className="text-3xl md:text-4xl font-bold font-display mb-4">
               Influencer
               {pathname === "/influencer-lists" ? (
-                <span className="text-gradient"> Lists</span>
+                <span className="text-beast-purple-light"> Lists</span>
               ) : (
-                <span className="text-gradient"> Blogs</span>
+                <span className="text-beast-purple-light"> Blogs</span>
               )}
             </h1>
             <p className="text-white/70 mx-auto max-w-3xl">

@@ -2,11 +2,19 @@ import React from "react";
 import { Button } from "../ui/button";
 import { MoveRight } from "lucide-react";
 import { useNavigate } from "react-router";
+import { motion } from "framer-motion";
 
 function Contact() {
   const navigate = useNavigate();
   return (
     <section className="bg-beast-black text-center py-24 px-4">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3, delay: 0.1 }}
+      viewport={{ once: true, amount: 0.2 }}
+      className="text-center "
+    >
       <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
         Scale Your Business With{" "}
         <span className="text-beast-purple-light">Creator Power</span>
@@ -26,6 +34,7 @@ function Contact() {
           strokeWidth={2.5}
         />
       </Button>
+    </motion.div>
     </section>
   );
 }

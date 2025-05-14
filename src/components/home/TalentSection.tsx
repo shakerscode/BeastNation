@@ -8,7 +8,8 @@ import {
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
-import { influencer } from "@/constans/fakeInfluencers";
+import { influencer } from "@/constants/fakeInfluencers";
+import CommonSubHeading from "../common/CommonSubHeading";
 
 const TalentSection = () => {
   return (
@@ -18,24 +19,7 @@ const TalentSection = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-center flex-col mb-12 w-full">
-          <div className="flex flex-col items-center justify-start gap-2 mb-2">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true, amount: 0.3 }}
-              className="text-beast-purple-light font-medium"
-            >
-              TELNETS
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true, amount: 0.3 }}
-              className="w-48 h-[2px] bg-beast-purple-light rounded-lg "
-            ></motion.div>
-          </div>
+           <CommonSubHeading subHead="TELNETS" shouldCol/>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -43,7 +27,7 @@ const TalentSection = () => {
             viewport={{ once: true, amount: 0.3 }}
             className="text-3xl md:text-5xl font-bold font-display mb-4 w-full md:max-w-5xl text-center"
           >
-            Elevating <span className="text-gradient">Brands</span> Through
+            Elevating <span className="text-beast-purple-light">Brands</span> Through
             Creator Excellence
           </motion.h2>
 
