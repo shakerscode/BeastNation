@@ -77,11 +77,11 @@ const Navbar = () => {
         }`}
       >
         <Link to={"/"} className="flex items-center space-x-2 px-4 py-3">
-          <div className="bg-white text-xl md:text-3xl font-bold text-[#4c0fa1] p-1.5 rounded-lg">
+          <div className="bg-white text-xl md:text-3xl font-bold font-display text-[#4c0fa1] p-1.5 rounded-lg">
             TN
           </div>
           <div
-            className={`text-3xl font-bold hidden md:block  ${
+            className={`text-3xl font-bold font-display hidden md:block  ${
               isScrolled ? "text-beast-purple-light" : "text-gradient"
             }`}
           >

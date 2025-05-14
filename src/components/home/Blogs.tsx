@@ -103,7 +103,7 @@ const BlogSection = () => {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
               viewport={{ once: true, amount: 0.3 }}
               key={index}
               className="glass border border-white/10 rounded-xl overflow-hidden group transition-all duration-300 hover:shadow-glow"
@@ -144,7 +144,7 @@ const BlogSection = () => {
               </div>
             </motion.div>
           ))}
-        </div> 
+        </div>
       </div>
     </section>
   );
