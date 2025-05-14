@@ -114,14 +114,12 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <div className="md:hidden px-4">
-          <Button
-            size="icon"
-            variant="ghost"
+          <button
             onClick={() => setIsOpen(!isOpen)}
             className="text-white hover:bg-white/10"
           >
-            <Menu className="h-8 w-8" strokeWidth={2.5} />
-          </Button>
+            <Menu className="h-6 w-6" strokeWidth={2.5} />
+          </button>
         </div>
 
         {/* Mobile Navigation */}
@@ -182,7 +180,11 @@ const Navbar = () => {
                     </div>
                   </motion.div>
                 ) : (
-                  <motion.div onClick={() => setIsOpen(false)} key={link.name} variants={linkVariant}>
+                  <motion.div
+                    onClick={() => setIsOpen(false)}
+                    key={link.name}
+                    variants={linkVariant}
+                  >
                     <Link
                       to={link.path}
                       className="font-medium hover:text-beast-700 dark:hover:text-beast-400 transition-colors"
