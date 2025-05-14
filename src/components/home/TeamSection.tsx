@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import CommonSubHeading from "../common/CommonSubHeading";
 
 const TeamSection = () => {
   const teamImage =
@@ -13,24 +14,9 @@ const TeamSection = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-12 z-20">
         {/* Left Text Content */}
         <div className="w-full">
-          <div className="flex items-center justify-start gap-2 mb-2">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true, amount: 0.3 }}
-              className="text-beast-purple-light font-medium uppercase"
-            >
-              Our Culture
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true, amount: 0.3 }}
-              className="w-48 h-[2px] bg-beast-purple-light rounded-lg "
-            ></motion.div>
-          </div>
+          <CommonSubHeading
+            subHead="Our Culture"
+          />
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}

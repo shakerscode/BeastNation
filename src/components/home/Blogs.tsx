@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Clock, ArrowUpRight, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import CommonSubHeading from "../common/CommonSubHeading";
 
 const blogs = [
   {
@@ -42,24 +43,7 @@ const BlogSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-end">
           <div>
-            <div className="flex  items-center justify-start gap-2 mb-2">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                viewport={{ once: true, amount: 0.3 }}
-                className="text-beast-purple-light font-medium"
-              >
-                BLOGS
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                viewport={{ once: true, amount: 0.3 }}
-                className="w-48 h-[2px] bg-beast-purple-light rounded-lg "
-              ></motion.div>
-            </div>
+            <CommonSubHeading subHead="Blog"/>
             <div className="text-start mb-12">
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
@@ -68,7 +52,7 @@ const BlogSection = () => {
                 viewport={{ once: true, amount: 0.3 }}
                 className="text-3xl md:text-5xl font-bold font-display mb-4"
               >
-                Insights From the <span className="text-gradient">Creator</span>{" "}
+                Insights From the <span className="text-beast-purple-light">Creator</span>{" "}
                 Economy
               </motion.h2>
               <motion.p
@@ -103,7 +87,7 @@ const BlogSection = () => {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
               viewport={{ once: true, amount: 0.3 }}
               key={index}
               className="glass border border-white/10 rounded-xl overflow-hidden group transition-all duration-300 hover:shadow-glow"
@@ -144,7 +128,7 @@ const BlogSection = () => {
               </div>
             </motion.div>
           ))}
-        </div> 
+        </div>
       </div>
     </section>
   );

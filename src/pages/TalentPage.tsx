@@ -63,7 +63,7 @@ export const TalentPage = () => {
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-3xl md:text-4xl font-bold font-display mb-4">
-              Our <span className="text-gradient">Talent</span>
+              Our <span className="text-beast-purple-light">Talent</span>
             </h1>
             <p className="text-gray-600 dark:text-gray-400">
               Discover our diverse roster of talented creators and influencers
