@@ -21,7 +21,7 @@ const MarketingHeroSection = ({
     <section className="relative w-full min-h-screen flex items-center py-16">
       <div className="px-4 sm:px-6 lg:px-8 w-full">
         {/* Breadcrumb Navigation */}
-        <div className="mb-12">
+        <div className="lg:my-8 my-9">
           <motion.nav
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -49,7 +49,7 @@ const MarketingHeroSection = ({
           </motion.nav>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center lg:-mt-8">
           {/* Left Content */}
           <div>
             <motion.h1
@@ -97,9 +97,11 @@ const MarketingHeroSection = ({
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.8 }}
             >
-              <Button className="bg-primary-gradient text-white hover:shadow-glow transition-shadow px-8 py-6 text-lg font-medium">
-                Get In Touch
-              </Button>
+              <Link to={"/contact"}>
+                <Button className="bg-primary-gradient text-white hover:shadow-glow transition-shadow px-8 py-6 text-lg font-medium">
+                  Get In Touch
+                </Button>
+              </Link>
             </motion.div>
           </div>
 
