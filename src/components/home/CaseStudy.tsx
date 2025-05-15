@@ -3,8 +3,11 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink, MoveRight } from "lucide-react";
 import { motion } from "framer-motion";
 import CommonSubHeading from "../common/CommonSubHeading";
+import { useNavigate } from "react-router";
 
 const CaseStudy = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="case-studies" className="py-20 relative overflow-hidden">
       <div className="absolute inset-0 -z-10 bg-gradient-to-br from-beast-accent/20 to-background" />
@@ -117,6 +120,7 @@ const CaseStudy = () => {
                   <ExternalLink className="ml-2 h-4 w-4" strokeWidth={2.5} />
                 </Button>
                 <Button
+                  onClick={() => navigate("/resources/case-studies")}
                   variant="outline"
                   className="group border-white/20 hover:bg-white/10 text-base transition-all ease-in-out duration-300 flex items-center"
                 >

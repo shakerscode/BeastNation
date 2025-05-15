@@ -13,8 +13,9 @@ import ExperientialMarketing from "@/pages/marketing_services/ExperientialMarket
 import InfluencerMarketing from "@/pages/marketing_services/InfluencerMarketing";
 import PerformanceMarketing from "@/pages/marketing_services/PerformanceMarketing";
 import SocialContentStudio from "@/pages/marketing_services/SocialContentStudio";
-import NewsAndPress from "@/pages/NewsAndPress";
 import NotFound from "@/pages/NotFound";
+import CaseStudies from "@/pages/resources/CaseStudies";
+import NewsAndPress from "@/pages/resources/NewsAndPress";
 import { TalentDetailPage } from "@/pages/TalentDetailPage";
 import { TalentPage } from "@/pages/TalentPage";
 import { createBrowserRouter } from "react-router";
@@ -117,6 +118,10 @@ export const router = createBrowserRouter([
           {
             path: "news-press-releases/:slug",
             Component: ArticlePage,
+          },
+          {
+            path: "case-studies",
+            Component: CaseStudies,
           },
         ],
       },
