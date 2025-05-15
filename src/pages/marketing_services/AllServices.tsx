@@ -3,6 +3,7 @@ import CommonSubFooter from "@/components/marketing_services/CommonSubFooter";
 import MarketingHeroSection from "@/components/marketing_services/MarketingHeroSection";
 import OurWork from "@/components/marketing_services/OurWork";
 import WhatWeOffer from "@/components/marketing_services/WhatWeOffer";
+import { ourWorkData } from "@/utils/fakeData";
 import AllServiceImg from "/img/services/main_services.png";
 
 const AllServices = () => {
@@ -15,7 +16,7 @@ const AllServices = () => {
       />
       <ClientLogos />
       <WhatWeOffer />
-      <OurWork />
+      <OurWork data={ourWorkData} />
       <CommonSubFooter
         title={"Heavy lifting, offloaded"}
         description={"Ready to consolidate your marketing efforts?"}
