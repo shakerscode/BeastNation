@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function CaseStudiesHeader(props) {
   return (
-    <section className="pt-20 md:pt-36">
+    <section className="pt-32 md:pt-36 px-4 md:px-0">
       <CommonSubHeading subHead="Our Work" />
       <motion.h1
         initial={{ opacity: 0, y: 20 }}
@@ -24,7 +24,7 @@ function CaseStudiesHeader(props) {
         connect with their audiences, break into new platforms, and dominate the
         digital space.
       </p>
-      <div className="px-4 md:px-12 py-6 "></div>
+      <div className="px-4 md:px-12 md:py-6 "></div>
       <PlaybookCTA />
     </section>
   );

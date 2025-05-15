@@ -1,4 +1,5 @@
 import { MoveRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 const caseStudies = [
   {
@@ -48,10 +49,14 @@ const caseStudies = [
 
 function CaseStudiesGrid() {
   return (
-    <section className="p-5">
+    <section className="md:p-5">
       <div className="max-w-7xl mx-auto px-4 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {caseStudies.map((study, index) => (
-          <div
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
             key={index}
             className="min-h-[400px] h-full w-full min-w-[350px] group cursor-pointer transition-all duration-300 ease-in-out relative rounded-lg overflow-hidden shadow-glow"
           >
@@ -81,7 +86,7 @@ function CaseStudiesGrid() {
                 <span>Read more</span> <MoveRight className="w-5 h-5 mt-0.5" />
               </button>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
