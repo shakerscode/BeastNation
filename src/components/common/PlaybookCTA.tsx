@@ -9,7 +9,7 @@ const PlaybookCTA = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.3 }}
       viewport={{ once: true, amount: 0.3 }}
-      className="bg-beast-black px-4 md:px-12 py-6 md:py-16"
+      className=""
     >
       {/* CTA Box */}
       <div className="max-w-7xl mx-auto bg-white text-black rounded-md flex flex-col md:flex-row items-center justify-between gap-3 md:gap-8 p-5 shadow-xl">
