@@ -32,12 +32,18 @@ const caseStudies = [
   },
   {
     productImage:
-      "https://images.pexels.com/photos/3299905/pexels-photo-3299905.jpeg", // pet brand
+      "https://images.pexels.com/photos/3299905/pexels-photo-3299905.jpeg",
     title: "Pet supply brand's loyalty campaign hit 500K active users",
     logoURL: "/public/img/caseStudy/logo_five.png",
     link: "#",
   },
-  
+  {
+    productImage:
+      "https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg",
+    title: "Fitness app’s Instagram campaign grew engagement by 700%",
+    logoURL: "/public/img/caseStudy/logo_six.png",
+    link: "#",
+  },
 ];
 
 function CaseStudiesGrid() {
