@@ -12,7 +12,11 @@ const CommonSubFooter = ({
 }) => {
   const navigate = useNavigate();
   return (
-    <section className="text-center py-24 px-4">
+    <section className="text-center py-24 px-4 relative">
+      <div
+        className="absolute z-0 bottom-10 md:bottom-[20%] md:left-2/3 w-40 md:w-96 h-40 md:h-72 rounded-full bg-beast-purple blur-[120px] animate-pulse-gentle"
+        style={{ animationDelay: "1s" }}
+      />
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

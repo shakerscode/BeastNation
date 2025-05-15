@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router";
+import CommonSubHeading from "../common/CommonSubHeading";
 
 interface ServiceCardProps {
   title: string;
@@ -83,7 +84,11 @@ const ServiceCard = ({
 
 export const WhatWeOffer = () => {
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-16 md:py-24 relative">
+      <div
+        className="absolute z-0 bottom-10 md:bottom-[30%] md:left-1/3 w-40 md:w-96 h-40 md:h-72 rounded-full bg-beast-purple blur-[120px] animate-pulse-gentle"
+        style={{ animationDelay: "1s" }}
+      />
       <div className="container mx-auto px-4">
         <motion.h2
           className="text-4xl md:text-5xl font-bold mb-12 text-gradient"
@@ -92,7 +97,7 @@ export const WhatWeOffer = () => {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          What We Offer
+          <CommonSubHeading subHead=" What we offer" shouldCol />
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
