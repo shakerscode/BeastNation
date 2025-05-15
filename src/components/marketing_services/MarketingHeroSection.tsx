@@ -20,6 +20,16 @@ const MarketingHeroSection = ({
   return (
     <section className="relative w-full min-h-screen flex items-center py-16">
       <div className="px-4 sm:px-6 lg:px-8 w-full">
+        {/* Animated background elements */}
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-beast-accent to-transparent opacity-30" />
+          <div className="absolute top-0 md:top-2/4 -right-20 md:left-[480px] w-48 md:w-72 h-48 md:h-72 rounded-full bg-beast-purple-dark blur-[100px] animate-pulse-gentle" />
+          <div
+            className="absolute bottom-10 md:bottom-[20%] md:right-1/4 w-40 md:w-96 h-40 md:h-96 rounded-full bg-beast-purple blur-[120px] animate-pulse-gentle"
+            style={{ animationDelay: "1s" }}
+          />
+        </div>
+
         {/* Breadcrumb Navigation */}
         <div className="lg:my-8 my-9">
           <motion.nav

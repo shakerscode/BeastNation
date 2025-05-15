@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Menu, Search, X } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router";
+import CommonGetInTouchBtn from "../common/CommonGetInTouchBtn";
 
 const mobileMenuVariants = {
   hidden: {
@@ -126,13 +127,7 @@ const Navbar = () => {
             )
           )}
 
-          <Button
-            onClick={() => navigate("/contact")}
-            size="sm"
-            className="bg-primary-gradient hover:bg-beast-purple shadow-glow w-full"
-          >
-            Get In Touch
-          </Button>
+          <CommonGetInTouchBtn />
         </nav>
 
         {/* Mobile Menu Button */}

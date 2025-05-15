@@ -806,3 +806,65 @@ export const bulletPoints = [
       "We've handpicked the creator trends that will drive the greatest impact for brands.",
   },
 ];
+
+export const ourWorkData = [
+  {
+    id: 1,
+    src: "/img/influencers/insta_hero.png",
+    label: "Smartwater",
+    description:
+      "We crafted an innovative social campaign integrating creators and hydration with style.",
+  },
+  {
+    id: 2,
+    src: "/img/influencers/Top Couples Blog Image _Noah and Lori.png",
+    label: "Walmart Land",
+    description:
+      "An immersive virtual experience showcasing Walmart's community-driven activations.",
+  },
+  {
+    id: 3,
+    src: "/img/influencers/Steph-Grasso-Blog-Image.png",
+    label: "Creating Fans for Call of Duty League",
+    description:
+      "Trendy Nation orchestrated an ambassador program with always-on coverage, converting hundreds of thousands of casual gamers into active fans.",
+  },
+  {
+    id: 4,
+    src: "/img/services/experiential_marketing.png",
+    label: "PUBG",
+    description:
+      "From battleground to brand — this campaign brought the intensity of PUBG into real-world engagement.",
+  },
+];
+
+export const influencerWorkData = [
+  {
+    id: 1,
+    src: "/img/blog/Blog_Image_Template_B2B-Marketing_Feature.png",
+    label: "7 Eleven Canada",
+    description:
+      "For highly targeted and seasonally optimized campaigns, Viral Nation consistently delivers versatile content creation across various formats. With their ability to handle large-scale operations, 7-Eleven turned to Viral Nation to enhance our social presence across targeted markets and demographics. Their comprehensive and integrated service model reduces the need for multiple service providers, adding value at every step.",
+  },
+  {
+    id: 2,
+    src: "/img/blog/Blog_Image_Template_Creators-Talent_Feature.png",
+    label: "Chegg",
+    description:
+      "Trendy Nation has propelled Chegg into the social-first era, helping to transform our channel into a vibrant hub that resonates with our audience. With a deep understanding of our mission and goals, Viral Nation captures the essence of today’s college life, curating influencers and user-generated content that leverages trends and cultural moments. With their expertise and alliance with our marketing team, they have helped Chegg become a significant voice in the #EduTok space delivering impactful, relatable, viral, and memorable content that authentically supports students on their academic journeys.",
+  },
+  {
+    id: 3,
+    src: "/img/blog/VN-Blog_LatinX-Thought-LeadershipFeature.png",
+    label: "Dairy Management Inc.",
+    description:
+      "Viral Nation transformed Undeniably Dairy’s approach to influencer content, identifying a diverse group of enthusiastic dairy-loving influencers for Undeniably Dairy’s roster as an ongoing partnership. The approach was all about identifying a wide breadth of authentic voices of all tiers and formalizing a partnership to bring their own, personal stories to life on an ongoing basis. Viral Nation coordinated with the influencers as they crafted innovative, seasonally relevant content and engaging activations transparently informed by the influencers’ own dairy-filled lives and storytelling angles, which Viral Nation supported with paid media amplification.",
+  },
+  {
+    id: 4,
+    src: "/img/blog/Blog_Image_Template_TikTok.png",
+    label: "Modern States",
+    description:
+      "It matters to us that our ambassadors represent our values as an organization. Viral Nation Secure™ lets us quickly review prospective ambassadors’ social presence, with their permission, and make better decisions about who represents us.",
+  },
+];
