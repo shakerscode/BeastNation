@@ -7,11 +7,15 @@ import {
   FileText,
   GlassesIcon,
   Globe,
+  GlobeIcon,
+  HandshakeIcon,
+  HeartHandshakeIcon,
   MegaphoneIcon,
   PlaySquareIcon,
   PuzzleIcon,
   RadioTower,
   Smartphone,
+  SmartphoneIcon,
   SmartphoneNfcIcon,
   TargetIcon,
   TrendingUp,
@@ -895,31 +899,31 @@ export const influencerWorkData = [
 
 export const performanceDrivenData = [
   {
-    icon: <UserCircle className="w-20 h-20" />,
+    icon: <UserCircle className="" size={100} />,
     title: "Be Authentic And Relatable",
     description:
       "Develop a personalized understanding of your audience to deliver high volume, lo-fi content that's timely, engaging, and shareable.",
   },
   {
-    icon: <Users className="w-20 h-20" />,
+    icon: <Users className="" size={100} />,
     title: "Be Always-On",
     description:
       "Partner with our network of leading media and social publishers to connect with your most valuable audiences, everywhere it matters.",
   },
   {
-    icon: <TrendingUp className="w-20 h-20" />,
+    icon: <TrendingUp className="" size={100} />,
     title: "Be Growth-Oriented",
     description:
       "Test different angles, audiences, and messaging to engage, convert, and expand: Doubling down on what works, round after round.",
   },
   {
-    icon: <Smartphone className="w-20 h-20" />,
+    icon: <Smartphone className="" size={100} />,
     title: "Be Cutting Edge",
     description:
       "Dig deep with robust custom reporting and AI-powered analytics that provide the data and insights you need to keep optimizing.",
   },
   {
-    icon: <RadioTower className="w-20 h-20" />,
+    icon: <RadioTower className="" size={100} />,
     title: "Be Endlessly Iterative",
     description:
       "Leverage social listening to build a feedback loop, fuelling continuously improving performance.",
@@ -1058,5 +1062,63 @@ export const experienceExecutionData = [
     title: "Measurement Technology",
     description:
       "After the dust has settled, we wrap the experience up with our best-in-class business intelligence service that provides measurement modeling, custom playbooks, and attribution technology to ensure each experience builds on the learnings of the last.",
+  },
+];
+
+export const brandEngagementData = [
+  {
+    icon: <PlaySquareIcon className="w-8 h-8 text-beast-purple" />,
+    title: "Elevate Customer Journeys",
+    description:
+      "Every interaction is an opportunity to bolster positive brand sentiment.",
+  },
+  {
+    icon: <BrushIcon className="w-8 h-8 text-beast-purple" />,
+    title: "Embed Brands into Cultural Moments",
+    description: "Leverage social listening and join the conversation.",
+  },
+  {
+    icon: <MegaphoneIcon className="w-8 h-8 text-beast-purple" />,
+    title: "Grow Revenue Through Social",
+    description:
+      "Social commerce management that’s strategic, engaging, and always on.",
+  },
+  {
+    icon: <SmartphoneNfcIcon className="w-8 h-8 text-beast-purple" />,
+    title: "Strengthen Brand Loyalty",
+    description: "Bespoke programs and services that speak to your audience.",
+  },
+];
+
+export const socialSolutionsData = [
+  {
+    icon: <GlobeIcon className="" size={100} />,
+    title: "Social Management & Community Building",
+    description:
+      "Cultivate intentional relationships with your audience through a unified social persona to offer timely conversations, meaningful brand moments, and content tapped into cultural pulse points.",
+  },
+  {
+    icon: <SmartphoneIcon className="" size={100} />,
+    title: "Social Commerce",
+    description:
+      "Drive revenue by connecting community, content, and commerce: Identify opportunities to amplify promotion, create a seamless shopping experience, and encourage consideration across social platforms.",
+  },
+  {
+    icon: <HandshakeIcon className="" size={100} />,
+    title: "Customer Guidance & Crisis Communications",
+    description:
+      "Enhance customer guidance and support by seamlessly integrating our internal teams into a client’s existing customer service experience, including a proactive escalation process and bespoke crisis communication.",
+  },
+  {
+    icon: <UsersIcon className="" size={100} />,
+    title: "Loyalty Programs",
+    description:
+      "Transform engaged communities into brand loyalists with programs designed to encourage deeper audience connections, strengthen customer retention, and drive commerce.",
+  },
+  {
+    icon: <HeartHandshakeIcon className="" size={100} />,
+    title: "Surprise & Delight Strategy",
+    description:
+      "Harness the power of social listening to attract potential audiences and nurture current communities with social gifting, offerings, and rewards — fueled by our proprietary tech stack.",
   },
 ];

@@ -35,8 +35,8 @@ const ServiceItem = ({
 
 export const ServicesShowcaseSection = ({ services }) => {
   return (
-    <section className="py-16 md:py-24 bg-white dark:bg-gray-950">
-      <div className="container mx-auto px-4">
+    <section className="py-16 md:py-24">
+      <div className="px-4">
         <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-6 lg:gap-8"
           initial={{ opacity: 0 }}

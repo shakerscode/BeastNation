@@ -6,6 +6,7 @@ import { PerformanceDriven } from "@/components/marketing_services/performance_m
 import { PhoneShowcase } from "@/components/marketing_services/performance_marketing/PhoneShowcase";
 import { ServicesShowcaseSection } from "@/components/marketing_services/performance_marketing/ServicesShowcaseSection";
 import { embeddingBrands, servicesShowcaseSocial } from "@/utils/fakeData";
+import InterviewStar from "/img/marketing_services/Interview_star.png";
 import SocialContentImg from "/img/services/social_content_studio.png";
 
 const SocialContentStudio = () => {
@@ -18,7 +19,13 @@ const SocialContentStudio = () => {
         img={SocialContentImg}
       />
       <ClientLogos />
-      <PhoneShowcase />
+      <PhoneShowcase
+        title={"Where Strategy, Creative, and Production Come Together"}
+        description={
+          "Strategizing angles, brainstorming creative, and iterating in production – Viral Nation Studio reaches millions of people across platforms and channels who share and amplify the message far and wide."
+        }
+        photo={InterviewStar}
+      />
       <ServicesShowcaseSection services={servicesShowcaseSocial} />
       <ContentTracks />
       <PerformanceDriven
