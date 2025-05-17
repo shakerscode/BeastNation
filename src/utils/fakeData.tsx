@@ -1,4 +1,11 @@
 import { Talent } from "@/types/talent";
+import {
+  RadioTower,
+  Smartphone,
+  TrendingUp,
+  UserCircle,
+  Users,
+} from "lucide-react";
 
 export type Blog = {
   id: number;
@@ -866,5 +873,38 @@ export const influencerWorkData = [
     label: "Modern States",
     description:
       "It matters to us that our ambassadors represent our values as an organization. Viral Nation Secure™ lets us quickly review prospective ambassadors’ social presence, with their permission, and make better decisions about who represents us.",
+  },
+];
+
+export const performanceDrivenData = [
+  {
+    icon: <UserCircle className="w-20 h-20" />,
+    title: "Be Authentic And Relatable",
+    description:
+      "Develop a personalized understanding of your audience to deliver high volume, lo-fi content that's timely, engaging, and shareable.",
+  },
+  {
+    icon: <Users className="w-20 h-20" />,
+    title: "Be Always-On",
+    description:
+      "Partner with our network of leading media and social publishers to connect with your most valuable audiences, everywhere it matters.",
+  },
+  {
+    icon: <TrendingUp className="w-20 h-20" />,
+    title: "Be Growth-Oriented",
+    description:
+      "Test different angles, audiences, and messaging to engage, convert, and expand: Doubling down on what works, round after round.",
+  },
+  {
+    icon: <Smartphone className="w-20 h-20" />,
+    title: "Be Cutting Edge",
+    description:
+      "Dig deep with robust custom reporting and AI-powered analytics that provide the data and insights you need to keep optimizing.",
+  },
+  {
+    icon: <RadioTower className="w-20 h-20" />,
+    title: "Be Endlessly Iterative",
+    description:
+      "Leverage social listening to build a feedback loop, fuelling continuously improving performance.",
   },
 ];

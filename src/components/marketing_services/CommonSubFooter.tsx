@@ -32,11 +32,11 @@ const CommonSubFooter = ({
         <Button
           onClick={() => navigate("/contact")}
           size="lg"
-          className="group bg-primary-gradient text-xl hover:bg-beast-purple shadow-glow w-auto"
+          className="group bg-primary-gradient text-xl hover:bg-beast-purple py-7 shadow-glow w-auto"
         >
           Get In Touch{" "}
           <MoveRight
-            size={24}
+            size={32}
             className="transform transition-transform duration-300 group-hover:translate-x-1"
             strokeWidth={2.5}
           />
