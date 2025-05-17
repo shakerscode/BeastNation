@@ -1,11 +1,22 @@
 import { Talent } from "@/types/talent";
 import {
+  BarChart3Icon,
+  ChartAreaIcon,
+  Cpu,
+  FileText,
+  GlassesIcon,
+  Globe,
+  PuzzleIcon,
   RadioTower,
   Smartphone,
+  TargetIcon,
   TrendingUp,
   UserCircle,
   Users,
+  UsersIcon,
+  VideoIcon,
 } from "lucide-react";
+import { FaPhoneSlash } from "react-icons/fa";
 
 export type Blog = {
   id: number;
@@ -906,5 +917,86 @@ export const performanceDrivenData = [
     title: "Be Endlessly Iterative",
     description:
       "Leverage social listening to build a feedback loop, fuelling continuously improving performance.",
+  },
+];
+
+export const embeddingBrands = [
+  {
+    icon: <FaPhoneSlash className="w-20 h-20" />,
+    title: "Harness Authentic Creator Stories",
+    description:
+      "Posts with the highest social engagement have one thing in common: Great storytelling. By leveraging the authentic essence of creators, branded content becomes relatable, memorable, and shareable.",
+  },
+  {
+    icon: <Cpu className="w-20 h-20" />,
+    title: "Move At The Speed Of Culture",
+    description:
+      "Social feeds are won with content that moves at the speed of trends. Viral Nation Studio team of designers, social experts, and strategists fuse stories with speed to amplify brand narrative.",
+  },
+  {
+    icon: <Smartphone className="w-20 h-20" />,
+    title: "Everything, Everywhere All At Once",
+    description:
+      "A lethal amplification method – our paid and performance specialists push messaging out to broader target audience segments, facilitating maximum reach and enabling deeper insights about content performance and propensity.",
+  },
+  {
+    icon: <GlassesIcon className="w-20 h-20" />,
+    title: "Shaped By Creativity And Culture",
+    description:
+      "Our wickedly talented community and social team are the ears to the ground, serving as a feedback loop on trends, audience behavior, and content performance to fuel iteration and innovation.",
+  },
+];
+
+export const servicesShowcase = [
+  {
+    icon: <Globe className="w-8 h-8" />,
+    title: "Growth Consulting",
+    description:
+      "Drive continuous growth with the expert insights and experience that comes from powering the world's biggest brands.",
+  },
+  {
+    icon: <PuzzleIcon className="w-8 h-8" />,
+    title: "Always-on Content",
+    description:
+      "Deliver high volume, lo-fi social content with our award-winning marketing services team and exclusive access to our industry-leading talent roster.",
+  },
+  {
+    icon: <FileText className="w-8 h-8" />,
+    title: "Campaign Execution",
+    description:
+      "Unlock end-to-end campaign management, from ideation and strategy to execution and measurement, all under one roof.",
+  },
+  {
+    icon: <ChartAreaIcon className="w-8 h-8" />,
+    title: "Reporting & Analytics",
+    description:
+      "Tap into AI-powered analytics tools to help you analyze, optimize, and scale your data-driven decision making.",
+  },
+];
+
+export const servicesShowcaseSocial = [
+  {
+    icon: <TargetIcon className="w-8 h-8" />,
+    title: "Strategy",
+    description:
+      "From award shows to convenience store activations or back-to-college tentpoles, we leverage the cultural calendar, SEO, and market insights to ensure content is delivered for maximum impact.",
+  },
+  {
+    icon: <UsersIcon className="w-8 h-8" />,
+    title: "Creative",
+    description:
+      "Social content is a craft that immerses audiences in the product, messaging, and narrative. Choose between two tracks: In-house content or creator-led content, or both.",
+  },
+  {
+    icon: <VideoIcon className="w-8 h-8" />,
+    title: "Production",
+    description:
+      "Beautiful visual storytelling begins with high-quality production. Our agile on-site shoots and post-production specialists work efficiently to hit deadlines.",
+  },
+  {
+    icon: <BarChart3Icon className="w-8 h-8" />,
+    title: "Measurement",
+    description:
+      "Leveraging our AI-powered Creator OS, clients enjoy exclusive access to data and insights to track a campaign’s success defined by previously agreed goals and KPIs.",
   },
 ];

@@ -1,4 +1,3 @@
-import { performanceDrivenData } from "@/utils/fakeData";
 import { motion } from "framer-motion";
 import React from "react";
 
@@ -48,9 +47,9 @@ const ValueItem = ({
   );
 };
 
-export const PerformanceDriven = () => {
+export const PerformanceDriven = ({ data, title }) => {
   return (
-    <section className="py-16 md:py-24 bg-white dark:bg-gray-950">
+    <section className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -59,13 +58,13 @@ export const PerformanceDriven = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            Performance-Driven And Social-First
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4">
+            {title}
           </h2>
         </motion.div>
 
         <div className="space-y-8 md:space-y-0">
-          {performanceDrivenData.map((value, index) => (
+          {data.map((value, index) => (
             <ValueItem
               key={index}
               icon={value.icon}

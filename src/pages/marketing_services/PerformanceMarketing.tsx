@@ -4,6 +4,7 @@ import { PlanetMedia } from "@/components/marketing_services/influencer/PlanetMe
 import MarketingHeroSection from "@/components/marketing_services/MarketingHeroSection";
 import { PerformanceDriven } from "@/components/marketing_services/performance_marketing/PerformanceDriven";
 import { ServicesShowcaseSection } from "@/components/marketing_services/performance_marketing/ServicesShowcaseSection";
+import { performanceDrivenData, servicesShowcase } from "@/utils/fakeData";
 import PerformanceImg from "/img/services/performance_marketing.png";
 
 const PerformanceMarketing = () => {
@@ -29,8 +30,11 @@ const PerformanceMarketing = () => {
         cardPara4="Avg CAC reduction"
       />
 
-      <ServicesShowcaseSection />
-      <PerformanceDriven />
+      <ServicesShowcaseSection services={servicesShowcase} />
+      <PerformanceDriven
+        data={performanceDrivenData}
+        title={"Performance-Driven And Social-First"}
+      />
       <CommonSubFooter
         title="Quantify Your Social-First Transformation"
         description="Connect with Viral Nation today to take the first step in scaling your brand’s growth."

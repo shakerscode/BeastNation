@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { ChartAreaIcon, FileText, Globe, PuzzleIcon } from "lucide-react";
 import React from "react";
 
 interface ServiceItemProps {
@@ -23,7 +22,7 @@ const ServiceItem = ({
       transition={{ duration: 0.5, delay }}
       viewport={{ once: true }}
     >
-      <div className="text-beast-500 mb-4">
+      <div className="text-beast-purple-dark mb-4">
         <div className="w-16 h-16 flex items-center justify-center border-2 border-beast-500 rounded-md">
           {icon}
         </div>
@@ -34,34 +33,7 @@ const ServiceItem = ({
   );
 };
 
-export const ServicesShowcaseSection = () => {
-  const services = [
-    {
-      icon: <Globe className="w-8 h-8" />,
-      title: "Growth Consulting",
-      description:
-        "Drive continuous growth with the expert insights and experience that comes from powering the world's biggest brands.",
-    },
-    {
-      icon: <PuzzleIcon className="w-8 h-8" />,
-      title: "Always-on Content",
-      description:
-        "Deliver high volume, lo-fi social content with our award-winning marketing services team and exclusive access to our industry-leading talent roster.",
-    },
-    {
-      icon: <FileText className="w-8 h-8" />,
-      title: "Campaign Execution",
-      description:
-        "Unlock end-to-end campaign management, from ideation and strategy to execution and measurement, all under one roof.",
-    },
-    {
-      icon: <ChartAreaIcon className="w-8 h-8" />,
-      title: "Reporting & Analytics",
-      description:
-        "Tap into AI-powered analytics tools to help you analyze, optimize, and scale your data-driven decision making.",
-    },
-  ];
-
+export const ServicesShowcaseSection = ({ services }) => {
   return (
     <section className="py-16 md:py-24 bg-white dark:bg-gray-950">
       <div className="container mx-auto px-4">

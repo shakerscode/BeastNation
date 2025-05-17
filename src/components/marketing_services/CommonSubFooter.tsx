@@ -12,9 +12,9 @@ const CommonSubFooter = ({
 }) => {
   const navigate = useNavigate();
   return (
-    <section className="text-center py-24 px-4 relative">
-      <div className="absolute right-0 top-0 w-1/3 h-full bg-gradient-to-l from-beast-purple-dark/20 to-transparent -z-10" />
-      <div className="absolute left-0 top-0 w-1/3 h-full bg-gradient-to-l to-beast-purple-dark/20 from-transparent -z-10" />
+    <section className="text-center py-24 px-4">
+      {/* <div className="absolute right-0 top-0 w-1/3 h-full bg-gradient-to-l from-beast-purple-dark/20 to-transparent -z-10" />
+      <div className="absolute left-0 top-0 w-1/3 h-full bg-gradient-to-l to-beast-purple-dark/20 from-transparent -z-10" /> */}
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
