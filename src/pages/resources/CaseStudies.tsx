@@ -6,7 +6,7 @@ import useScrollToTop from "@/hooks/useScrollToTop";
 function CaseStudies() {
   useScrollToTop();
   return (
-    <div className=" bg-gray-900/50 w-full space-y-8 space-y-12">
+    <div className=" bg-gray-900/50 w-full space-y-8 md:space-y-12">
       <div className="max-w-7xl mx-auto space-y-8 md:space-y-12">
         {/* Hero Section */}
         <CaseStudiesHeader />
