@@ -15,6 +15,7 @@ import PerformanceMarketing from "@/pages/marketing_services/PerformanceMarketin
 import SocialContentStudio from "@/pages/marketing_services/SocialContentStudio";
 import NotFound from "@/pages/NotFound";
 import CaseStudies from "@/pages/resources/CaseStudies";
+import DetailedCaseStudy from "@/pages/resources/DetailedCaseStudy";
 import NewsAndPress from "@/pages/resources/NewsAndPress";
 import { TalentDetailPage } from "@/pages/TalentDetailPage";
 import { TalentPage } from "@/pages/TalentPage";
@@ -122,6 +123,10 @@ export const router = createBrowserRouter([
           {
             path: "case-studies",
             Component: CaseStudies,
+          },
+          {
+            path: "case-studies/:slug",
+            Component: DetailedCaseStudy,
           },
         ],
       },

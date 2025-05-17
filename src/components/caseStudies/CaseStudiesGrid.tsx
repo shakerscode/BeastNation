@@ -1,5 +1,7 @@
 import { MoveRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { useCallback } from "react";
+import { useNavigate } from "react-router";
 
 const caseStudies = [
   {
@@ -48,11 +50,37 @@ const caseStudies = [
 ];
 
 function CaseStudiesGrid() {
+  const navigate = useNavigate();
+
+  //  Safe navigation with cleanup
+  const handleNavigate = useCallback(
+    (title: string) => {
+      let isMounted = true;
+
+      const slug = title
+        .toLowerCase()
+        .replace(/\s+/g, "-")
+        .replace(/[^\w-]+/g, "");
+
+      if (isMounted) {
+        navigate(`/resources/case-studies/${slug}`, {
+          replace: false,
+          preventScrollReset: true,
+        });
+      }
+
+      return () => {
+        isMounted = false;
+      };
+    },
+    [navigate]
+  );
   return (
     <section className="md:p-5">
       <div className="max-w-7xl mx-auto px-4 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {caseStudies.map((study, index) => (
           <motion.div
+            onClick={() => handleNavigate(study?.title)}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.3 }}
