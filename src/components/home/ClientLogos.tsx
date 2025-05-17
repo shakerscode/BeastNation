@@ -13,7 +13,7 @@ const clients = [
 
 const ClientLogos = () => {
   return (
-    <section className="py-12 overflow-hidden bg-beast-black/30">
+    <section className="py-12 overflow-hidden">
       <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4">
         <div className="relative">
           {/* Edge fade */}

@@ -50,7 +50,7 @@ const ValueItem = ({
 export const PerformanceDriven = ({ data, title }) => {
   return (
     <section className="py-16 md:py-24">
-      <div className="container mx-auto px-4">
+      <div className="px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

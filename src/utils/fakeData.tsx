@@ -1,22 +1,28 @@
 import { Talent } from "@/types/talent";
 import {
   BarChart3Icon,
+  BrushIcon,
   ChartAreaIcon,
   Cpu,
   FileText,
   GlassesIcon,
   Globe,
+  MegaphoneIcon,
+  PlaySquareIcon,
   PuzzleIcon,
   RadioTower,
   Smartphone,
+  SmartphoneNfcIcon,
   TargetIcon,
   TrendingUp,
   UserCircle,
   Users,
+  Users2,
   UsersIcon,
+  UsersRound,
   VideoIcon,
 } from "lucide-react";
-import { FaPhoneSlash } from "react-icons/fa";
+import { FaPhoneSlash, FaUserAltSlash } from "react-icons/fa";
 
 export type Blog = {
   id: number;
@@ -922,25 +928,25 @@ export const performanceDrivenData = [
 
 export const embeddingBrands = [
   {
-    icon: <FaPhoneSlash className="w-20 h-20" />,
+    icon: <FaPhoneSlash className="" size={100} />,
     title: "Harness Authentic Creator Stories",
     description:
       "Posts with the highest social engagement have one thing in common: Great storytelling. By leveraging the authentic essence of creators, branded content becomes relatable, memorable, and shareable.",
   },
   {
-    icon: <Cpu className="w-20 h-20" />,
+    icon: <Cpu className="" size={100} />,
     title: "Move At The Speed Of Culture",
     description:
       "Social feeds are won with content that moves at the speed of trends. Viral Nation Studio team of designers, social experts, and strategists fuse stories with speed to amplify brand narrative.",
   },
   {
-    icon: <Smartphone className="w-20 h-20" />,
+    icon: <Smartphone className="" size={100} />,
     title: "Everything, Everywhere All At Once",
     description:
       "A lethal amplification method – our paid and performance specialists push messaging out to broader target audience segments, facilitating maximum reach and enabling deeper insights about content performance and propensity.",
   },
   {
-    icon: <GlassesIcon className="w-20 h-20" />,
+    icon: <GlassesIcon className="" size={100} />,
     title: "Shaped By Creativity And Culture",
     description:
       "Our wickedly talented community and social team are the ears to the ground, serving as a feedback loop on trends, audience behavior, and content performance to fuel iteration and innovation.",
@@ -998,5 +1004,59 @@ export const servicesShowcaseSocial = [
     title: "Measurement",
     description:
       "Leveraging our AI-powered Creator OS, clients enjoy exclusive access to data and insights to track a campaign’s success defined by previously agreed goals and KPIs.",
+  },
+];
+
+export const experientialMarketingData = [
+  {
+    icon: <UsersRound className="w-8 h-8 text-beast-purple" />,
+    title: "Experiential Halo Effect",
+    description:
+      "Viral Nation’s Experiential Halo Effect creates wave after wave of virality during the live buzz of the event by partnering with some of the best-known icons in each vertical.",
+  },
+  {
+    icon: <Cpu className="w-8 h-8 text-beast-purple" />,
+    title: "Full-Service Experiential",
+    description:
+      "From designing and sourcing a jaw-dropping convention booth to measuring the impact of an event, our experiential team takes care of all the heavy lifting.",
+  },
+  {
+    icon: <FaUserAltSlash className="w-8 h-8 text-beast-purple" />,
+    title: "Hit at an Emotional Level",
+    description:
+      "Every event is an opportunity to surround audiences with targeted content that connects with audiences at an emotional level, generating content that extends your brand across channels and beyond.",
+  },
+  {
+    icon: <Users2 className="w-8 h-8 text-beast-purple" />,
+    title: "Lean Into Community",
+    description:
+      "Listen, learn, and lean into the communities that define each vertical. Feedback gathered from events contains vital information about a target audience’s wants and needs that can’t be found online.",
+  },
+];
+
+export const experienceExecutionData = [
+  {
+    icon: <PlaySquareIcon className="" size={100} />,
+    title: "Creative Strategy",
+    description:
+      "The mission: Create experiences with purpose that inspire and create emotional engagement. Core to the mission is our network of creators who bridge the offline/online experience with User-Generated Content (UGC) or hosting as brand ambassadors.",
+  },
+  {
+    icon: <BrushIcon className="" size={100} />,
+    title: "Activation Experience",
+    description:
+      "Break the brick-and-mortar or online shopping deadlock with pop-ups, AR and MR experiences, or spectacular drone shows. Every immersive experience comes with ‘wow’ moments attendees can’t help but share with those who aren’t there.",
+  },
+  {
+    icon: <MegaphoneIcon className="" size={100} />,
+    title: "Distribute & Amplify",
+    description:
+      "With anticipation building pre-event, video production on-site ensures cameras are always rolling so viewers feel like VIPs. Interactive photo moments and live streaming provide touchpoints to extract maximum buzz from the experience. Paid ads are loaded and ready to boost branded content far and wide.",
+  },
+  {
+    icon: <SmartphoneNfcIcon className="" size={100} />,
+    title: "Measurement Technology",
+    description:
+      "After the dust has settled, we wrap the experience up with our best-in-class business intelligence service that provides measurement modeling, custom playbooks, and attribution technology to ensure each experience builds on the learnings of the last.",
   },
 ];
