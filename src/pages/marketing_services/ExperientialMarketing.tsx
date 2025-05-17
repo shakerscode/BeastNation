@@ -21,7 +21,7 @@ const ExperientialMarketing = () => {
       <ClientLogos />
 
       <section>
-        <h2 className="text-3xl pt-16 md:pt-24 -pb-16 md:-pb-14  text-center md:text-5xl lg:text-6xl font-bold mb-4">
+        <h2 className="text-3xl pt-16 md:pt-24 -pb-16 md:-pb-14  text-center md:text-5xl lg:text-6xl font-bold mb-6">
           Shattering Traditional Experiential
         </h2>
         <p className="text-lg text-center w-full">

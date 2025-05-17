@@ -1,22 +1,28 @@
 import { Talent } from "@/types/talent";
 import {
   BarChart3Icon,
+  BrainCogIcon,
   BrushIcon,
   ChartAreaIcon,
   Cpu,
+  CpuIcon,
   FileText,
   GlassesIcon,
   Globe,
   GlobeIcon,
+  GoalIcon,
   HandshakeIcon,
   HeartHandshakeIcon,
+  IdCardIcon,
   MegaphoneIcon,
   PlaySquareIcon,
   PuzzleIcon,
   RadioTower,
   Smartphone,
+  SmartphoneCharging,
   SmartphoneIcon,
   SmartphoneNfcIcon,
+  SparkleIcon,
   TargetIcon,
   TrendingUp,
   UserCircle,
@@ -1120,5 +1126,53 @@ export const socialSolutionsData = [
     title: "Surprise & Delight Strategy",
     description:
       "Harness the power of social listening to attract potential audiences and nurture current communities with social gifting, offerings, and rewards — fueled by our proprietary tech stack.",
+  },
+];
+
+export const measurementGoalsData = [
+  {
+    icon: <BrainCogIcon size={100} />,
+    title: "Goal: Conversion & Sales",
+    description:
+      "Draw connections between social and sales to increase the effectiveness of your campaigns. Our suite of sales lift studies and marketing mix modeling power optimizations that scale revenue.",
+  },
+  {
+    icon: <SmartphoneCharging size={100} />,
+    title: "Goal: Perception",
+    description:
+      "Get a read on how your brand is perceived by your audience. Our suite of brand lift studies measures a campaign’s effect on brand advocacy, awareness, familiarity, and purchase intent. Viral Nation then narrows the gap between your brand goals and real-world perception.",
+  },
+  {
+    icon: <UsersIcon size={100} />,
+    title: "Goal: Resonance",
+    description:
+      "Measure the mental effect of a campaign and the steps that lead up to customer action. Using research into the neuroscience of emotion, attention, and memory, Viral Nation works to embed message internalization and steer decision-making.",
+  },
+  {
+    icon: <CpuIcon size={100} />,
+    title: "Goal: Custom Measurement",
+    description:
+      "Take advantage of Viral Nation’s full suite of business intelligence capabilities. Our custom solutions combine data sets and research techniques to provide deeper insights into brand positioning across the social landscape.",
+  },
+];
+
+export const analyticsStrategyData = [
+  {
+    icon: <GoalIcon className="w-8 h-8 text-beast-purple" />,
+    title: "Advanced Analytics",
+    description:
+      "Connecting social, paid, and sales performance metrics to campaign, client, and industry data, to find the running thread of cause and effect. Centralizing insights using Creator OS™ to tell a cohesive story.",
+  },
+  {
+    icon: <IdCardIcon className="w-8 h-8 text-beast-purple" />,
+    title: "Differentiated Attribution",
+    description:
+      "Go beyond traditional tracking and get a true read on your social ecosystem with Viral Nation’s sentiment, perception, and search modeling that feeds into an automated reporting dashboard.",
+  },
+  {
+    icon: <SparkleIcon className="w-8 h-8 text-beast-purple" />,
+    title: "Playbook Optimization",
+    description:
+      "Don’t just measure KPIs, use them to drive results. Campaigns are optimized for success throughout the program, building a custom playbook of learnings to test and retest.",
   },
 ];
