@@ -1,6 +1,30 @@
 import { motion } from "framer-motion";
 
-export const PlanetMedia = () => {
+interface IPageProps {
+  title: string;
+  description: string;
+  cardTitle1: string;
+  cardPara1: string;
+  cardTitle2: string;
+  cardPara2: string;
+  cardTitle3: string;
+  cardPara3: string;
+  cardTitle4: string;
+  cardPara4: string;
+}
+
+export const PlanetMedia = ({
+  title,
+  description,
+  cardTitle1,
+  cardPara1,
+  cardTitle2,
+  cardPara2,
+  cardTitle3,
+  cardPara3,
+  cardTitle4,
+  cardPara4,
+}: IPageProps) => {
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
@@ -14,17 +38,10 @@ export const PlanetMedia = () => {
             className="max-w-2xl"
           >
             <h2 className="text-4xl sm:text-5xl font-bold leading-tight mb-6">
-              Forge Authentic Connections That Drive Trust, Loyalty, And
-              Measurable Growth
+              {title}
             </h2>
             <p className="text-lg text-gray-700 dark:text-gray-300">
-              Creators are the new global media, shaping consumer trust and
-              driving engagement. With over 200M+ professional creators, finding
-              the perfect fit for your campaign can feel overwhelming. At Beast
-              Nation, we take the guesswork out of influencer marketing. Our
-              end-to-end solution identifies, curates, and activates the ideal
-              creators to amplify your brand across global markets — ensuring
-              impact, efficiency, and measurable success.
+              {description}
             </p>
           </motion.div>
 
@@ -38,9 +55,11 @@ export const PlanetMedia = () => {
               viewport={{ once: true }}
               className="flex flex-col"
             >
-              <h3 className="text-5xl sm:text-6xl font-bold mb-2">$100M+</h3>
+              <h3 className="text-5xl sm:text-6xl font-bold mb-2">
+                {cardTitle1}
+              </h3>
               <p className="text-lg text-gray-600 dark:text-gray-400">
-                Annual creator spend
+                {cardPara1}
               </p>
               <div className="mt-2 h-1 w-full bg-beast-purple-light"></div>
             </motion.div>
@@ -52,9 +71,11 @@ export const PlanetMedia = () => {
               viewport={{ once: true }}
               className="flex flex-col"
             >
-              <h3 className="text-5xl sm:text-6xl font-bold mb-2">35+</h3>
+              <h3 className="text-5xl sm:text-6xl font-bold mb-2">
+                {cardTitle2}
+              </h3>
               <p className="text-lg text-gray-600 dark:text-gray-400">
-                Verticals
+                {cardPara2}
               </p>
               <div className="mt-2 h-1 w-full bg-beast-purple"></div>
             </motion.div>
@@ -67,9 +88,11 @@ export const PlanetMedia = () => {
               viewport={{ once: true }}
               className="flex flex-col"
             >
-              <h3 className="text-5xl sm:text-6xl font-bold mb-2">7X</h3>
+              <h3 className="text-5xl sm:text-6xl font-bold mb-2">
+                {cardTitle3}
+              </h3>
               <p className="text-lg text-gray-600 dark:text-gray-400">
-                Avg ROAs increase
+                {cardPara3}
               </p>
               <div className="mt-2 h-1 w-full bg-beast-purple-dark"></div>
             </motion.div>
@@ -81,9 +104,11 @@ export const PlanetMedia = () => {
               viewport={{ once: true }}
               className="flex flex-col"
             >
-              <h3 className="text-5xl sm:text-6xl font-bold mb-2">-42%</h3>
+              <h3 className="text-5xl sm:text-6xl font-bold mb-2">
+                {cardTitle4}
+              </h3>
               <p className="text-lg text-gray-600 dark:text-gray-400">
-                Avg CAC reduction
+                {cardPara4}
               </p>
               <div className="mt-2 h-1 w-full bg-beast-purple-light"></div>
             </motion.div>
