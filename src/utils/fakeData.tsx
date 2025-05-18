@@ -1,4 +1,38 @@
 import { Talent } from "@/types/talent";
+import {
+  BarChart3Icon,
+  BrainCogIcon,
+  BrushIcon,
+  ChartAreaIcon,
+  Cpu,
+  CpuIcon,
+  FileText,
+  GlassesIcon,
+  Globe,
+  GlobeIcon,
+  GoalIcon,
+  HandshakeIcon,
+  HeartHandshakeIcon,
+  IdCardIcon,
+  MegaphoneIcon,
+  PlaySquareIcon,
+  PuzzleIcon,
+  RadioTower,
+  Smartphone,
+  SmartphoneCharging,
+  SmartphoneIcon,
+  SmartphoneNfcIcon,
+  SparkleIcon,
+  TargetIcon,
+  TrendingUp,
+  UserCircle,
+  Users,
+  Users2,
+  UsersIcon,
+  UsersRound,
+  VideoIcon,
+} from "lucide-react";
+import { FaPhoneSlash, FaUserAltSlash } from "react-icons/fa";
 
 export type Blog = {
   id: number;
@@ -866,5 +900,279 @@ export const influencerWorkData = [
     label: "Modern States",
     description:
       "It matters to us that our ambassadors represent our values as an organization. Viral Nation Secure™ lets us quickly review prospective ambassadors’ social presence, with their permission, and make better decisions about who represents us.",
+  },
+];
+
+export const performanceDrivenData = [
+  {
+    icon: <UserCircle className="" size={100} />,
+    title: "Be Authentic And Relatable",
+    description:
+      "Develop a personalized understanding of your audience to deliver high volume, lo-fi content that's timely, engaging, and shareable.",
+  },
+  {
+    icon: <Users className="" size={100} />,
+    title: "Be Always-On",
+    description:
+      "Partner with our network of leading media and social publishers to connect with your most valuable audiences, everywhere it matters.",
+  },
+  {
+    icon: <TrendingUp className="" size={100} />,
+    title: "Be Growth-Oriented",
+    description:
+      "Test different angles, audiences, and messaging to engage, convert, and expand: Doubling down on what works, round after round.",
+  },
+  {
+    icon: <Smartphone className="" size={100} />,
+    title: "Be Cutting Edge",
+    description:
+      "Dig deep with robust custom reporting and AI-powered analytics that provide the data and insights you need to keep optimizing.",
+  },
+  {
+    icon: <RadioTower className="" size={100} />,
+    title: "Be Endlessly Iterative",
+    description:
+      "Leverage social listening to build a feedback loop, fuelling continuously improving performance.",
+  },
+];
+
+export const embeddingBrands = [
+  {
+    icon: <FaPhoneSlash className="" size={100} />,
+    title: "Harness Authentic Creator Stories",
+    description:
+      "Posts with the highest social engagement have one thing in common: Great storytelling. By leveraging the authentic essence of creators, branded content becomes relatable, memorable, and shareable.",
+  },
+  {
+    icon: <Cpu className="" size={100} />,
+    title: "Move At The Speed Of Culture",
+    description:
+      "Social feeds are won with content that moves at the speed of trends. Viral Nation Studio team of designers, social experts, and strategists fuse stories with speed to amplify brand narrative.",
+  },
+  {
+    icon: <Smartphone className="" size={100} />,
+    title: "Everything, Everywhere All At Once",
+    description:
+      "A lethal amplification method – our paid and performance specialists push messaging out to broader target audience segments, facilitating maximum reach and enabling deeper insights about content performance and propensity.",
+  },
+  {
+    icon: <GlassesIcon className="" size={100} />,
+    title: "Shaped By Creativity And Culture",
+    description:
+      "Our wickedly talented community and social team are the ears to the ground, serving as a feedback loop on trends, audience behavior, and content performance to fuel iteration and innovation.",
+  },
+];
+
+export const servicesShowcase = [
+  {
+    icon: <Globe className="w-8 h-8" />,
+    title: "Growth Consulting",
+    description:
+      "Drive continuous growth with the expert insights and experience that comes from powering the world's biggest brands.",
+  },
+  {
+    icon: <PuzzleIcon className="w-8 h-8" />,
+    title: "Always-on Content",
+    description:
+      "Deliver high volume, lo-fi social content with our award-winning marketing services team and exclusive access to our industry-leading talent roster.",
+  },
+  {
+    icon: <FileText className="w-8 h-8" />,
+    title: "Campaign Execution",
+    description:
+      "Unlock end-to-end campaign management, from ideation and strategy to execution and measurement, all under one roof.",
+  },
+  {
+    icon: <ChartAreaIcon className="w-8 h-8" />,
+    title: "Reporting & Analytics",
+    description:
+      "Tap into AI-powered analytics tools to help you analyze, optimize, and scale your data-driven decision making.",
+  },
+];
+
+export const servicesShowcaseSocial = [
+  {
+    icon: <TargetIcon className="w-8 h-8" />,
+    title: "Strategy",
+    description:
+      "From award shows to convenience store activations or back-to-college tentpoles, we leverage the cultural calendar, SEO, and market insights to ensure content is delivered for maximum impact.",
+  },
+  {
+    icon: <UsersIcon className="w-8 h-8" />,
+    title: "Creative",
+    description:
+      "Social content is a craft that immerses audiences in the product, messaging, and narrative. Choose between two tracks: In-house content or creator-led content, or both.",
+  },
+  {
+    icon: <VideoIcon className="w-8 h-8" />,
+    title: "Production",
+    description:
+      "Beautiful visual storytelling begins with high-quality production. Our agile on-site shoots and post-production specialists work efficiently to hit deadlines.",
+  },
+  {
+    icon: <BarChart3Icon className="w-8 h-8" />,
+    title: "Measurement",
+    description:
+      "Leveraging our AI-powered Creator OS, clients enjoy exclusive access to data and insights to track a campaign’s success defined by previously agreed goals and KPIs.",
+  },
+];
+
+export const experientialMarketingData = [
+  {
+    icon: <UsersRound className="w-8 h-8 text-beast-purple" />,
+    title: "Experiential Halo Effect",
+    description:
+      "Viral Nation’s Experiential Halo Effect creates wave after wave of virality during the live buzz of the event by partnering with some of the best-known icons in each vertical.",
+  },
+  {
+    icon: <Cpu className="w-8 h-8 text-beast-purple" />,
+    title: "Full-Service Experiential",
+    description:
+      "From designing and sourcing a jaw-dropping convention booth to measuring the impact of an event, our experiential team takes care of all the heavy lifting.",
+  },
+  {
+    icon: <FaUserAltSlash className="w-8 h-8 text-beast-purple" />,
+    title: "Hit at an Emotional Level",
+    description:
+      "Every event is an opportunity to surround audiences with targeted content that connects with audiences at an emotional level, generating content that extends your brand across channels and beyond.",
+  },
+  {
+    icon: <Users2 className="w-8 h-8 text-beast-purple" />,
+    title: "Lean Into Community",
+    description:
+      "Listen, learn, and lean into the communities that define each vertical. Feedback gathered from events contains vital information about a target audience’s wants and needs that can’t be found online.",
+  },
+];
+
+export const experienceExecutionData = [
+  {
+    icon: <PlaySquareIcon className="" size={100} />,
+    title: "Creative Strategy",
+    description:
+      "The mission: Create experiences with purpose that inspire and create emotional engagement. Core to the mission is our network of creators who bridge the offline/online experience with User-Generated Content (UGC) or hosting as brand ambassadors.",
+  },
+  {
+    icon: <BrushIcon className="" size={100} />,
+    title: "Activation Experience",
+    description:
+      "Break the brick-and-mortar or online shopping deadlock with pop-ups, AR and MR experiences, or spectacular drone shows. Every immersive experience comes with ‘wow’ moments attendees can’t help but share with those who aren’t there.",
+  },
+  {
+    icon: <MegaphoneIcon className="" size={100} />,
+    title: "Distribute & Amplify",
+    description:
+      "With anticipation building pre-event, video production on-site ensures cameras are always rolling so viewers feel like VIPs. Interactive photo moments and live streaming provide touchpoints to extract maximum buzz from the experience. Paid ads are loaded and ready to boost branded content far and wide.",
+  },
+  {
+    icon: <SmartphoneNfcIcon className="" size={100} />,
+    title: "Measurement Technology",
+    description:
+      "After the dust has settled, we wrap the experience up with our best-in-class business intelligence service that provides measurement modeling, custom playbooks, and attribution technology to ensure each experience builds on the learnings of the last.",
+  },
+];
+
+export const brandEngagementData = [
+  {
+    icon: <PlaySquareIcon className="w-8 h-8 text-beast-purple" />,
+    title: "Elevate Customer Journeys",
+    description:
+      "Every interaction is an opportunity to bolster positive brand sentiment.",
+  },
+  {
+    icon: <BrushIcon className="w-8 h-8 text-beast-purple" />,
+    title: "Embed Brands into Cultural Moments",
+    description: "Leverage social listening and join the conversation.",
+  },
+  {
+    icon: <MegaphoneIcon className="w-8 h-8 text-beast-purple" />,
+    title: "Grow Revenue Through Social",
+    description:
+      "Social commerce management that’s strategic, engaging, and always on.",
+  },
+  {
+    icon: <SmartphoneNfcIcon className="w-8 h-8 text-beast-purple" />,
+    title: "Strengthen Brand Loyalty",
+    description: "Bespoke programs and services that speak to your audience.",
+  },
+];
+
+export const socialSolutionsData = [
+  {
+    icon: <GlobeIcon className="" size={100} />,
+    title: "Social Management & Community Building",
+    description:
+      "Cultivate intentional relationships with your audience through a unified social persona to offer timely conversations, meaningful brand moments, and content tapped into cultural pulse points.",
+  },
+  {
+    icon: <SmartphoneIcon className="" size={100} />,
+    title: "Social Commerce",
+    description:
+      "Drive revenue by connecting community, content, and commerce: Identify opportunities to amplify promotion, create a seamless shopping experience, and encourage consideration across social platforms.",
+  },
+  {
+    icon: <HandshakeIcon className="" size={100} />,
+    title: "Customer Guidance & Crisis Communications",
+    description:
+      "Enhance customer guidance and support by seamlessly integrating our internal teams into a client’s existing customer service experience, including a proactive escalation process and bespoke crisis communication.",
+  },
+  {
+    icon: <UsersIcon className="" size={100} />,
+    title: "Loyalty Programs",
+    description:
+      "Transform engaged communities into brand loyalists with programs designed to encourage deeper audience connections, strengthen customer retention, and drive commerce.",
+  },
+  {
+    icon: <HeartHandshakeIcon className="" size={100} />,
+    title: "Surprise & Delight Strategy",
+    description:
+      "Harness the power of social listening to attract potential audiences and nurture current communities with social gifting, offerings, and rewards — fueled by our proprietary tech stack.",
+  },
+];
+
+export const measurementGoalsData = [
+  {
+    icon: <BrainCogIcon size={100} />,
+    title: "Goal: Conversion & Sales",
+    description:
+      "Draw connections between social and sales to increase the effectiveness of your campaigns. Our suite of sales lift studies and marketing mix modeling power optimizations that scale revenue.",
+  },
+  {
+    icon: <SmartphoneCharging size={100} />,
+    title: "Goal: Perception",
+    description:
+      "Get a read on how your brand is perceived by your audience. Our suite of brand lift studies measures a campaign’s effect on brand advocacy, awareness, familiarity, and purchase intent. Viral Nation then narrows the gap between your brand goals and real-world perception.",
+  },
+  {
+    icon: <UsersIcon size={100} />,
+    title: "Goal: Resonance",
+    description:
+      "Measure the mental effect of a campaign and the steps that lead up to customer action. Using research into the neuroscience of emotion, attention, and memory, Viral Nation works to embed message internalization and steer decision-making.",
+  },
+  {
+    icon: <CpuIcon size={100} />,
+    title: "Goal: Custom Measurement",
+    description:
+      "Take advantage of Viral Nation’s full suite of business intelligence capabilities. Our custom solutions combine data sets and research techniques to provide deeper insights into brand positioning across the social landscape.",
+  },
+];
+
+export const analyticsStrategyData = [
+  {
+    icon: <GoalIcon className="w-8 h-8 text-beast-purple" />,
+    title: "Advanced Analytics",
+    description:
+      "Connecting social, paid, and sales performance metrics to campaign, client, and industry data, to find the running thread of cause and effect. Centralizing insights using Creator OS™ to tell a cohesive story.",
+  },
+  {
+    icon: <IdCardIcon className="w-8 h-8 text-beast-purple" />,
+    title: "Differentiated Attribution",
+    description:
+      "Go beyond traditional tracking and get a true read on your social ecosystem with Viral Nation’s sentiment, perception, and search modeling that feeds into an automated reporting dashboard.",
+  },
+  {
+    icon: <SparkleIcon className="w-8 h-8 text-beast-purple" />,
+    title: "Playbook Optimization",
+    description:
+      "Don’t just measure KPIs, use them to drive results. Campaigns are optimized for success throughout the program, building a custom playbook of learnings to test and retest.",
   },
 ];

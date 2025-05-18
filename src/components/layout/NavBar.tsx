@@ -90,7 +90,7 @@ const Navbar = () => {
                 onMouseEnter={() => setActiveMenu(link.name)}
                 onMouseLeave={() => setActiveMenu(null)}
               >
-                <span className="cursor-pointer text-nowrap font-medium text-sm hover:text-beast-700 dark:hover:text-beast-400 transition-colors">
+                <span className="cursor-pointer text-nowrap font-medium text-base hover:text-beast-700 dark:hover:text-beast-400 transition-colors">
                   {link.name}
                 </span>
 
@@ -120,7 +120,7 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 to={link.path}
-                className="font-medium text-sm hover:text-beast-700 dark:hover:text-beast-400 transition-colors"
+                className="font-medium text-base hover:text-beast-700 dark:hover:text-beast-400 transition-colors"
               >
                 {link.name}
               </Link>

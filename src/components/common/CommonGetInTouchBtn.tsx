@@ -1,7 +1,6 @@
-import React from "react";
-import { Button } from "../ui/button";
-import { useNavigate } from "react-router";
 import { MoveRight } from "lucide-react";
+import { useNavigate } from "react-router";
+import { Button } from "../ui/button";
 
 function CommonGetInTouchBtn() {
   const navigate = useNavigate();
@@ -9,7 +8,7 @@ function CommonGetInTouchBtn() {
     <Button
       onClick={() => navigate("/contact")}
       size="lg"
-      className="bg-primary-gradient hover:bg-beast-purple shadow-glow w-fit"
+      className="bg-primary-gradient text-base hover:bg-beast-purple shadow-glow w-fit"
     >
       Get In Touch
       <MoveRight

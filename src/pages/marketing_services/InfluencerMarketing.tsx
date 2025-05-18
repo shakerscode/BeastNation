@@ -19,7 +19,23 @@ const InfluencerMarketing = () => {
         img={InfluencerMarketingImg}
       />
       <ClientLogos />
-      <PlanetMedia />
+      <PlanetMedia
+        title="Forge Authentic Connections That Drive Trust, Loyalty, And Measurable Growth"
+        description="Creators are the new global media, shaping consumer trust and driving engagement.
+              With over 200M+ professional creators, finding the perfect fit for your campaign can feel overwhelming. At Beast Nation, we take the
+              guesswork out of influencer marketing. Our end-to-end solution
+              identifies, curates, and activates the ideal creators to amplify
+              your brand across global markets — ensuring impact, efficiency,
+              and measurable success."
+        cardTitle1="$100M+"
+        cardPara1="Annual creator spend"
+        cardTitle2="35+"
+        cardPara2="Verticals"
+        cardTitle3="7X"
+        cardPara3="Avg ROAs increase"
+        cardTitle4="-42%"
+        cardPara4="Avg CAC reduction"
+      />
       <div className="my-20">
         <video
           className="w-full"

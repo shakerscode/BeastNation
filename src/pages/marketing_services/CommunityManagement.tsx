@@ -1,5 +1,11 @@
 import ClientLogos from "@/components/home/ClientLogos";
+import CommonSubFooter from "@/components/marketing_services/CommonSubFooter";
 import MarketingHeroSection from "@/components/marketing_services/MarketingHeroSection";
+import { PerformanceDriven } from "@/components/marketing_services/performance_marketing/PerformanceDriven";
+import { PhoneShowcase } from "@/components/marketing_services/performance_marketing/PhoneShowcase";
+import { ServicesShowcaseSection } from "@/components/marketing_services/performance_marketing/ServicesShowcaseSection";
+import { brandEngagementData, socialSolutionsData } from "@/utils/fakeData";
+import NEW_Rooted from "/img/marketing_services/NEW_Rooted.png";
 import CommunityImg from "/img/services/community_management.png";
 
 const CommunityManagement = () => {
@@ -12,6 +18,20 @@ const CommunityManagement = () => {
         img={CommunityImg}
       />
       <ClientLogos />
+      <PhoneShowcase
+        title={"Rooted In Relationships"}
+        description="Trendy Nation’s 360 Community and Social Management cultivates an always-on social persona for your brand, unlocking a community-driven feedback loop that fuels awareness, engagement, and conversion across every social touchpoint. So you can humanize your social presence and build brand loyalty with a holistic strategy that elevates the customer journey while driving commerce."
+        photo={NEW_Rooted}
+      />
+      <ServicesShowcaseSection services={brandEngagementData} />
+      <PerformanceDriven
+        data={socialSolutionsData}
+        title={"Be always-on for your audience"}
+      />
+      <CommonSubFooter
+        title="Humanize Your Community Management"
+        description="Connect with Trendy Nation today to learn how we can help you elevate your social presence."
+      />
     </div>
   );
 };
