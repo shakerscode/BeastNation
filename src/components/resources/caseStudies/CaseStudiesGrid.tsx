@@ -7,8 +7,8 @@ const caseStudies = [
   {
     productImage:
       "https://images.pexels.com/photos/1628086/pexels-photo-1628086.jpeg",
-    title: "Increased Holiday resorts 40% to 120% ",
-    logoURL: "/public/img/caseStudy/logo_one.png",
+    title: "Increased Holiday resorts profit 40% to 120% ",
+    logoURL: "/img/caseStudy/logo_one.png",
     link: "#",
   },
 
@@ -16,35 +16,35 @@ const caseStudies = [
     productImage:
       "https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg",
     title: "A lipstick brand just gone viral after collaborating with us",
-    logoURL: "/public/img/caseStudy/logo_two.png",
+    logoURL: "/img/caseStudy/logo_two.png",
     link: "#",
   },
   {
     productImage:
       "https://images.pexels.com/photos/5704841/pexels-photo-5704841.jpeg", // fashion
     title: "Fashion startup reached 2M+ Gen Zs through TikTok reels",
-    logoURL: "/public/img/caseStudy/logo_three.png",
+    logoURL: "/img/caseStudy/logo_three.png",
     link: "#",
   },
   {
     productImage:
       "https://images.pexels.com/photos/5980866/pexels-photo-5980866.jpeg",
     title: "Fintech app installs surged 180% in 30 days post launch campaign",
-    logoURL: "/public/img/caseStudy/logo_four.png",
+    logoURL: "/img/caseStudy/logo_four.png",
     link: "#",
   },
   {
     productImage:
       "https://images.pexels.com/photos/3299905/pexels-photo-3299905.jpeg",
     title: "Pet supply brand's loyalty campaign hit 500K active users",
-    logoURL: "/public/img/caseStudy/logo_five.png",
+    logoURL: "/img/caseStudy/logo_five.png",
     link: "#",
   },
   {
     productImage:
       "https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg",
     title: "Fitness app’s Instagram campaign grew engagement by 700%",
-    logoURL: "/public/img/caseStudy/logo_six.png",
+    logoURL: "/img/caseStudy/logo_six.png",
     link: "#",
   },
 ];

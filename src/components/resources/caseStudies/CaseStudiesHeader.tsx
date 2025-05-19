@@ -1,5 +1,5 @@
-import CommonSubHeading from "../common/CommonSubHeading";
-import PlaybookCTA from "../common/PlaybookCTA";
+import CommonSubHeading from "../../common/CommonSubHeading";
+import PlaybookCTA from "../../common/PlaybookCTA";
 import { motion } from "framer-motion";
 
 function CaseStudiesHeader(props) {

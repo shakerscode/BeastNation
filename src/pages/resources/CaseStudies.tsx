@@ -1,5 +1,5 @@
-import CaseStudiesGrid from "@/components/caseStudies/CaseStudiesGrid";
-import CaseStudiesHeader from "@/components/caseStudies/CaseStudiesHeader";
+import CaseStudiesGrid from "@/components/resources/caseStudies/CaseStudiesGrid";
+import CaseStudiesHeader from "@/components/resources/caseStudies/CaseStudiesHeader";
 import CommonCTA from "@/components/common/CommonCTA";
 import useScrollToTop from "@/hooks/useScrollToTop";
 
