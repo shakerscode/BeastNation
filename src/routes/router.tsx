@@ -3,7 +3,7 @@ import { RootLayout } from "@/components/layout/RootLayout";
 import ArticlePage from "@/components/resources/newsDetails/NewsArticleDetails";
 import { AboutPage } from "@/pages/AboutPage";
 import { ContactPage } from "@/pages/ContactPage";
-import { HomePage } from "@/pages/HomePage"; 
+import { HomePage } from "@/pages/HomePage";
 import BlogPage from "@/pages/BlogPage";
 import InfluencerMarketingTrendsReport from "@/pages/InfluencerMarketingTrendsReport";
 import AllServices from "@/pages/marketing_services/AllServices";
@@ -81,11 +81,11 @@ export const router = createBrowserRouter([
       //   hydrateFallbackElement: <CommonLoading />,
       //   Component: InfluencerBlog,
       // },
-      {
-        path: "influencer-lists",
-        hydrateFallbackElement: <CommonLoading />,
-        Component: BlogPage,
-      },
+      // {
+      //   path: "influencer-lists",
+      //   hydrateFallbackElement: <CommonLoading />,
+      //   Component: BlogPage,
+      // },
       {
         path: "influencer-marketing-trends-report",
         hydrateFallbackElement: <CommonLoading />,
@@ -130,6 +130,10 @@ export const router = createBrowserRouter([
           },
           {
             path: "blogs",
+            Component: BlogPage,
+          },
+          {
+            path: "influencer-lists",
             Component: BlogPage,
           },
         ],
