@@ -38,7 +38,7 @@ export const influencer = [
       description:
         "Noah inspires millions with high-energy fitness routines and real transformation journeys. Brands trust him for authentic promotion and loyal reach.",
       imageUrl:
-        "https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&h=800",
+        "https://images.pexels.com/photos/1375849/pexels-photo-1375849.jpeg?auto=compress&cs=tinysrgb&h=800",
       socials: {
         youtube: "1.3M Followers",
         instagram: "900K Followers",
@@ -70,7 +70,7 @@ export const influencer = [
       description:
         "Ethan's punchy humor and sharp timing have made him a viral sensation. Brands love working with him for short-form branded content that explodes organically.",
       imageUrl:
-        "https://images.pexels.com/photos/1375849/pexels-photo-1375849.jpeg?auto=compress&cs=tinysrgb&h=800",
+        "https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&h=800 ",
       socials: {
         youtube: "980K Followers",
         instagram: "1.3M Followers",

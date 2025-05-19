@@ -1,5 +1,5 @@
-import CommonSubHeading from "../common/CommonSubHeading";
-import PlaybookCTA from "../common/PlaybookCTA";
+import CommonSubHeading from "../../common/CommonSubHeading";
+import PlaybookCTA from "../../common/PlaybookCTA";
 import { motion } from "framer-motion";
 
 function CaseStudiesHeader(props) {
@@ -19,11 +19,17 @@ function CaseStudiesHeader(props) {
         </span>{" "}
         & Deliver Results
       </motion.h1>
-      <p className="text-sm md:text-lg mb-6 max-w-3xl">
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        viewport={{ once: true }}
+        className="text-sm md:text-lg mb-6 max-w-3xl"
+      >
         Explore our case studies to see how we’ve helped industry leaders to
         connect with their audiences, break into new platforms, and dominate the
         digital space.
-      </p>
+      </motion.p>
       <div className="px-4 md:px-12 md:py-6 "></div>
       <PlaybookCTA />
     </section>
