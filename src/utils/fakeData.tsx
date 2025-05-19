@@ -1176,3 +1176,38 @@ export const analyticsStrategyData = [
       "Don’t just measure KPIs, use them to drive results. Campaigns are optimized for success throughout the program, building a custom playbook of learnings to test and retest.",
   },
 ];
+
+export const find_talent_categories = [
+  {
+    title: "Comedy",
+    image: "/img/marketing_services/comedy.jpeg",
+  },
+  {
+    title: "Lifestyle",
+    image: "/img/marketing_services/life-style.jpeg",
+  },
+  {
+    title: "Professional Experts",
+    image: "/img/marketing_services/professional-expart.jpeg",
+  },
+  {
+    title: "Food",
+    image: "/img/marketing_services/food.jpeg",
+  },
+  {
+    title: "Beauty",
+    image: "/img/marketing_services/beauty.jpeg",
+  },
+  {
+    title: "Kids & Family",
+    image: "/img/marketing_services/kids-and-family.png",
+  },
+  {
+    title: "Gaming",
+    image: "/img/marketing_services/gaming.jpeg",
+  },
+  {
+    title: "Sports & Fitness",
+    image: "/img/marketing_services/fitness.jpeg",
+  },
+];
