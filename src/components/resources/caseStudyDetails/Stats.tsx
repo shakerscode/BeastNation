@@ -41,7 +41,7 @@ const StatsStrip = ({ metrics }) => {
                 className="text-center"
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
-                <div className="text-2xl md:text-5xl font-display font-bold text-black mb-2">
+                <div className="text-4xl md:text-5xl font-display font-bold text-black mb-2">
                   <CountUp
                     to={targetValue}
                     formatter={(val) =>

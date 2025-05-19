@@ -26,7 +26,7 @@ const DetailedCaseStudy = () => {
       </div>
 
       {/* Breadcrumbs */}
-      <nav className="max-w-5xl mx-auto py-10 text-sm text-white/60">
+      <nav className="max-w-5xl mx-auto py-6 px-4 md:px-0 md:py-10 text-sm text-white/60">
         <ul className="flex items-center gap-1">
           <li className="hover:underline">
             <Link to={"/"}>Home </Link>
@@ -43,14 +43,14 @@ const DetailedCaseStudy = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
           viewport={{ once: true }}
-          className="text-2xl md:text-3xl text-white font-bold font-display mt-4"
+          className="text-xl md:text-3xl text-white font-bold font-display mt-4"
         >
           {data.subtitle}
         </motion.p>
       </nav>
 
-      <div className="border-y border-t-gray-600">
-        <div className="max-w-5xl mx-auto space-y-20 py-20">
+      <div className="border-y border-t-gray-600 px-4 md:px-0">
+        <div className="max-w-5xl mx-auto space-y-6 md:space-y-20 py-6 md:py-20">
           <CaseStudyInfoSection
             title="Overview"
             header={data?.campaign_overview}

@@ -63,7 +63,7 @@ const ContentCarousel = ({ videoItems }: { videoItems: VideoItem[] }) => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-bold font-display"
+            className="text-2xl md:text-4xl font-bold font-display"
           >
             Creator Content
           </motion.h2>
