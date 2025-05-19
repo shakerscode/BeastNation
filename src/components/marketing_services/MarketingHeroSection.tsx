@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { MoveRight } from "lucide-react";
 import { Link } from "react-router";
 
 interface IPageProps {
@@ -8,6 +9,7 @@ interface IPageProps {
   description: string;
   quote?: string;
   img: string;
+  hideBreadcrumb?: boolean;
 }
 
 const MarketingHeroSection = ({
@@ -16,14 +18,15 @@ const MarketingHeroSection = ({
   description,
   quote,
   img,
+  hideBreadcrumb,
 }: IPageProps) => {
   return (
     <section className="relative w-full min-h-screen flex items-center py-16">
       <div className="px-4 sm:px-6 lg:px-8 w-full">
         {/* Animated background elements */}
         <div className="absolute inset-0 -z-10">
-          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-beast-accent to-transparent opacity-30" />
-          <div className="absolute top-0 md:top-2/4 -right-20 md:left-[480px] w-48 md:w-72 h-48 md:h-72 rounded-full bg-beast-purple-dark blur-[100px] animate-pulse-gentle" />
+          {/* <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-beast-accent to-transparent opacity-30" /> */}
+          <div className="absolute top-0 md:top-2/4 -right-20 md:left-[580px] w-48 md:w-72 h-48 md:h-72 rounded-full bg-beast-purple-dark blur-[100px] animate-pulse-gentle" />
           <div
             className="absolute bottom-10 md:bottom-[20%] md:right-1/4 w-40 md:w-96 h-40 md:h-96 rounded-full bg-beast-purple blur-[120px] animate-pulse-gentle"
             style={{ animationDelay: "1s" }}
@@ -31,33 +34,35 @@ const MarketingHeroSection = ({
         </div>
 
         {/* Breadcrumb Navigation */}
-        <div className="lg:my-8 my-9">
-          <motion.nav
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            className="flex text-sm text-white/70"
-          >
-            <Link to="/" className="hover:text-white transition-colors">
-              Home
-            </Link>
-            <span className="mx-2">/</span>
-            <Link
-              to="/services"
-              className={`${
-                pageName ? "hover:text-white" : "text-beast-purple-light"
-              } transition-colors"`}
+        {!hideBreadcrumb && (
+          <div className="lg:my-8 my-9">
+            <motion.nav
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              className="flex text-sm text-white/70"
             >
-              Services
-            </Link>
-            {pageName && (
-              <>
-                <span className="mx-2">/</span>
-                <span className="text-beast-purple-light">{pageName}</span>
-              </>
-            )}
-          </motion.nav>
-        </div>
+              <Link to="/" className="hover:text-white transition-colors">
+                Home
+              </Link>
+              <span className="mx-2">/</span>
+              <Link
+                to="/services"
+                className={`${
+                  pageName ? "hover:text-white" : "text-beast-purple-light"
+                } transition-colors"`}
+              >
+                Services
+              </Link>
+              {pageName && (
+                <>
+                  <span className="mx-2">/</span>
+                  <span className="text-beast-purple-light">{pageName}</span>
+                </>
+              )}
+            </motion.nav>
+          </div>
+        )}
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center lg:-mt-8">
           {/* Left Content */}
@@ -108,8 +113,13 @@ const MarketingHeroSection = ({
               transition={{ duration: 0.7, delay: 0.8 }}
             >
               <Link to={"/contact"}>
-                <Button className="bg-primary-gradient text-white hover:shadow-glow transition-shadow px-8 py-6 text-lg font-medium">
-                  Get In Touch
+                <Button className="bg-primary-gradient text-white hover:shadow-glow transition-shadow px-8 py-7 text-lg font-medium">
+                  Get In Touch{" "}
+                  <MoveRight
+                    size={32}
+                    className="transform transition-transform duration-300 group-hover:translate-x-1"
+                    strokeWidth={3}
+                  />
                 </Button>
               </Link>
             </motion.div>

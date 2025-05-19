@@ -6,14 +6,17 @@ import {
   ChartAreaIcon,
   Cpu,
   CpuIcon,
+  FileSearch2Icon,
   FileText,
   GlassesIcon,
   Globe,
+  Globe2Icon,
   GlobeIcon,
   GoalIcon,
   HandshakeIcon,
   HeartHandshakeIcon,
   IdCardIcon,
+  Layers3Icon,
   MegaphoneIcon,
   PlaySquareIcon,
   PuzzleIcon,
@@ -26,10 +29,12 @@ import {
   TargetIcon,
   TrendingUp,
   UserCircle,
+  UserCircleIcon,
   Users,
   Users2,
   UsersIcon,
   UsersRound,
+  UsersRoundIcon,
   VideoIcon,
 } from "lucide-react";
 import { FaPhoneSlash, FaUserAltSlash } from "react-icons/fa";
@@ -1156,6 +1161,39 @@ export const measurementGoalsData = [
   },
 ];
 
+export const serviceSupportData = [
+  {
+    icon: <UserCircleIcon size={100} />,
+    title: "Account Management",
+    description:
+      "Your dedicated talent agent does the heavy lifting to secure meaningful brand partnerships and casting opportunities. From inbox management and brand outreach to contracting and payment support, you’re fully covered.",
+  },
+  {
+    icon: <FileSearch2Icon size={100} />,
+    title: "IP Diversification",
+    description:
+      "We’re always finding new ways to expand your IP. Tap into our content & platform experts with Creator Studio, access our full service syndication program, or work alongside our Original Programming — the opportunities are endless.",
+  },
+  {
+    icon: <Globe2Icon size={100} />,
+    title: "Ventures",
+    description:
+      "With the industry’s most seasoned experts across merchandising, podcasting, and more, we’re ready to bring you opportunities aligned with your goals while uncovering new spaces for you to make your mark.",
+  },
+  {
+    icon: <Layers3Icon size={100} />,
+    title: "OTT & Licensing",
+    description:
+      "Our team goes the extra mile to bring your content to FAST channels and OTT streaming services, so you can earn on existing IP and broaden your audience reach.",
+  },
+  {
+    icon: <UsersRoundIcon size={100} />,
+    title: "Public Relations",
+    description:
+      "Our in-house PR team is dedicated to elevating your visibility — so you’ll never need to hire a publicist. We’ll put you front and center for awards, publications, red carpets, hosting, guest appearances, and more.",
+  },
+];
+
 export const analyticsStrategyData = [
   {
     icon: <GoalIcon className="w-8 h-8 text-beast-purple" />,
@@ -1174,5 +1212,71 @@ export const analyticsStrategyData = [
     title: "Playbook Optimization",
     description:
       "Don’t just measure KPIs, use them to drive results. Campaigns are optimized for success throughout the program, building a custom playbook of learnings to test and retest.",
+  },
+];
+
+export const find_talent_categories = [
+  {
+    title: "Comedy",
+    image: "/img/marketing_services/comedy.jpeg",
+  },
+  {
+    title: "Lifestyle",
+    image: "/img/marketing_services/life-style.jpeg",
+  },
+  {
+    title: "Professional Experts",
+    image: "/img/marketing_services/professional-expart.jpeg",
+  },
+  {
+    title: "Food",
+    image: "/img/marketing_services/food.jpeg",
+  },
+  {
+    title: "Beauty",
+    image: "/img/marketing_services/beauty.jpeg",
+  },
+  {
+    title: "Kids & Family",
+    image: "/img/marketing_services/kids-and-family.png",
+  },
+  {
+    title: "Gaming",
+    image: "/img/marketing_services/gaming.jpeg",
+  },
+  {
+    title: "Sports & Fitness",
+    image: "/img/marketing_services/fitness.jpeg",
+  },
+];
+
+export const for_talent_data = [
+  {
+    id: 1,
+    src: "/img/marketing_services/fitness.jpeg",
+    label: "Dalton Chandler",
+    description:
+      "Having trust in my agent to negotiate terms that protect me and my personal brand is a huge priority. Viral Nation brings partnerships onboard and navigates incoming opportunities to ensure all details are buttoned up. I feel so lucky to be working with an incredible agent and his team of people that all have my best interests at heart.",
+  },
+  {
+    id: 2,
+    src: "/img/marketing_services/professional-expart.jpeg",
+    label: "Steven He",
+    description:
+      "Viral Nation is the best influencer agency I’ve come across. They have been extremely effective in procuring opportunities, monetization, and providing support. On a personal level, my agent has become one of my closest friends. I’m grateful to be working with VN.",
+  },
+  {
+    id: 3,
+    src: "/img/marketing_services/creator.png",
+    label: "Gab Chappel",
+    description:
+      "This team has been incredibly supportive in helping me to achieve my professional goals, and has even helped me dream bigger as I enter into a new phase of my career. I am so grateful for the hard work they put into supporting my creative endeavors.",
+  },
+  {
+    id: 4,
+    src: "/img/marketing_services/beauty.jpeg",
+    label: "Nadia Aidi",
+    description:
+      "Viral Nation’s connections have helped me land my dream partnerships while also working closely with me strategizing and developing my content. I love Viral Nation’s cutting edge and avant-garde approach to the influencer marketing industry. They’re constantly exploring new ways to utilize social media platforms and trends to ensure the success of their creators.",
   },
 ];

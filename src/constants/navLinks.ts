@@ -71,7 +71,17 @@ export const navLinks = [
       },
     ],
   },
-  { name: "Talent", path: "/talent" },
+  {
+    name: "Talent",
+    path: "#",
+    children: [
+      { name: "Find Talent", path: "/talent/find-talent" },
+      {
+        name: "For Talent",
+        path: "/talent/for-talent",
+      },
+    ],
+  },
   {
     name: "Resources",
     path: "#",

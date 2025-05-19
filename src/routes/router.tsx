@@ -3,6 +3,7 @@ import { RootLayout } from "@/components/layout/RootLayout";
 import ArticlePage from "@/components/resources/newsDetails/NewsArticleDetails";
 import { AboutPage } from "@/pages/AboutPage";
 import { ContactPage } from "@/pages/ContactPage";
+import ForTalentPage from "@/pages/ForTalentPage";
 import { HomePage } from "@/pages/HomePage";
 import BlogPage from "@/pages/BlogPage";
 import InfluencerMarketingTrendsReport from "@/pages/InfluencerMarketingTrendsReport";
@@ -34,11 +35,16 @@ export const router = createBrowserRouter([
         children: [
           {
             index: true,
+            path: "find-talent",
             Component: TalentPage,
           },
           {
-            path: ":id",
+            path: "find-talent/:id",
             Component: TalentDetailPage,
+          },
+          {
+            path: "for-talent",
+            Component: ForTalentPage,
           },
         ],
       },

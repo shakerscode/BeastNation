@@ -96,7 +96,7 @@ export const TalentDetailPage = () => {
         <div className="mb-6">
           <Button asChild variant="ghost" className="px-0 hover:bg-transparent">
             <Link
-              to="/talent"
+              to="/talent/find-talent"
               className="flex items-center text-gray-600 dark:text-gray-400 hover:text-beast-700 dark:hover:text-beast-400"
             >
               <svg
