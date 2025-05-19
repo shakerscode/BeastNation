@@ -20,7 +20,13 @@ interface ClientImage {
   description: string;
 }
 
-const OurWork = ({ data }) => {
+const OurWork = ({
+  data,
+  hideHeading,
+}: {
+  data: ClientImage[];
+  hideHeading?: boolean;
+}) => {
   const [api, setApi] = useState<ReturnType<typeof useCarousel>[1]>(null);
   const [current, setCurrent] = useState(0);
   const images: ClientImage[] = data;
@@ -52,29 +58,31 @@ const OurWork = ({ data }) => {
   );
 
   return (
-    <section className="py-20 md:py-32 bg-black text-white overflow-hidden">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <motion.h2
-            className="text-3xl md:text-4xl font-bold mb-4"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <CommonSubHeading subHead=" Our Works" shouldCol />
-          </motion.h2>
-          <motion.p
-            className="text-gray-400 max-w-2xl mx-auto"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            See how we've transformed brands through strategic partnerships and
-            innovative campaigns
-          </motion.p>
-        </div>
+    <section className="py-20 md:py-32 text-white overflow-hidden">
+      <div className="px-4">
+        {!hideHeading && (
+          <div className="text-center mb-16">
+            <motion.h2
+              className="text-3xl md:text-4xl font-bold mb-4"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <CommonSubHeading subHead=" Our Works" shouldCol />
+            </motion.h2>
+            <motion.p
+              className="text-gray-400 max-w-2xl mx-auto"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              See how we've transformed brands through strategic partnerships
+              and innovative campaigns
+            </motion.p>
+          </div>
+        )}
 
         <div className="relative">
           <Carousel
@@ -94,7 +102,7 @@ const OurWork = ({ data }) => {
                   <CarouselItem
                     key={image.id}
                     className={cn(
-                      "transition-opacity duration-300 h-[800px]",
+                      "transition-opacity duration-300 h-[700px]",
                       isActive
                         ? "basis-[calc(100%/2+200px)]"
                         : "md:basis-1/2 lg:basis-2/5"
@@ -131,19 +139,21 @@ const OurWork = ({ data }) => {
                                 animate={{ opacity: 1 }}
                                 transition={{ duration: 0.4 }}
                               >
-                                <h3 className="text-xl md:text-2xl font-bold mb-2">
+                                <h3 className="text-3xl md:text-2xl font-bold mb-2">
                                   {image.label}
                                 </h3>
-                                <p className="text-sm text-gray-300 mb-4">
+                                <p className="text-lg text-gray-300 mb-4">
                                   {image.description}
                                 </p>
-                                <Button
-                                  variant="outline"
-                                  size="sm"
-                                  className="w-max border-white text-white hover:bg-white/20"
-                                >
-                                  View Case Study
-                                </Button>
+                                {!hideHeading && (
+                                  <Button
+                                    variant="outline"
+                                    size="sm"
+                                    className="w-max border-white text-white hover:bg-white/20"
+                                  >
+                                    View Case Study
+                                  </Button>
+                                )}
                               </motion.div>
                             )}
                           </div>
