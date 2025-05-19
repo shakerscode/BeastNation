@@ -1,9 +1,13 @@
 import { talentService } from "@/api/talentService";
-import { TalentFilter } from "@/components/talent/TalentFilter";
-import { TalentGrid } from "@/components/talent/TalentGrid";
+import CommonCTA from "@/components/common/CommonCTA";
+import MarketingHeroSection from "@/components/marketing_services/MarketingHeroSection";
+import CategorySection from "@/components/talent/find_talent/CategorySection";
+import CreatorSection from "@/components/talent/find_talent/CreatorSection";
+import { TalentFilter } from "@/components/talent/find_talent/TalentFilter";
+import { TalentGrid } from "@/components/talent/find_talent/TalentGrid";
 import { useTalentStore } from "@/store/useTalentStore";
-import { motion } from "framer-motion";
 import { useEffect } from "react";
+import heroImg from "/img/marketing_services/FindTalent.png";
 
 export const TalentPage = () => {
   const {
@@ -55,30 +59,33 @@ export const TalentPage = () => {
 
   return (
     <>
-      <div className="md:pt-32 pt-24 pb-12 bg-gray-100 dark:bg-gray-900 w-full">
-        <div className="container mx-auto text-center px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <h1 className="text-3xl md:text-4xl font-bold font-display mb-4">
-              Our <span className="text-beast-purple-light">Talent</span>
-            </h1>
-            <p className="text-gray-600 dark:text-gray-400">
-              Discover our diverse roster of talented creators and influencers
-              across various industries. Filter by category or search to find
-              the perfect match for your brand.
-            </p>
-          </motion.div>
-        </div>
-      </div>
-
-      <div className="py-12 bg-white dark:bg-black">
-        <div className="container mx-auto px-4">
+      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto pt-10 md:pt-0">
+        <MarketingHeroSection
+          title="Your Campaign, Our Creators"
+          description="Tap into the in-house agency representing the largest global creator roster."
+          img={heroImg}
+          hideBreadcrumb={true}
+        />
+        <CategorySection />
+        <div className="pb-6 px-4">
           <TalentFilter />
           <TalentGrid />
         </div>
+        <CreatorSection />
+      </div>
+      <div className="mt-8 md:mt-12 border-t">
+        <CommonCTA
+          title={
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 max-w-4xl mx-auto">
+              Your one-stop shop for perfect
+              <span className="text-beast-purple-light">
+                {" "}
+                creator partnerships
+              </span>
+            </h2>
+          }
+          subTitle="Access the world’s largest roster of verified content creators, celebrities, and athletes with an affinity for your target audience."
+        />
       </div>
     </>
   );
