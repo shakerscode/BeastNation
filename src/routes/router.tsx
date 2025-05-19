@@ -3,8 +3,8 @@ import { RootLayout } from "@/components/layout/RootLayout";
 import ArticlePage from "@/components/resources/newsDetails/NewsArticleDetails";
 import { AboutPage } from "@/pages/AboutPage";
 import { ContactPage } from "@/pages/ContactPage";
-import { HomePage } from "@/pages/HomePage";
-import InfluencerBlog from "@/pages/InfluencerBlog";
+import { HomePage } from "@/pages/HomePage"; 
+import BlogPage from "@/pages/BlogPage";
 import InfluencerMarketingTrendsReport from "@/pages/InfluencerMarketingTrendsReport";
 import AllServices from "@/pages/marketing_services/AllServices";
 import BusinessIntelligence from "@/pages/marketing_services/BusinessIntelligence";
@@ -76,15 +76,15 @@ export const router = createBrowserRouter([
           },
         ],
       },
-      {
-        path: "influencer-blogs",
-        hydrateFallbackElement: <CommonLoading />,
-        Component: InfluencerBlog,
-      },
+      // {
+      //   path: "blogs",
+      //   hydrateFallbackElement: <CommonLoading />,
+      //   Component: InfluencerBlog,
+      // },
       {
         path: "influencer-lists",
         hydrateFallbackElement: <CommonLoading />,
-        Component: InfluencerBlog,
+        Component: BlogPage,
       },
       {
         path: "influencer-marketing-trends-report",
@@ -113,11 +113,11 @@ export const router = createBrowserRouter([
         hydrateFallbackElement: <CommonLoading />,
         children: [
           {
-            path: "news-press-releases",
+            path: "news-and-press",
             Component: NewsAndPress,
           },
           {
-            path: "news-press-releases/:slug",
+            path: "news-and-press/:slug",
             Component: ArticlePage,
           },
           {
@@ -127,6 +127,10 @@ export const router = createBrowserRouter([
           {
             path: "case-studies/:slug",
             Component: DetailedCaseStudy,
+          },
+          {
+            path: "blogs",
+            Component: BlogPage,
           },
         ],
       },

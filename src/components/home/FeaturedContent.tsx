@@ -78,7 +78,7 @@ const FeaturedContent = () => {
           </motion.p>
         </div>
         <motion.div
-          onClick={() => navigate("/resources/news-press-releases")}
+          onClick={() => navigate("/resources/news-and-press")}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
@@ -98,7 +98,7 @@ const FeaturedContent = () => {
         id="content"
       >
         <motion.div
-          onClick={() => navigate("/resources/news-press-releases")}
+          onClick={() => navigate("/resources/news-and-press")}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}

@@ -77,7 +77,9 @@ export const navLinks = [
     path: "#",
     children: [
       { name: "Influencer List", path: "/influencer-lists" },
-      { name: "Influencer Blogs", path: "/influencer-blogs" },
+      { name: "Case Studies", path: "/resources/case-studies" },
+      { name: "News & Press", path: "/resources/news-and-press" },
+      { name: "Blogs", path: "/resources/blogs" },
     ],
   },
   { name: "About", path: "/about" },
