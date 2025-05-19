@@ -24,7 +24,7 @@ const ArticlePage = () => {
       <div className="pt-28 md:pt-40 px-4 md:px-0 max-w-7xl mx-auto">
         <div className="text-sm text-white/60 mb-4">
           <Link
-            to="/resources/news-press-releases"
+            to="/resources/news-and-press"
             className="hover:underline text-xs"
           >
             Home / Trendy Nation News & Press

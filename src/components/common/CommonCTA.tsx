@@ -10,7 +10,7 @@ function CommonCTA({
   subTitle: string;
 }) {
   return (
-    <section className="bg-beast-black text-center py-24 px-4">
+    <section className="bg-beast-black text-center py-14 md:py-24 px-4">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

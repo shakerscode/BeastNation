@@ -42,7 +42,7 @@ function NewsAndPressArticles() {
         .replace(/[^\w-]+/g, "");
 
       if (isMounted) {
-        navigate(`/resources/news-press-releases/${slug}`, {
+        navigate(`/resources/news-and-press/${slug}`, {
           replace: false,
           preventScrollReset: true,
         });
