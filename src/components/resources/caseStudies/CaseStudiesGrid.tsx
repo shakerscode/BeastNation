@@ -2,6 +2,7 @@ import { MoveRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useCallback } from "react";
 import { useNavigate } from "react-router";
+import { detailedCaseStudies } from "@/constants/fakeCaseStudy";
 
 const caseStudies = [
   {
@@ -78,9 +79,9 @@ function CaseStudiesGrid() {
   return (
     <section className="md:p-5">
       <div className="max-w-7xl mx-auto px-4 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-        {caseStudies.map((study, index) => (
+        {detailedCaseStudies.map((study, index) => (
           <motion.div
-            onClick={() => handleNavigate(study?.title)}
+            onClick={() => handleNavigate(study?.slug)}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.3 }}
@@ -89,13 +90,13 @@ function CaseStudiesGrid() {
             className="min-h-[400px] h-full w-full min-w-[350px] group cursor-pointer transition-all duration-300 ease-in-out relative rounded-lg overflow-hidden shadow-glow"
           >
             <img
-              src={study.productImage}
+              src={study.coverImage}
               alt=""
               className="w-full object-cover h-full group-hover:opacity-20 transition-all duration-300 ease-in-out"
             />
             <div className="absolute bottom-3 left-0 right-0 w-[90%] h-[100px] mx-auto bg-white/80 shadow rounded-lg group-hover:opacity-0 overflow-hidden">
               <img
-                src={study.logoURL}
+                src={study.logo}
                 alt=""
                 className="w-full h-full object-contain transform scale-150 transition-all duration-300 ease-in-out"
               />
@@ -104,7 +105,7 @@ function CaseStudiesGrid() {
             <div className="group-hover:flex flex-col items-start justify-end gap-3 absolute top-0 bottom-0 right-0 left-0 w-full h-full hidden p-4 transition-all duration-300 ease-in-out overflow-hidden">
               <div className="w-full h-48 overflow-hidden">
                 <img
-                  src={study.logoURL}
+                  src={study.logo}
                   alt=""
                   className="w-full h-full object-contain transform overflow-hidden group-hover:scale-150 transition-all duration-300 ease-in-out"
                 />

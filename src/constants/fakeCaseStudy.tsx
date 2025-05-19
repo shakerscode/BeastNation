@@ -216,8 +216,9 @@ export const detailedCaseStudies = [
     ],
   },
   {
-    title: "A lipstick brand just gone viral after collaborating with us",
-    slug: "lipstick-viral-campaign",
+    title:
+      "LipBee's Lipstick Campaign Achieves 600% Sales Surge Through Influencer Collaboration",
+    slug: "lipbee-lipstick-campaign",
     brand: "LipBee",
     coverImage:
       "https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg",
@@ -259,42 +260,50 @@ export const detailedCaseStudies = [
       creators: 3,
     },
     campaign_overview:
-      "LipBee was preparing to launch a new vegan lip kit collection and needed more than a product push—they needed cultural traction. With Gen-Z attention scattered across fast-paced platforms, traditional ads wouldn’t cut it. We architected a creator-driven strategy to showcase transformations, virality, and real-time buzz. The result: a beauty moment that drove 600% sales growth and made LipBee a household name overnight.",
+      "LipBee’s new vegan-friendly line was set to launch, and we wanted the TikTok generation to do the talking. Our goal: viral swatches and real user buzz.",
     campaign_challenge:
-      "Entering a saturated beauty market, LipBee struggled to stand out against larger legacy brands and viral trend cycles. The challenge wasn’t quality—it was visibility and momentum. Our task was to spark genuine engagement and convert social attention into measurable purchases, while positioning LipBee as a trend originator, not just a follower.",
+      "Despite a quality product, LipBee faced stiff competition in the saturated beauty market. Traditional advertising channels were not yielding the desired engagement, and the brand needed a fresh approach to connect with the Gen-Z audience.",
     campaign_strategy: {
       header:
-        "We partnered with highly relatable Gen-Z creators known for fast-paced, transformation-driven content. The campaign focused on authenticity, interactivity, and virality. Each influencer was selected based on previous trending performance and alignment with LipBee’s brand tone.",
+        "We collaborated with influential Gen-Z creators to authentically showcase LipBee's products, leveraging their unique styles and platforms.",
       points: [
-        "GlowByNia launched a GRWM (Get Ready With Me) series using the Matte Berry Kit, blending humor, confidence, and step-by-step results.",
-        "MakeupMomo created sleek before/after lip tutorials on Instagram Reels with personalized product breakdowns.",
-        "BeauteSzn kicked off a 3-second swatch challenge on Snapchat using the Peach Pop Duo with rapid cuts and interactive stickers.",
+        "GlowByNia created engaging GRWM (Get Ready With Me) TikTok videos featuring the Matte Berry Kit, highlighting its rich pigmentation and long-lasting wear.",
+        "MakeupMomo shared transformative before-and-after tutorials on Instagram Reels, demonstrating the versatility of the Glossy Rose Set.",
+        "BeauteSzn provided quick, captivating reviews and swatches on Snapchat, focusing on the Peach Pop Duo's vibrant shades.",
       ],
       footer:
-        "We launched the #BeeTheTrend hashtag challenge across all platforms with creator-specific codes for tracking. Our team also managed asset repurposing and boosted creator content with micro ad spend to enhance reach while maintaining organic feel.",
+        "Each creator was provided with personalized discount codes and exclusive links, enabling us to track conversions and engagement effectively.",
     },
     campaign_execution: {
       header:
-        "The rollout began with teaser content a week prior to launch. Our creators posted their initial content within 48 hours of receiving their custom PR boxes—timed for TikTok’s peak engagement windows. The second wave included remix and duet content encouraging user participation.",
-      points: [],
+        "The campaign was launched strategically in early January to capitalize on New Year trends and resolutions.",
+      points: [
+        "Content was scheduled during peak engagement hours across platforms to maximize visibility.",
+        "We utilized platform-specific features, such as TikTok's 'For You' page and Instagram's Explore page, to enhance content discoverability.",
+        "Interactive elements like polls and Q&A sessions were incorporated to foster community engagement.",
+      ],
       footer:
-        "Each creator’s unique link directed users to personalized landing pages featuring limited edition kits and exclusive time-based offers, increasing urgency and conversion.",
+        "The cohesive campaign approach ensured consistent messaging and branding across all platforms, reinforcing LipBee's identity.",
     },
     campaign_results: {
       header:
-        "The LipBee campaign generated extraordinary results in record time:",
+        "The campaign exceeded expectations, delivering remarkable results:",
       points: [
-        "600% increase in lip kit sales within 72 hours",
-        "#BeeTheTrend hashtag reached 8M+ views organically within 5 days",
-        "34K+ direct conversions tracked via creator-specific codes",
-        "28K+ new email subscribers and record-high follower growth on TikTok and Instagram",
+        "600% increase in lip kit sales within the first week of the campaign.",
+        "Over 12 million impressions and 1.1 million engagements across all platforms.",
+        "34,000 conversions tracked through personalized creator links.",
+        "Significant growth in social media followers and newsletter subscribers.",
       ],
       footer: "",
     },
     reason_of_results: {
       header:
-        "What made this campaign a viral success wasn’t just creator content—it was our strategy of timing, creator-fit, and platform-native execution. By blending entertainment with transformation, we made LipBee the talk of beauty TikTok and Reels. Clear conversion paths and strategic amplification turned that buzz into real business growth.",
-      points: [],
+        "The campaign's success can be attributed to authentic storytelling and strategic influencer partnerships.",
+      points: [
+        "Leveraging creators' unique styles and trusted voices resonated with the target audience.",
+        "Platform-specific strategies ensured content was optimized for each channel's algorithms and user behavior.",
+        "Interactive and engaging content fostered a sense of community and encouraged user participation.",
+      ],
       footer: "",
     },
     content: [
@@ -306,13 +315,39 @@ export const detailedCaseStudies = [
       },
       {
         creator: "@makeupmomo",
-        contentUrl: "https://www.instagram.com/reel/000000000000000002",
-        embedUrl: "https://www.instagram.com/reel/000000000000000002/embed",
+        contentUrl:
+          "https://www.tiktok.com/@makeupmomo/video/000000000000000002",
+        embedUrl: "https://www.tiktok.com/embed/000000000000000002",
       },
       {
         creator: "@beauteszn",
-        contentUrl: "https://www.snapchat.com/discover/beauteszn/0000000003",
-        embedUrl: "", // Snapchat embeds typically not used
+        contentUrl:
+          "https://www.tiktok.com/@beauteszn/video/000000000000000003",
+        embedUrl: "https://www.tiktok.com/embed/000000000000000003",
+      },
+      {
+        creator: "@youngcouture",
+        contentUrl:
+          "https://www.tiktok.com/@youngcouture/video/7403434433413401898",
+        embedUrl: "https://www.tiktok.com/embed/7403434433413401898",
+      },
+      {
+        creator: "@idylleed",
+        contentUrl:
+          "https://www.tiktok.com/@idylleed/video/7499159914506456342",
+        embedUrl: "https://www.tiktok.com/embed/7499159914506456342",
+      },
+      {
+        creator: "@sydneypurl",
+        contentUrl:
+          "https://www.tiktok.com/@sydneypurl/video/7412336337673555232",
+        embedUrl: "https://www.tiktok.com/embed/7412336337673555232",
+      },
+      {
+        creator: "@jeffreestar",
+        contentUrl:
+          "https://www.tiktok.com/@jeffreestar/video/7348923787376692522",
+        embedUrl: "https://www.tiktok.com/embed/7348923787376692522",
       },
     ],
   },
@@ -398,7 +433,49 @@ export const detailedCaseStudies = [
       points: [],
       footer: "",
     },
-    content: [],
+    content: [
+      {
+        creator: "@chicbychance",
+        contentUrl:
+          "https://www.tiktok.com/@chicbychance/video/000000000000000004",
+        embedUrl: "https://www.tiktok.com/embed/000000000000000004",
+      },
+      {
+        creator: "@styleonloop",
+        contentUrl:
+          "https://www.tiktok.com/@styleonloop/video/000000000000000005",
+        embedUrl: "https://www.tiktok.com/embed/000000000000000005",
+      },
+      {
+        creator: "@haulmuse",
+        contentUrl: "https://www.tiktok.com/@haulmuse/video/000000000000000006",
+        embedUrl: "https://www.tiktok.com/embed/000000000000000006",
+      },
+      {
+        creator: "@fashionforward",
+        contentUrl:
+          "https://www.tiktok.com/@fashionforward/video/7403434433413401899",
+        embedUrl: "https://www.tiktok.com/embed/7403434433413401899",
+      },
+      {
+        creator: "@trendsetterz",
+        contentUrl:
+          "https://www.tiktok.com/@trendsetterz/video/7499159914506456343",
+        embedUrl: "https://www.tiktok.com/embed/7499159914506456343",
+      },
+      {
+        creator: "@urbanvibe",
+        contentUrl:
+          "https://www.tiktok.com/@urbanvibe/video/7412336337673555233",
+        embedUrl: "https://www.tiktok.com/embed/7412336337673555233",
+      },
+      {
+        creator: "@styleicon",
+        contentUrl:
+          "https://www.tiktok.com/@styleicon/video/7348923787376692523",
+        embedUrl: "https://www.tiktok.com/embed/7348923787376692523",
+      },
+    ],
   },
   {
     slug: "fintech-app-growth",
@@ -481,7 +558,38 @@ export const detailedCaseStudies = [
       points: [],
       footer: "",
     },
-    content: [],
+    content: [
+      {
+        creator: "@financebae",
+        contentUrl:
+          "https://www.tiktok.com/@financebae/video/7503985145947409694",
+        embedUrl: "https://www.tiktok.com/embed/7503985145947409694",
+      },
+      {
+        creator: "@investwithivy",
+        contentUrl:
+          "https://www.tiktok.com/@investwithivy/video/7489243207637765381",
+        embedUrl: "https://www.tiktok.com/embed/7489243207637765381",
+      },
+      {
+        creator: "@budgetbeats",
+        contentUrl:
+          "https://www.tiktok.com/@budgetbeats/video/7402646211796159774",
+        embedUrl: "https://www.tiktok.com/embed/7402646211796159774",
+      },
+      {
+        creator: "@moneymentor",
+        contentUrl:
+          "https://www.tiktok.com/@moneymentor/video/7499707086952140078",
+        embedUrl: "https://www.tiktok.com/embed/7499707086952140078",
+      },
+      {
+        creator: "@savvysaver",
+        contentUrl:
+          "https://www.tiktok.com/@savvysaver/video/7466640108838505774",
+        embedUrl: "https://www.tiktok.com/embed/7466640108838505774",
+      },
+    ],
   },
   {
     slug: "fitness-instagram-boost",
@@ -564,7 +672,38 @@ export const detailedCaseStudies = [
       points: [],
       footer: "",
     },
-    content: [],
+    content: [
+      {
+        creator: "@sweatsquad",
+        contentUrl:
+          "https://www.tiktok.com/@sweatsquad/video/7503985145947409694",
+        embedUrl: "https://www.tiktok.com/embed/7503985145947409694",
+      },
+      {
+        creator: "@gymgainsdaily",
+        contentUrl:
+          "https://www.tiktok.com/@gymgainsdaily/video/7489243207637765381",
+        embedUrl: "https://www.tiktok.com/embed/7489243207637765381",
+      },
+      {
+        creator: "@trainwithkay",
+        contentUrl:
+          "https://www.tiktok.com/@trainwithkay/video/7402646211796159774",
+        embedUrl: "https://www.tiktok.com/embed/7402646211796159774",
+      },
+      {
+        creator: "@fitfocus",
+        contentUrl:
+          "https://www.tiktok.com/@fitfocus/video/7499707086952140078",
+        embedUrl: "https://www.tiktok.com/embed/7499707086952140078",
+      },
+      {
+        creator: "@healthhustle",
+        contentUrl:
+          "https://www.tiktok.com/@healthhustle/video/7466640108838505774",
+        embedUrl: "https://www.tiktok.com/embed/7466640108838505774",
+      },
+    ],
   },
   {
     title: "Pet supply brand's loyalty campaign hit 500K active users",
@@ -647,6 +786,37 @@ export const detailedCaseStudies = [
       points: [],
       footer: "",
     },
-    content: [],
+    content: [
+      {
+        creator: "@lunathevet",
+        contentUrl:
+          "https://www.tiktok.com/@lunathevet/video/7503985145947409694",
+        embedUrl: "https://www.tiktok.com/embed/7503985145947409694",
+      },
+      {
+        creator: "@barkbrostv",
+        contentUrl:
+          "https://www.tiktok.com/@barkbrostv/video/7489243207637765381",
+        embedUrl: "https://www.tiktok.com/embed/7489243207637765381",
+      },
+      {
+        creator: "@purrfectmilo",
+        contentUrl:
+          "https://www.tiktok.com/@purrfectmilo/video/7402646211796159774",
+        embedUrl: "https://www.tiktok.com/embed/7402646211796159774",
+      },
+      {
+        creator: "@petcarepro",
+        contentUrl:
+          "https://www.tiktok.com/@petcarepro/video/7499707086952140078",
+        embedUrl: "https://www.tiktok.com/embed/7499707086952140078",
+      },
+      {
+        creator: "@furryfriendsdaily",
+        contentUrl:
+          "https://www.tiktok.com/@furryfriendsdaily/video/7466640108838505774",
+        embedUrl: "https://www.tiktok.com/embed/7466640108838505774",
+      },
+    ],
   },
 ];

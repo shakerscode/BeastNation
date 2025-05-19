@@ -16,7 +16,7 @@ const DetailedCaseStudy = () => {
     ?.replace(/(?:^|-)([a-z])/g, (_, char) => ` ${char.toUpperCase()}`)
     .trim();
 
-  const data = detailedCaseStudies[0];
+  const data = slug && detailedCaseStudies.find((item) => item?.slug === slug);
   return (
     <div className="bg-black/90 text-gray-900">
       {/* Cover Image */}
