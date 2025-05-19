@@ -1,21 +1,50 @@
 import { motion } from "framer-motion";
 
 export const AboutPage = () => {
+  const teamImage =
+    "https://images.pexels.com/photos/2467506/pexels-photo-2467506.jpeg";
+
+  const ourTeam = [
+    {
+      name: "Allina Jery",
+      image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg",
+      jobTitle: "CEO",
+    },
+    {
+      name: "Sindre Fs",
+      image:
+        "https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg",
+      jobTitle: "Project manager",
+    },
+    {
+      name: "Italo Melo",
+      image:
+        "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
+      jobTitle: "Marketing director",
+    },
+    {
+      name: "Anna Nekrash",
+      image:
+        "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg",
+      jobTitle: "Managing director",
+    },
+  ];
+
   return (
-    <div className="bg-white dark:bg-black">
+    <div className="md:pt-12">
       {/* Hero Section */}
-      <section className="pt-24 pb-12 bg-gray-100 dark:bg-gray-900">
-        <div className="container mx-auto px-4 text-center">
+      <section className="pt-24 pb-12">
+        <div className="mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              About TrendyNation
+              About <span className="text-beast-purple">Trendy Nation</span>
             </h1>
             <p className="text-gray-600 dark:text-gray-400">
-              TrendyNation is a premier talent management agency connecting
+              Trendy Nation is a premier talent management agency connecting
               exceptional creators with leading brands for impactful
               collaborations.
             </p>
@@ -32,7 +61,7 @@ export const AboutPage = () => {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}
-                src="/placeholder.svg"
+                src={teamImage}
                 alt="Our Mission"
                 className="rounded-xl"
               />
@@ -76,26 +105,26 @@ export const AboutPage = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {[1, 2, 3, 4].map((item) => (
+            {ourTeam.map((item, index) => (
               <motion.div
-                key={item}
+                key={item.name}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: item * 0.1 }}
+                transition={{ duration: 0.5, delay: index + 1 * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md"
+                className="rounded-xl border-2 overflow-hidden shadow-md"
               >
                 <div className="aspect-square">
                   <img
-                    src="/placeholder.svg"
+                    src={item.image}
                     alt="Team Member"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-4">
-                  <h3 className="text-lg font-bold">John Doe</h3>
+                  <h3 className="text-lg font-bold">{item.name}</h3>
                   <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Co-Founder & CEO
+                    {item.jobTitle}
                   </p>
                 </div>
               </motion.div>
