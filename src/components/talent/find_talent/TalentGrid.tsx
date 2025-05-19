@@ -1,6 +1,6 @@
 import { useTalentStore } from "@/store/useTalentStore";
 import { useState } from "react";
-import { Button } from "../ui/button";
+import { Button } from "../../ui/button";
 import { TalentCard } from "./TalentCard";
 
 export const TalentGrid = () => {

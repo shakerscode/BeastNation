@@ -19,7 +19,7 @@ export const TalentCard = ({ talent, index }: TalentCardProps) => {
       title="Click to view details"
     >
       <Link
-        to={`/talent/${talent.id}`}
+        to={`/talent/find-talent/${talent.id}`}
         className="block overflow-hidden rounded-xl"
       >
         <div className="aspect-[3/4] relative overflow-hidden">

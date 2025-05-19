@@ -28,7 +28,7 @@ export const TalentFilter = () => {
   return (
     <div className="mb-8">
       <div className="flex flex-col md:flex-row justify-between gap-4 mb-6">
-        <h2 className="text-2xl font-bold">Our Talent</h2>
+        <h2 className="text-2xl md:text-4xl font-bold">Our Talent</h2>
 
         <div className="relative">
           <Input
