@@ -2,7 +2,7 @@ import CommonSubHeading from "../../common/CommonSubHeading";
 import PlaybookCTA from "../../common/PlaybookCTA";
 import { motion } from "framer-motion";
 
-function CaseStudiesHeader(props) {
+function CaseStudiesHeader() {
   return (
     <section className="pt-32 md:pt-36 px-4 md:px-0">
       <CommonSubHeading subHead="Our Work" />

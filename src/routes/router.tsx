@@ -21,6 +21,7 @@ import NewsAndPress from "@/pages/resources/NewsAndPress";
 import { TalentDetailPage } from "@/pages/TalentDetailPage";
 import { TalentPage } from "@/pages/TalentPage";
 import { createBrowserRouter } from "react-router";
+import OurStory from "@/pages/about/OurStory";
 
 export const router = createBrowserRouter([
   {
@@ -141,6 +142,16 @@ export const router = createBrowserRouter([
           {
             path: "influencer-lists",
             Component: BlogPage,
+          },
+        ],
+      },
+      {
+        path: "about",
+        hydrateFallbackElement: <CommonLoading />,
+        children: [
+          {
+            path: "our-story",
+            Component: OurStory,
           },
         ],
       },
