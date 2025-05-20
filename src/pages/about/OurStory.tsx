@@ -8,7 +8,7 @@ import React from "react";
 function OurStory() {
   return (
     <>
-      <div className="max-w-7xl mx-auto">
+      <div className="w-full md:max-w-7xl mx-auto px-4 md:px-0">
         <HeroSection />
         <IntroSection />
         <LandmarkSection />

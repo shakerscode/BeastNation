@@ -1,40 +1,13 @@
 import CommonHeading from "@/components/common/CommonHeading";
-import { Users, UsersRound, Newspaper, Share2, Scale } from "lucide-react";
-import { motion } from "framer-motion";
+import { icons } from "@/constants/fakeOurStory";
+
+import { motion } from "framer-motion"; 
 
 const IntroSection = () => {
-  const icons = [
-    {
-      title: "Creators",
-      description: "Empowering creative minds globally",
-      icon: Users,
-    },
-    {
-      title: "Consumers",
-      description: "Understanding audience behaviors",
-      icon: UsersRound,
-    },
-    {
-      title: "New Media",
-      description: "Pioneering emerging platforms",
-      icon: Newspaper,
-    },
-    {
-      title: "Social-First",
-      description: "Leading with social strategy",
-      icon: Share2,
-    },
-    {
-      title: "Scale",
-      description: "Delivering global reach & impact",
-      icon: Scale,
-    },
-  ];
-
   return (
-    <section className="py-16 md:py-20">
-      <div className="container mx-auto">
-        <div className="max-w-5xl mx-auto mb-4 text-center">
+    <section className="py-10 md:py-20">
+      <div className="w-full md:container mx-auto">
+        <div className="w-full md:max-w-5xl mx-auto mb-4 text-center">
           <CommonHeading
             beforeHighlight="A Global Leader In"
             highlight="Social Media Innovation"

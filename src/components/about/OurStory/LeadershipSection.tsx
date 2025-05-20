@@ -5,8 +5,8 @@ import { directors, executives, seniorLeaders } from "@/constants/fakeOurStory";
 
 const LeadershipSection = () => {
   return (
-    <section className="my-28 py-14 px-5 bg-gray-50">
-      <div className="container mx-auto">
+    <section className="my-10 md:my-28 py-10 md:py-14 px-5 bg-gray-50">
+      <div className="w-full md:container mx-auto">
         <div className="mb-10 text-black">
           <CommonHeading
             beforeHighlight="Meet Our"
@@ -14,7 +14,7 @@ const LeadershipSection = () => {
           />
         </div>
 
-        <div className="space-y-20 text-black">
+        <div className="space-y-10 md:space-y-20 text-black">
           {/* Executive Leadership */}
           <div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">

@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 function HeroSection() {
   return (
-    <section className="pt-16 pb-16 md:pt-48 md:pb-20">
-      <div className="container mx-auto">
+    <section className="pt-36 pb-16 md:pt-48 md:pb-20">
+      <div className="md:container mx-auto">
         <div className="flex flex-col md:flex-row gap-12 items-center">
           <div className="w-full md:w-[60%]">
             <CommonSubHeading subHead="Our Story" />
@@ -24,7 +24,7 @@ function HeroSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
-              className="text-sm md:text-lg mb-8 text-white/80 max-w-xl"
+              className="text-sm md:text-lg mb-8 text-white/80 md:max-w-xl"
             >
               Since 2010, we've been pioneering digital strategies for brands
               ready to transform their social presence. Our journey from a small
@@ -41,7 +41,7 @@ function HeroSection() {
             </motion.div>
           </div>
 
-          <div className="w-full md:w-auto">
+          <div className="w-full md:w-auto px-8 md:px-0">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
