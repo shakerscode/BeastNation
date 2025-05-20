@@ -1,8 +1,11 @@
 import { featuredResources, quickLinks } from "@/constants/navLinks";
+import { useModal } from "@/modal/useModal";
 import { FaInstagram, FaTiktok, FaTwitter, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router";
+import NewsLetter from "../common/NewsLetter";
 
 export const Footer = () => {
+  const { openModal } = useModal();
   return (
     <footer className="bg-gray-100 dark:bg-gray-900 pt-12 pb-6">
       <div className="container mx-auto px-4">
@@ -43,6 +46,12 @@ export const Footer = () => {
                 <FaTwitter size={20} />
               </Link>
             </div>
+            <button
+              className="border border-gray-200 px-3 mt-4 py-2 rounded-lg hover:bg-gray-800"
+              onClick={openModal}
+            >
+              Subscribe to our Newsletter
+            </button>
           </div>
 
           <div>
@@ -94,6 +103,7 @@ export const Footer = () => {
           </p>
         </div>
       </div>
+      <NewsLetter />
     </footer>
   );
 };
