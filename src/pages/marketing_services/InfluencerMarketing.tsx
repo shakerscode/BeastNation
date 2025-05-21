@@ -11,7 +11,7 @@ import CommonCTA from "@/components/common/CommonCTA";
 
 const InfluencerMarketing = () => {
   return (
-    <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto">
+    <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto pt-28 md:pt-0">
       <MarketingHeroSection
         pageName="Influencer marketing"
         title={

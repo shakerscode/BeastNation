@@ -26,11 +26,11 @@ const ExperientialMarketing = () => {
       />
       <ClientLogos />
 
-      <section>
-        <h2 className="text-3xl pt-16 md:pt-24 -pb-16 md:-pb-14  text-center md:text-5xl lg:text-6xl font-bold mb-6">
-          Shattering Traditional Experiential
+      <section className="">
+        <h2 className="text-3xl pt-16 md:pt-24 -pb-16 md:-pb-14 w-full md:max-w-5xl mx-auto text-center md:text-5xl lg:text-6xl font-bold font-display mb-6">
+          Shattering Traditional <span className="text-beast-purple-light">Experiential</span>
         </h2>
-        <p className="text-lg text-center w-full">
+        <p className="text-lg text-center w-full md:max-w-5xl mx-auto">
           Leverage the world’s largest influencer network to bring the offline
           and online world together with events primed for social amplification.
         </p>

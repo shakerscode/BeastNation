@@ -1,4 +1,4 @@
-import ClientLogos from "@/components/home/ClientLogos"; 
+import ClientLogos from "@/components/home/ClientLogos";
 import MarketingHeroSection from "@/components/marketing_services/MarketingHeroSection";
 import { ContentTracks } from "@/components/marketing_services/performance_marketing/ContentTracks";
 import { PerformanceDriven } from "@/components/marketing_services/performance_marketing/PerformanceDriven";
@@ -26,7 +26,14 @@ const SocialContentStudio = () => {
       />
       <ClientLogos />
       <PhoneShowcase
-        title={"Where Strategy, Creative, and Production Come Together"}
+        title={
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">
+            Where Strategy, Creative, and{" "}
+            <span className="text-beast-purple-light">
+              Production Come Together
+            </span>
+          </h1>
+        }
         description={
           "Strategizing angles, brainstorming creative, and iterating in production – Viral Nation Studio reaches millions of people across platforms and channels who share and amplify the message far and wide."
         }

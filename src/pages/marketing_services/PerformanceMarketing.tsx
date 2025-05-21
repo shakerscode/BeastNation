@@ -7,6 +7,7 @@ import { ServicesShowcaseSection } from "@/components/marketing_services/perform
 import { performanceDrivenData, servicesShowcase } from "@/utils/fakeData";
 import PerformanceImg from "/img/services/performance_marketing.png";
 import CommonCTA from "@/components/common/CommonCTA";
+import CommonHeading from "@/components/common/CommonHeading";
 
 const PerformanceMarketing = () => {
   return (
@@ -23,8 +24,15 @@ const PerformanceMarketing = () => {
         img={PerformanceImg}
       />
       <ClientLogos />
-      <PlanetMedia
-        title="Turn Stories into Sales"
+      <PlanetMedia 
+        jsxTitle={
+          <div className="mb-6">
+            <CommonHeading
+              beforeHighlight="Turn Stories"
+              highlight=" into Sales"
+            />
+          </div>
+        }
         description="Trendy Nation blends audience-centric content with data-driven decision making to deliver higher ROAs and better conversion rates. Leverage influencer collaborations to go beyond your existing followers to new, relevant audiences."
         cardTitle1="1B+"
         cardPara1="Engaged Customers"

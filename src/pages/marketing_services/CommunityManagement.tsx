@@ -25,7 +25,12 @@ const CommunityManagement = () => {
       />
       <ClientLogos />
       <PhoneShowcase
-        title={"Rooted In Relationships"}
+        title={
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">
+            Rooted In{" "}
+            <span className="text-beast-purple-light"> Relationships</span>
+          </h1>
+        }
         description="Trendy Nation’s 360 Community and Social Management cultivates an always-on social persona for your brand, unlocking a community-driven feedback loop that fuels awareness, engagement, and conversion across every social touchpoint. So you can humanize your social presence and build brand loyalty with a holistic strategy that elevates the customer journey while driving commerce."
         photo={NEW_Rooted}
       />

@@ -32,7 +32,7 @@ export const PlanetMedia = ({
 }: IPageProps) => {
   return (
     <section className="md:py-20">
-      <div className="md:container mx-auto md:px-4">
+      <div className="md:container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left column - Text content */}
           <motion.div
@@ -45,15 +45,15 @@ export const PlanetMedia = ({
             {jsxTitle ? (
               jsxTitle
             ) : (
-              <h2 className="text-4xl sm:text-5xl font-bold leading-tight mb-6">
+              <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
                 {title}
               </h2>
             )}
-            <p className="text-lg text-gray-700 dark:text-gray-300">
+            <p className="text-sm md:text-lg text-gray-700 dark:text-gray-300">
               {description}
             </p>
             {description2 && (
-              <p className="text-lg text-gray-700 dark:text-gray-300 mt-4">
+              <p className="text-sm md:text-lg text-gray-700 dark:text-gray-300 mt-4">
                 {description2}
               </p>
             )}

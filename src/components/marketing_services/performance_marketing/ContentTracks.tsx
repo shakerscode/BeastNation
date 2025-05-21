@@ -12,8 +12,8 @@ export const ContentTracks = () => {
           transition={{ duration: 0.6 }}
           className="md:w-1/2"
         >
-          <h2 className="text-3xl md:text-6xl font-bold mb-6">
-            Two Content Tracks
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
+            Two Content <span className="text-beast-purple-light">Tracks</span>
           </h2>
           <p className="text-gray-300 mb-6 text-lg leading-relaxed">
             In an age of voluminous and fast-paced content consumption, Viral
