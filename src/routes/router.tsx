@@ -1,11 +1,12 @@
 import CommonLoading from "@/components/common/CommonLoading";
 import { RootLayout } from "@/components/layout/RootLayout";
 import ArticlePage from "@/components/resources/newsDetails/NewsArticleDetails";
+import OurStory from "@/pages/about/OurStory";
 import { AboutPage } from "@/pages/AboutPage";
+import BlogPage from "@/pages/BlogPage";
 import { ContactPage } from "@/pages/ContactPage";
 import ForTalentPage from "@/pages/ForTalentPage";
 import { HomePage } from "@/pages/HomePage";
-import BlogPage from "@/pages/BlogPage";
 import InfluencerMarketingTrendsReport from "@/pages/InfluencerMarketingTrendsReport";
 import AllServices from "@/pages/marketing_services/AllServices";
 import BusinessIntelligence from "@/pages/marketing_services/BusinessIntelligence";
@@ -15,6 +16,7 @@ import InfluencerMarketing from "@/pages/marketing_services/InfluencerMarketing"
 import PerformanceMarketing from "@/pages/marketing_services/PerformanceMarketing";
 import SocialContentStudio from "@/pages/marketing_services/SocialContentStudio";
 import NotFound from "@/pages/NotFound";
+import BlogPostDetails from "@/pages/resources/BlogPostDetails";
 import CaseStudies from "@/pages/resources/CaseStudies";
 import DetailedCaseStudy from "@/pages/resources/DetailedCaseStudy";
 import NewsAndPress from "@/pages/resources/NewsAndPress";
@@ -23,6 +25,7 @@ import { TalentPage } from "@/pages/TalentPage";
 import { createBrowserRouter } from "react-router";
 import OurStory from "@/pages/about/OurStory";
 import Careers from "@/pages/about/Careers";
+ 
 
 export const router = createBrowserRouter([
   {
@@ -83,8 +86,7 @@ export const router = createBrowserRouter([
             Component: BusinessIntelligence,
           },
         ],
-      },
-
+      }, 
       {
         path: "influencer-marketing-trends-report",
         hydrateFallbackElement: <CommonLoading />,
@@ -130,6 +132,10 @@ export const router = createBrowserRouter([
           {
             path: "blogs",
             Component: BlogPage,
+          },
+          {
+            path: "blog/:id",
+            Component: BlogPostDetails,
           },
           {
             path: "influencer-lists",
