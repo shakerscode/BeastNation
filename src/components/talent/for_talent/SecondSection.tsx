@@ -63,7 +63,7 @@ const SecondSection = () => {
           viewport={{ once: true, amount: 0.2 }}
           className="text-center "
         >
-          <h1 className="text-3xl lg:text-6xl font-semibold text-center w-full">
+          <h1 className="text-3xl lg:text-6xl font-bold font-display text-center w-full">
             Your one-stop shop to evolve your <br />
             <span className="text-beast-purple">content</span> &{" "}
             <span className="text-beast-purple">brand</span>
@@ -88,11 +88,6 @@ const SecondSection = () => {
           </p>
         </motion.div>
       </section>
-
-      <div className="pb-6 px-4">
-        <TalentFilter />
-        <TalentGrid />
-      </div>
     </>
   );
 };
