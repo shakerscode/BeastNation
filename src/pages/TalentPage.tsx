@@ -8,6 +8,7 @@ import { TalentGrid } from "@/components/talent/find_talent/TalentGrid";
 import { useTalentStore } from "@/store/useTalentStore";
 import { useEffect } from "react";
 import heroImg from "/img/marketing_services/FindTalent.png";
+import CreatorWithBrand from "@/components/talent/find_talent/CreatorWithBrand";
 
 export const TalentPage = () => {
   const {
@@ -59,21 +60,22 @@ export const TalentPage = () => {
 
   return (
     <>
-      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto pt-10 md:pt-0">
+      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto pt-10 md:pt-10">
         <MarketingHeroSection
           title="Your Campaign, Our Creators"
           description="Tap into the in-house agency representing the largest global creator roster."
           img={heroImg}
           hideBreadcrumb={true}
         />
-        <CategorySection />
-        <div className="pb-6 px-4">
-          <TalentFilter />
-          <TalentGrid />
-        </div>
-        <CreatorSection />
       </div>
-      <div className="mt-8 md:mt-12 border-t">
+      <div className="w-full 2xl:max-w-[1536px] mx-auto overflow-x-auto md:py-10 scrollbar-hidden">
+        <CreatorWithBrand />
+      </div>
+      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto pt-10 md:pt-10">
+        <CreatorSection />
+        <CategorySection />
+      </div>
+      <div className="mt-8 md:mt-0 border-t">
         <CommonCTA
           title={
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 max-w-4xl mx-auto">

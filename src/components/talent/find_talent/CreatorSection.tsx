@@ -3,7 +3,7 @@ import creatorImg from "/img/marketing_services/creator.png";
 
 const CreatorSection = () => {
   return (
-    <div className="md:flex pt-16 md:pt-24 px-4 items-center gap-10">
+    <div className="md:flex pt-16 md:pt-24 px-4 md:px-0 pb-0 md:pb-36 items-center gap-10">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { MoveRight } from "lucide-react";
 import { Link } from "react-router";
+import CommonGetInTouchBtn from "../common/CommonGetInTouchBtn";
 
 interface IPageProps {
   pageName?: string;
@@ -21,7 +22,7 @@ const MarketingHeroSection = ({
   hideBreadcrumb,
 }: IPageProps) => {
   return (
-    <section className="relative w-full min-h-screen flex items-center py-16">
+    <section className="relative w-full min-h-screen flex items-center">
       <div className="px-4 sm:px-6 lg:px-8 w-full">
         {/* Animated background elements */}
         <div className="absolute inset-0 -z-10">
@@ -112,16 +113,7 @@ const MarketingHeroSection = ({
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.8 }}
             >
-              <Link to={"/contact"}>
-                <Button className="bg-primary-gradient text-white hover:shadow-glow transition-shadow px-8 py-7 text-lg font-medium">
-                  Get In Touch{" "}
-                  <MoveRight
-                    size={32}
-                    className="transform transition-transform duration-300 group-hover:translate-x-1"
-                    strokeWidth={3}
-                  />
-                </Button>
-              </Link>
+              <CommonGetInTouchBtn />
             </motion.div>
           </div>
 
@@ -130,7 +122,7 @@ const MarketingHeroSection = ({
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.9, delay: 0.5 }}
-            className="relative"
+            className="relative p-10"
           >
             <motion.div
               className="relative z-10"
