@@ -1,4 +1,5 @@
-import CareerHero from "@/components/about/Careers/Careerhero";
+ 
+import CareerHero from "@/components/about/Careers/CareerHero";
 import CultureAndCommunity from "@/components/about/Careers/CultureAndCommunity";
 import DiversityInclusion from "@/components/about/Careers/Diversity&Inclusion";
 import IntroSection from "@/components/about/Careers/IntroSection";
