@@ -55,7 +55,7 @@ const SecondSection = () => {
 
   return (
     <>
-      <section className="py-14 md:pb-20 md:pt-2">
+      <section className="py-0 pb-10 md:pb-20 md:pt-2">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -63,7 +63,7 @@ const SecondSection = () => {
           viewport={{ once: true, amount: 0.2 }}
           className="text-center "
         >
-          <h1 className="text-3xl lg:text-6xl font-bold font-display text-center w-full">
+          <h1 className="capitalize text-3xl lg:text-6xl font-bold font-display text-center w-full">
             Your one-stop shop to evolve your <br />
             <span className="text-beast-purple">content</span> &{" "}
             <span className="text-beast-purple">brand</span>
@@ -76,7 +76,7 @@ const SecondSection = () => {
           viewport={{ once: true, amount: 0.2 }}
           className="text-center "
         >
-          <p className="mt-3 lg:mt-5 text-base text-justify mx-auto w-4/5">
+          <p className="mt-3 lg:mt-5 text-base text-center mx-auto w-4/5">
             Trendy Nation Talent is the largest creator roster in the world,
             representing over 900 diverse creators across 35 verticals. We
             specialize in growing creator and athlete influencers into household

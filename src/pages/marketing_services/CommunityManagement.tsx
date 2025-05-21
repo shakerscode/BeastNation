@@ -12,8 +12,13 @@ const CommunityManagement = () => {
   return (
     <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto">
       <MarketingHeroSection
-        pageName="Community Management"
-        title="Social ROI Made Real"
+        pageName="Community Management" 
+        title={
+          <h2 className="text-3xl md:text-6xl font-bold font-display mb-6 capitalize">
+            Social ROI
+            <span className="text-beast-purple-light"> Made Real</span>
+          </h2>
+        } 
         description="Humanize your brand with community-centric, commerce-driving strategy."
         img={CommunityImg}
       />
@@ -26,7 +31,12 @@ const CommunityManagement = () => {
       <ServicesShowcaseSection services={brandEngagementData} />
       <PerformanceDriven
         data={socialSolutionsData}
-        title={"Be always-on for your audience"}
+        title={
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">
+            Be always-on for{" "}
+            <span className="text-beast-purple-light">your audience</span>
+          </h2>
+        }
       />
       <CommonSubFooter
         title="Humanize Your Community Management"

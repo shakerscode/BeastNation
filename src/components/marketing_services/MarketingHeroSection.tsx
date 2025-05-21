@@ -3,10 +3,11 @@ import { motion } from "framer-motion";
 import { MoveRight } from "lucide-react";
 import { Link } from "react-router";
 import CommonGetInTouchBtn from "../common/CommonGetInTouchBtn";
+import { ReactNode } from "react";
 
 interface IPageProps {
   pageName?: string;
-  title: string;
+  title: string | ReactNode;
   description: string;
   quote?: string;
   img: string;
@@ -68,20 +69,24 @@ const MarketingHeroSection = ({
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center lg:-mt-8">
           {/* Left Content */}
           <div>
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.2 }}
-              className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-none"
-            >
-              {title}
-            </motion.h1>
+            {typeof title === "string" ? (
+              <motion.h1
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.2 }}
+                className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-none"
+              >
+                {title}
+              </motion.h1>
+            ) : (
+              title
+            )}
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.4 }}
-              className="text-white/90 text-xl mb-12"
+              className="text-white/90 text-lg mb-6"
             >
               {description}
             </motion.p>
@@ -137,7 +142,7 @@ const MarketingHeroSection = ({
               <div className="w-full max-w-2xl mx-auto overflow-hidden">
                 <img
                   src={img}
-                  alt={title}
+                  alt={"Hero Image"}
                   className="w-full h-full object-cover"
                 />
               </div>

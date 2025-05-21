@@ -14,7 +14,13 @@ const SocialContentStudio = () => {
     <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto">
       <MarketingHeroSection
         pageName="Social Content Studio"
-        title="Creating Award-Winning Moments"
+        title={
+          <h2 className="text-3xl md:text-6xl font-bold font-display mb-6 capitalize">
+            Creating{" "}
+            <span className="text-beast-purple-light">Award-Winning</span>{" "}
+            Moments
+          </h2>
+        }
         description="Light the spark on unforgettable cultural moments."
         img={SocialContentImg}
       />
@@ -30,7 +36,12 @@ const SocialContentStudio = () => {
       <ContentTracks />
       <PerformanceDriven
         data={embeddingBrands}
-        title={"Embedding Brands Into Culture"}
+        title={
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">
+            <span className="text-beast-purple-light">Embedding Brands</span>{" "}
+            Into Culture
+          </h2>
+        }
       />
       <CommonSubFooter
         title="Create Award-Winning Moments"

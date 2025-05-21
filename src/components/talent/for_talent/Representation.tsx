@@ -4,7 +4,7 @@ export default function Representation() {
   return (
     <section className="py-20 px-4">
       <div className="grid md:grid-cols-2 gap-10 items-center">
-        <div className="relative w-full h-full">
+        <div className="relative w-full h-full p-0 md:p-5">
           <motion.img
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -17,8 +17,9 @@ export default function Representation() {
         </div>
         <div>
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            360° Creator Representation
+            360° Creator <span className="text-beast-purple-light">Representation</span>
           </h2>
+          
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-6 text-base text-gray-200">
             <ul className="space-y-2 list-disc list-inside">
               <li>Brand deals and partnerships</li>

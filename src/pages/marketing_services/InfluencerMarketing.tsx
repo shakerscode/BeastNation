@@ -13,7 +13,12 @@ const InfluencerMarketing = () => {
     <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto">
       <MarketingHeroSection
         pageName="Influencer marketing"
-        title="Transform Your Marketing"
+        title={
+          <h2 className="text-3xl md:text-6xl font-bold font-display mb-6 capitalize">
+            Transform Your
+            <span className="text-beast-purple-light"> Marketing</span>
+          </h2>
+        }
         description="with the Leader in Influencer Innovation"
         quote="true"
         img={InfluencerMarketingImg}

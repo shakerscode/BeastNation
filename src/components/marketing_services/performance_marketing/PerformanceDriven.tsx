@@ -23,7 +23,7 @@ const ValueItem = ({
       }`}
     >
       <motion.div
-        className={`w-32 h-32 flex-1 flex-shrink-0 flex items-center ${
+        className={`w-28 h-28 flex-1 flex-shrink-0 flex items-center ${
           isRight ? "justify-start" : "justify-end"
         } p-6`}
         initial={{ x: isRight ? 100 : -100, opacity: 0 }}
@@ -34,9 +34,9 @@ const ValueItem = ({
         {icon}
       </motion.div>
       <div className={`flex-1 flex flex-col ${isRight ? "items-end" : ""}`}>
-        <h3 className="text-2xl md:text-3xl font-bold mb-4">{title}</h3>
+        <h3 className="text-2xl md:text-3xl text-white font-bold mb-4">{title}</h3>
         <p
-          className={`text-gray-600 dark:text-gray-400 text-lg ${
+          className={`text-white/80 text-sm md:text-lg ${
             isRight ? "text-end" : "text-start"
           }`}
         >
@@ -58,9 +58,7 @@ export const PerformanceDriven = ({ data, title }) => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4">
-            {title}
-          </h2>
+          {title}
         </motion.div>
 
         <div className="space-y-8 md:space-y-0">
