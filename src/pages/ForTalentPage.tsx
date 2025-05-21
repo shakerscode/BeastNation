@@ -26,7 +26,7 @@ const ForTalentPage = () => {
         />
         <SecondSection />
       </div>
-      <div className="w-full 2xl:max-w-[1536px] mx-auto overflow-x-auto md:py-10 scrollbar-hidden">
+      <div className="w-full 2xl:max-w-[1536px] mx-auto overflow-x-auto pt-20 md:pt-0 md:py-10 scrollbar-hidden">
         <CreatorWithBrand />
       </div>
       <div>

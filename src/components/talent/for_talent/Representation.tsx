@@ -16,7 +16,7 @@ export default function Representation() {
           />
         </div>
         <div>
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 w-full">
             360° Creator <span className="text-beast-purple-light">Representation</span>
           </h2>
           

@@ -18,7 +18,7 @@ const ValueItem = ({
 }: ValueItemProps) => {
   return (
     <div
-      className={`flex flex-col md:flex-row items-center gap-8 md:gap-12 lg:gap-16 py-12 md:py-16 ${
+      className={`flex flex-col md:flex-row items-center gap-0 md:gap-12 lg:gap-16 py-0 md:py-16 ${
         isRight ? "md:flex-row-reverse" : ""
       }`}
     >
@@ -33,11 +33,13 @@ const ValueItem = ({
       >
         {icon}
       </motion.div>
-      <div className={`flex-1 flex flex-col ${isRight ? "items-end" : ""}`}>
-        <h3 className="text-2xl md:text-3xl text-white font-bold mb-4">{title}</h3>
+      <div className={`flex-1 flex flex-col ${isRight ? "items-center md:items-end" : "items-center md:items-start"}`}>
+        <h3 className="text-2xl md:text-3xl text-white font-bold mb-4">
+          {title}
+        </h3>
         <p
           className={`text-white/80 text-sm md:text-lg ${
-            isRight ? "text-end" : "text-start"
+            isRight ? "text-center md:text-end" : "text-center md:text-start"
           }`}
         >
           {description}
@@ -49,14 +51,14 @@ const ValueItem = ({
 
 export const PerformanceDriven = ({ data, title }) => {
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-10 md:py-24">
       <div className="px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="text-center mb-0 md:mb-12"
         >
           {title}
         </motion.div>
