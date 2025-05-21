@@ -22,8 +22,7 @@ import DetailedCaseStudy from "@/pages/resources/DetailedCaseStudy";
 import NewsAndPress from "@/pages/resources/NewsAndPress";
 import { TalentDetailPage } from "@/pages/TalentDetailPage";
 import { TalentPage } from "@/pages/TalentPage";
-import { createBrowserRouter } from "react-router";
-import OurStory from "@/pages/about/OurStory";
+import { createBrowserRouter } from "react-router"; 
 import Careers from "@/pages/about/Careers";
  
 

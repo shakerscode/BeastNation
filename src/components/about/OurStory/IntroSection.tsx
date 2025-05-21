@@ -1,6 +1,5 @@
 import CommonHeading from "@/components/common/CommonHeading";
 import { icons } from "@/constants/fakeOurStory";
-
 import { motion } from "framer-motion"; 
 
 const IntroSection = () => {

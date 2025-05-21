@@ -7,13 +7,19 @@ import MarketingHeroSection from "@/components/marketing_services/MarketingHeroS
 import OurWork from "@/components/marketing_services/OurWork";
 import { influencerWorkData } from "@/utils/fakeData";
 import InfluencerMarketingImg from "/img/services/influencer_markting.png";
+import CommonCTA from "@/components/common/CommonCTA";
 
 const InfluencerMarketing = () => {
   return (
-    <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto">
+    <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto pt-28 md:pt-0">
       <MarketingHeroSection
         pageName="Influencer marketing"
-        title="Transform Your Marketing"
+        title={
+          <h2 className="text-3xl md:text-6xl font-bold font-display mb-6 capitalize">
+            Transform Your
+            <span className="text-beast-purple-light"> Marketing</span>
+          </h2>
+        }
         description="with the Leader in Influencer Innovation"
         quote="true"
         img={InfluencerMarketingImg}
@@ -48,9 +54,15 @@ const InfluencerMarketing = () => {
       <AgencyValueSection />
       <OurWork data={influencerWorkData} />
       <AICapabilitiesSection />
-      <CommonSubFooter
-        title="Elevate your influence"
-        description="Ready to scale your brand’s influence in the marketplace?"
+
+      <CommonCTA
+        title={
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold font-display text-white mb-4 md:max-w-4xl mx-auto capitalize">
+            Elevate your
+            <span className="text-beast-purple-light"> influence</span>
+          </h1>
+        }
+        subTitle="Ready to scale your brand’s influence in the marketplace?"
       />
     </div>
   );

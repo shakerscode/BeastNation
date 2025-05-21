@@ -23,7 +23,7 @@ const ServiceItem = ({
       viewport={{ once: true }}
     >
       <div className="text-beast-purple-dark mb-4">
-        <div className="w-16 h-16 flex items-center justify-center border-2 border-beast-500 rounded-md">
+        <div className="w-16 h-16 flex items-center justify-center border-2 border-beast-purple-light text-beast-purple-light rounded-md ">
           {icon}
         </div>
       </div>

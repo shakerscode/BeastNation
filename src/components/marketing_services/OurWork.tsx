@@ -63,16 +63,16 @@ const OurWork = ({
         {!hideHeading && (
           <div className="text-center mb-16">
             <motion.h2
-              className="text-3xl md:text-4xl font-bold mb-4"
+              className="text-3xl md:text-5xl lg:text-6xl font-display font-bold mb-4"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <CommonSubHeading subHead=" Our Works" shouldCol />
+               Our <span className="text-beast-purple-light">Works</span>
             </motion.h2>
             <motion.p
-              className="text-gray-400 max-w-2xl mx-auto"
+              className="text-white/80 max-w-2xl mx-auto"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -134,7 +134,7 @@ const OurWork = ({
 
                             {isActive && (
                               <motion.div
-                                className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6"
+                                className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end md:p-6"
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 transition={{ duration: 0.4 }}
