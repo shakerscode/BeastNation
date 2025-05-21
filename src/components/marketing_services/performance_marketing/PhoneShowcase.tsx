@@ -13,9 +13,13 @@ export const PhoneShowcase = ({ title, description, photo }) => {
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-6">
-              {title}
-            </h2>
+            {typeof title === "string" ? (
+              <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6">
+                {title}
+              </h2>
+            ) : (
+              title
+            )}
             <p className="text-lg text-gray-700 dark:text-gray-300 mb-8">
               {description}
             </p>

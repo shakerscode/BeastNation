@@ -16,7 +16,7 @@ function CommonCTA({
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.1 }}
         viewport={{ once: true, amount: 0.2 }}
-        className="text-center "
+        className="text-center"
       >
         {title}
         <p className="text-white/70  max-w-2xl mx-auto mb-8 text-base md:text-lg">

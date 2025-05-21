@@ -19,9 +19,9 @@ function CommonHeading({
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.4 }}
       viewport={{ once: true, amount: 0.3 }}
-      className="text-3xl md:text-5xl font-bold font-display"
+      className="text-3xl md:text-5xl lg:text-6xl font-bold font-display capitalize"
     >
-      {beforeHighlight}{" "}
+      {beforeHighlight}
       <span className="text-beast-purple-light">{highlight}</span>{" "}
       {lineBreakAfterHighlight && <br />}
       {afterHighlight}

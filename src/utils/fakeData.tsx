@@ -1226,7 +1226,7 @@ export const find_talent_categories = [
   },
   {
     title: "Professional Experts",
-    image: "/img/marketing_services/professional-expart.jpeg",
+    image: "https://img.freepik.com/free-photo/pensive-concentrated-managers-standing-modern-cafe_1262-17088.jpg",
   },
   {
     title: "Food",

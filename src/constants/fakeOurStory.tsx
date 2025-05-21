@@ -14,7 +14,7 @@ export const executives = [
       "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
   },
   {
-    name: "Michael Chen",
+    name: "Hervy Spectar",
     title: "Chief Creative Officer",
     image:
       "https://img.freepik.com/free-photo/portrait-young-handsome-man-jean-shirt-smiling-with-crossed-arms_176420-12083.jpg",

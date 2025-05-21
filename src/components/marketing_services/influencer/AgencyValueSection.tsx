@@ -11,19 +11,23 @@ import {
 export const AgencyValueSection = () => {
   return (
     <section className="py-16 md:py-24 text-white">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4">  
         <motion.h2
-          className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-center"
+          className="text-3xl md:text-4xl lg:text-5xl lg:text-6xl font-bold mb-8 text-center max-w-5xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          The Influencer Agency Built For Marketers Seeking Measurable Growth
+          The Influencer Agency{" "}
+          <span className="text-beast-purple-light">
+            Built For Marketers Seeking
+          </span>{" "}
+          Measurable Growth
         </motion.h2>
 
         <motion.p
-          className="text-lg md:text-xl mb-12 max-w-4xl mx-auto text-gray-300"
+          className="text-lg md:text-xl mb-12 max-w-4xl mx-auto text-gray-300 text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}

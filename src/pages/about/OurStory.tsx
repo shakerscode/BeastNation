@@ -3,8 +3,8 @@ import LandmarkSection from "@/components/about/OurStory/LandmarkSection";
 import LeadershipSection from "@/components/about/OurStory/LeadershipSection";
 import HeroSection from "@/components/about/OurStory/OurStoryHeader";
 import CommonCTA from "@/components/common/CommonCTA";
-import React from "react";
 
+ 
 function OurStory() {
   return (
     <>
