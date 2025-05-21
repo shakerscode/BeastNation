@@ -23,6 +23,9 @@ import NewsAndPress from "@/pages/resources/NewsAndPress";
 import { TalentDetailPage } from "@/pages/TalentDetailPage";
 import { TalentPage } from "@/pages/TalentPage";
 import { createBrowserRouter } from "react-router";
+import OurStory from "@/pages/about/OurStory";
+import Careers from "@/pages/about/Careers";
+ 
 
 export const router = createBrowserRouter([
   {
@@ -83,7 +86,7 @@ export const router = createBrowserRouter([
             Component: BusinessIntelligence,
           },
         ],
-      },
+      }, 
       {
         path: "influencer-marketing-trends-report",
         hydrateFallbackElement: <CommonLoading />,
@@ -149,6 +152,11 @@ export const router = createBrowserRouter([
             Component: OurStory,
           },
         ],
+      },
+      {
+        path: "careers",
+        hydrateFallbackElement: <CommonLoading />,
+        Component: Careers,
       },
     ],
   },

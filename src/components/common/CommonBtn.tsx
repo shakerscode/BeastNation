@@ -1,12 +1,17 @@
-import { MoveRight } from "lucide-react";
-import { useNavigate } from "react-router";
+import React from "react";
 import { Button } from "../ui/button";
+import { MoveRight } from "lucide-react";
 
-function CommonGetInTouchBtn({ title = "Get In Touch" }: { title?: string }) {
-  const navigate = useNavigate();
+function CommonBtn({
+  title = "Get In Touch",
+  onClick,
+}: {
+  title?: string;
+  onClick?: () => void;
+}) {
   return (
     <Button
-      onClick={() => navigate("/contact")}
+      onClick={onClick}
       size="lg"
       className="bg-primary-gradient text-base hover:bg-beast-purple shadow-glow w-fit"
     >
@@ -19,4 +24,4 @@ function CommonGetInTouchBtn({ title = "Get In Touch" }: { title?: string }) {
   );
 }
 
-export default CommonGetInTouchBtn;
+export default CommonBtn;
