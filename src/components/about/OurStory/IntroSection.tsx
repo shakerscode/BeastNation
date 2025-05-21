@@ -34,14 +34,14 @@ const IntroSection = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true, amount: 0.3 }}
               key={item.title}
-              className="flex flex-col items-center text-center p-8 border border-gray-400/40 bg-black/90 shadow-sm animate-fade-in"
+              className="cursor-pointer hover:bg-gray-100/10 transition-all ease-in-out duration-300 flex flex-col items-center text-center p-8 border border-gray-400/40 bg-black/90 shadow-sm animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-4">
-                <item.icon size={20} className="text-beast-purple-light" />
+                <item.icon size={20} className="text-beast-purple-light"strokeWidth={2.5} />
               </div>
               <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-              <p className="text-gray-600 text-sm">{item.description}</p>
+              <p className="text-white/80 text-sm">{item.description}</p>
             </motion.div>
           ))}
         </div>

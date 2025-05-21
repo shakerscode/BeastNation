@@ -92,7 +92,14 @@ export const navLinks = [
       { name: "Blogs", path: "/resources/blogs" },
     ],
   },
-  { name: "About", path: "/about" },
+  {
+    name: "About",
+    path: "/about/our-story",
+    children: [
+      { name: "Our Story", path: "/about/our-story" },
+      { name: "Careers", path: "/careers" },
+    ],
+  },
 ];
 
 export const what_we_offer = [

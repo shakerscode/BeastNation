@@ -36,7 +36,7 @@ const LandmarkSection = () => {
         >
           {/* Left Panel: Portrait & Details */}
           <div className="w-full lg:w-1/2">
-            <div className="relative bg-gray-100 shadow-xl rounded-xl overflow-hidden">
+            <div className="relative bg-gray-100 shadow-xl max-h-[520px] h-full overflow-hidden">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={activeIndex}
