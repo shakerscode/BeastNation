@@ -45,17 +45,6 @@ export const ContactPage = () => {
       {/* Contact Form and Information */}
 
       <ContactSection />
-
-      {/* Map Section */}
-      <section className="py-12">
-        <div className="container mx-auto px-4">
-          <div className="bg-gray-200 dark:bg-gray-800 h-96 rounded-xl flex items-center justify-center">
-            <p className="text-gray-600 dark:text-gray-400">
-              Interactive map would be displayed here
-            </p>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
