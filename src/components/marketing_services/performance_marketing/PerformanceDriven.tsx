@@ -58,7 +58,7 @@ export const PerformanceDriven = ({ data, title }) => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-center mb-0 md:mb-12"
+          className="text-center mb-0 md:mb-12 md:max-w-3xl mx-auto"
         >
           {title}
         </motion.div>

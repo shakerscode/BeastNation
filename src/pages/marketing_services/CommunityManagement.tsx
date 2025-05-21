@@ -7,18 +7,19 @@ import { ServicesShowcaseSection } from "@/components/marketing_services/perform
 import { brandEngagementData, socialSolutionsData } from "@/utils/fakeData";
 import NEW_Rooted from "/img/marketing_services/NEW_Rooted.png";
 import CommunityImg from "/img/services/community_management.png";
+import CommonCTA from "@/components/common/CommonCTA";
 
 const CommunityManagement = () => {
   return (
     <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto">
       <MarketingHeroSection
-        pageName="Community Management" 
+        pageName="Community Management"
         title={
           <h2 className="text-3xl md:text-6xl font-bold font-display mb-6 capitalize">
             Social ROI
             <span className="text-beast-purple-light"> Made Real</span>
           </h2>
-        } 
+        }
         description="Humanize your brand with community-centric, commerce-driving strategy."
         img={CommunityImg}
       />
@@ -38,9 +39,18 @@ const CommunityManagement = () => {
           </h2>
         }
       />
-      <CommonSubFooter
-        title="Humanize Your Community Management"
-        description="Connect with Trendy Nation today to learn how we can help you elevate your social presence."
+
+      <CommonCTA
+        title={
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold font-display text-white mb-4 md:max-w-4xl mx-auto capitalize">
+            Humanize Your
+            <span className="text-beast-purple-light">
+              {" "}
+              Community Management
+            </span>
+          </h1>
+        }
+        subTitle="Connect with Trendy Nation today to learn how we can help you elevate your social presence."
       />
     </div>
   );

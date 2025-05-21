@@ -6,6 +6,7 @@ import { PerformanceDriven } from "@/components/marketing_services/performance_m
 import { ServicesShowcaseSection } from "@/components/marketing_services/performance_marketing/ServicesShowcaseSection";
 import { analyticsStrategyData, measurementGoalsData } from "@/utils/fakeData";
 import BusinessImg from "/img/services/business_intelligence.png";
+import CommonCTA from "@/components/common/CommonCTA";
 
 const BusinessIntelligence = () => {
   return (
@@ -17,7 +18,7 @@ const BusinessIntelligence = () => {
             Modernizing
             <span className="text-beast-purple-light"> measurement</span>
           </h2>
-        } 
+        }
         description="Get a read on social marketing campaign performance and ROAS."
         img={BusinessImg}
       />
@@ -45,9 +46,15 @@ const BusinessIntelligence = () => {
           </h2>
         }
       />
-      <CommonSubFooter
-        title="Modernize Your Measurement"
-        description="Go beyond vanity metrics with the best-in-class business intelligence team."
+
+      <CommonCTA
+        title={
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold font-display text-white mb-4 md:max-w-5xl mx-auto capitalize">
+            Modernize Your
+            <span className="text-beast-purple-light"> Measurement</span>
+          </h1>
+        }
+        subTitle="Go beyond vanity metrics with the best-in-class business intelligence team."
       />
     </div>
   );

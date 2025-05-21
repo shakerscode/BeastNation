@@ -6,6 +6,7 @@ import { PerformanceDriven } from "@/components/marketing_services/performance_m
 import { ServicesShowcaseSection } from "@/components/marketing_services/performance_marketing/ServicesShowcaseSection";
 import { performanceDrivenData, servicesShowcase } from "@/utils/fakeData";
 import PerformanceImg from "/img/services/performance_marketing.png";
+import CommonCTA from "@/components/common/CommonCTA";
 
 const PerformanceMarketing = () => {
   return (
@@ -14,10 +15,10 @@ const PerformanceMarketing = () => {
         pageName="Performance Marketing"
         title={
           <h2 className="text-3xl md:text-6xl font-bold font-display mb-6 capitalize">
-            <span className="text-beast-purple-light">Unparalleled</span>{" "}
-            social commerce
+            <span className="text-beast-purple-light">Unparalleled</span> social
+            commerce
           </h2>
-        } 
+        }
         description="Scale your growth with social-first paid media."
         img={PerformanceImg}
       />
@@ -45,9 +46,17 @@ const PerformanceMarketing = () => {
           </h2>
         }
       />
-      <CommonSubFooter
-        title="Quantify Your Social-First Transformation"
-        description="Connect with Viral Nation today to take the first step in scaling your brand’s growth."
+
+      <CommonCTA
+        title={
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold font-display text-white mb-4 md:max-w-4xl mx-auto capitalize">
+            Quantify Your Social
+            <span className="text-beast-purple-light">
+              -First Transformation
+            </span>
+          </h1>
+        }
+        subTitle="Ready to scale your brand’s influence in the marketplace?"
       />
     </div>
   );

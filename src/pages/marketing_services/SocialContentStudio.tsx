@@ -1,5 +1,4 @@
-import ClientLogos from "@/components/home/ClientLogos";
-import CommonSubFooter from "@/components/marketing_services/CommonSubFooter";
+import ClientLogos from "@/components/home/ClientLogos"; 
 import MarketingHeroSection from "@/components/marketing_services/MarketingHeroSection";
 import { ContentTracks } from "@/components/marketing_services/performance_marketing/ContentTracks";
 import { PerformanceDriven } from "@/components/marketing_services/performance_marketing/PerformanceDriven";
@@ -8,6 +7,7 @@ import { ServicesShowcaseSection } from "@/components/marketing_services/perform
 import { embeddingBrands, servicesShowcaseSocial } from "@/utils/fakeData";
 import InterviewStar from "/img/marketing_services/Interview_star.png";
 import SocialContentImg from "/img/services/social_content_studio.png";
+import CommonCTA from "@/components/common/CommonCTA";
 
 const SocialContentStudio = () => {
   return (
@@ -43,9 +43,15 @@ const SocialContentStudio = () => {
           </h2>
         }
       />
-      <CommonSubFooter
-        title="Create Award-Winning Moments"
-        description="Get in touch with our culture-first team of specialists."
+
+      <CommonCTA
+        title={
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold font-display text-white mb-4 md:max-w-4xl mx-auto capitalize">
+            Create Award
+            <span className="text-beast-purple-light">-Winning Moments</span>
+          </h1>
+        }
+        subTitle="Get in touch with our culture-first team of specialists."
       />
     </div>
   );

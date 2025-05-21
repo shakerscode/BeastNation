@@ -8,6 +8,7 @@ import {
   experientialMarketingData,
 } from "@/utils/fakeData";
 import ExperientialImg from "/img/services/experiential_marketing.png";
+import CommonCTA from "@/components/common/CommonCTA";
 
 const ExperientialMarketing = () => {
   return (
@@ -45,9 +46,15 @@ const ExperientialMarketing = () => {
           </h2>
         }
       />
-      <CommonSubFooter
-        title="Extend Your Brand Footprint"
-        description="Partner with the global creative service experts in original content, experiences, and collaborations."
+
+      <CommonCTA
+        title={
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold font-display text-white mb-4 md:max-w-4xl mx-auto capitalize">
+            Extend Your
+            <span className="text-beast-purple-light"> Brand Footprint</span>
+          </h1>
+        }
+        subTitle="Partner with the global creative service experts in original content, experiences, and collaborations."
       />
     </div>
   );
