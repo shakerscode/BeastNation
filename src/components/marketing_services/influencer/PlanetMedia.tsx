@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
+import { ReactNode } from "react";
 
 interface IPageProps {
-  title: string;
+  title?: string;
+  jsxTitle?: ReactNode;
   description: string;
+  description2?: string;
   cardTitle1: string;
   cardPara1: string;
   cardTitle2: string;
@@ -15,7 +18,9 @@ interface IPageProps {
 
 export const PlanetMedia = ({
   title,
+  jsxTitle,
   description,
+  description2,
   cardTitle1,
   cardPara1,
   cardTitle2,
@@ -26,8 +31,8 @@ export const PlanetMedia = ({
   cardPara4,
 }: IPageProps) => {
   return (
-    <section className="py-20">
-      <div className="container mx-auto px-4">
+    <section className="md:py-20">
+      <div className="md:container mx-auto md:px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left column - Text content */}
           <motion.div
@@ -37,12 +42,21 @@ export const PlanetMedia = ({
             viewport={{ once: true }}
             className="max-w-2xl"
           >
-            <h2 className="text-4xl sm:text-5xl font-bold leading-tight mb-6">
-              {title}
-            </h2>
+            {jsxTitle ? (
+              jsxTitle
+            ) : (
+              <h2 className="text-4xl sm:text-5xl font-bold leading-tight mb-6">
+                {title}
+              </h2>
+            )}
             <p className="text-lg text-gray-700 dark:text-gray-300">
               {description}
             </p>
+            {description2 && (
+              <p className="text-lg text-gray-700 dark:text-gray-300 mt-4">
+                {description2}
+              </p>
+            )}
           </motion.div>
 
           {/* Right column - Statistics */}
