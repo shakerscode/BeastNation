@@ -1,9 +1,9 @@
+import { content } from "@/constants/fakeContent";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import CommonSubHeading from "../common/CommonSubHeading";
-import { content } from "@/constants/fakeContent";
 import { useNavigate } from "react-router";
+import CommonSubHeading from "../common/CommonSubHeading";
 
 const FeaturedContent = () => {
   const navigate = useNavigate();
@@ -49,7 +49,7 @@ const FeaturedContent = () => {
 
   return (
     <div className="py-20">
-      <div className="mb-6 flex items-end justify-between max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
+      <div className="mb-6 flex items-end justify-between max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="text-start">
           <CommonSubHeading subHead="Press & Media" />
           <motion.h2
@@ -94,7 +94,7 @@ const FeaturedContent = () => {
 
       <div
         ref={containerRef}
-        className="h-[600px] overflow-hidden relative"
+        className="h-[600px] overflow-hidden relative max-w-7xl 2xl:max-w-[1536px] mx-auto"
         id="content"
       >
         <motion.div
@@ -114,7 +114,7 @@ const FeaturedContent = () => {
           ref={innerRef}
           className="scroll-inner overflow-y-auto h-full flex flex-col gap-4"
         >
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 h-[600px] overflow-y-scroll px-4 md:px-28 lg:px-[140px] scrollbar-hidden">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 h-[600px] overflow-y-scroll px-4 md:px-8 scrollbar-hidden">
             {content.map((data, i) => (
               <motion.div
                 initial={{ opacity: 0, y: 20 }}

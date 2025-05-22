@@ -1,7 +1,6 @@
-import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
 import { services } from "@/constants/fakeService";
+import { motion } from "framer-motion";
 import CommonSubHeading from "../common/CommonSubHeading";
 
 const ServicesSection = () => {
@@ -11,7 +10,7 @@ const ServicesSection = () => {
       {/* Gradient  */}
       <div className="-z-20 absolute top-0 -right-20 w-48 md:w-80 h-48 md:h-80 rounded-full bg-beast-purple-dark blur-[100px] animate-pulse-gentle" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
+      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 h-full">
         <CommonSubHeading subHead=" What we offer" shouldCol />
         <div className="text-center mb-5 md:mb-10">
           <motion.h2

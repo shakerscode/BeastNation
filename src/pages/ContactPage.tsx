@@ -41,7 +41,7 @@ export const ContactPage = () => {
   };
 
   return (
-    <div className="bg-white dark:bg-black mt-10">
+    <div className="mt-10">
       {/* Contact Form and Information */}
 
       <ContactSection />

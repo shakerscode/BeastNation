@@ -1,6 +1,5 @@
-import React from "react";
-import { Check, Shield, ChartBar, Zap, Cloud } from "lucide-react";
 import { motion } from "framer-motion";
+import { ChartBar, Check, Cloud, Shield, Zap } from "lucide-react";
 
 const features = [
   {
@@ -34,7 +33,7 @@ const ProductFeatures = () => {
     <section className="py-20 relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-beast-accent/10 to-transparent -z-10" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left: Product Features List */}
           <div>

@@ -1,20 +1,20 @@
 import CommonHeading from "@/components/common/CommonHeading";
-import { ArrowRight } from "lucide-react";
-import { motion } from "framer-motion";
 import { directors, executives, seniorLeaders } from "@/constants/fakeOurStory";
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 
 const LeadershipSection = () => {
   return (
-    <section className="my-10 md:my-28 py-10 md:py-14 px-5 bg-gray-50">
-      <div className="w-full md:container mx-auto">
-        <div className="mb-10 text-black">
+    <section className="my-10 py-10 md:py-14 px-5">
+      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto">
+        <div className="mb-10 text-center">
           <CommonHeading
-            beforeHighlight="Meet Our"
+            beforeHighlight="Meet Our "
             highlight="Executive Leadership"
           />
         </div>
 
-        <div className="space-y-10 md:space-y-20 text-black">
+        <div className="space-y-10 md:space-y-20 ">
           {/* Executive Leadership */}
           <div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -32,9 +32,9 @@ const LeadershipSection = () => {
 
           {/* Senior Leadership */}
           <div>
-            <div className="mb-10 text-black">
+            <div className="mb-10 text-center">
               <CommonHeading
-                beforeHighlight="Meet Our"
+                beforeHighlight="Meet Our "
                 highlight="Senior Leadership"
               />
             </div>
@@ -53,9 +53,9 @@ const LeadershipSection = () => {
 
           {/* Board of Directors */}
           <div>
-            <div className="mb-10 text-black">
+            <div className="mb-10 text-center">
               <CommonHeading
-                beforeHighlight="Meet Our"
+                beforeHighlight="Meet Our "
                 highlight="Board of Directors"
               />
             </div>

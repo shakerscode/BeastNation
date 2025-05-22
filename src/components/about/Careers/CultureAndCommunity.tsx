@@ -9,7 +9,7 @@ function CultureAndCommunity() {
           <div className="w-full md:w-1/2">
             <div className="mb-6">
               <CommonHeading
-                beforeHighlight="Culture and"
+                beforeHighlight="Culture and "
                 highlight="Community"
               />
             </div>

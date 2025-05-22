@@ -1,6 +1,5 @@
 import CommonHeading from "@/components/common/CommonHeading";
 import { PlanetMedia } from "@/components/marketing_services/influencer/PlanetMedia";
-import React from "react";
 
 function DiversityInclusion() {
   return (
@@ -8,7 +7,7 @@ function DiversityInclusion() {
       jsxTitle={
         <div className="mb-6">
           <CommonHeading
-            beforeHighlight="Diversity, Equity,"
+            beforeHighlight="Diversity, Equity, "
             highlight="Inclusion, and Belonging"
           />
         </div>

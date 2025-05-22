@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 function HeroSection() {
   return (
     <section className="pt-36 pb-16 md:pt-48 md:pb-20">
-      <div className="md:container mx-auto">
-        <div className="flex flex-col md:flex-row gap-12 items-center">
-          <div className="w-full md:w-[60%]">
+      <div className="lg:px-6">
+        <div className="flex flex-col md:flex-row gap-12">
+          <div className="w-full md:w-[60%] md:flex flex-col justify-start items-start">
             <CommonSubHeading subHead="Our Story" />
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
@@ -53,8 +53,8 @@ function HeroSection() {
               <img
                 src="https://img.freepik.com/free-photo/group-people-working-out-business-plan-office_1303-15872.jpg"
                 alt="Our team in action"
-                className="w-full object-cover border border-white"
-                style={{ height: "350px" }}
+                className="w-full object-cover border border-white md:h-[450px] h-[300px]"
+                // style={{ height: "450px" }}
               />
               <div className="absolute -bottom-6 -right-6 w-24 h-24 border-b-2 border-r-2 border-beast-purple-light"></div>
             </motion.div>

@@ -4,11 +4,10 @@ import LeadershipSection from "@/components/about/OurStory/LeadershipSection";
 import HeroSection from "@/components/about/OurStory/OurStoryHeader";
 import CommonCTA from "@/components/common/CommonCTA";
 
- 
 function OurStory() {
   return (
     <>
-      <div className="w-full md:max-w-7xl mx-auto px-4 md:px-0">
+      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 md:px-0">
         <HeroSection />
         <IntroSection />
         <LandmarkSection />

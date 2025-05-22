@@ -1,6 +1,5 @@
-import { Search } from "lucide-react";
-import { motion } from "framer-motion";
 import CommonSearch from "@/components/common/CommonSearch";
+import { motion } from "framer-motion";
 
 const PlaybookCTA = () => {
   return (
@@ -12,7 +11,7 @@ const PlaybookCTA = () => {
       className=""
     >
       {/* CTA Box */}
-      <div className="max-w-7xl mx-auto bg-white text-black rounded-md flex flex-col md:flex-row items-center justify-between gap-3 md:gap-8 p-5 shadow-xl">
+      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto bg-white text-black rounded-md flex flex-col md:flex-row items-center justify-between gap-3 md:gap-8 p-5 shadow-xl">
         {/* Text Content */}
         <div className="flex-1">
           <h3 className="text-2xl md:text-2xl font-bold mb-2 text-center md:text-start w-full">

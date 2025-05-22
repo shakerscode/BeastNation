@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
-import { ArrowRight, ArrowLeft, MoveRight } from "lucide-react";
+import { influencer } from "@/constants/fakeInfluencers";
 import { motion } from "framer-motion";
+import { ArrowLeft, ArrowRight, MoveRight } from "lucide-react";
+import { useEffect, useState } from "react";
 import {
   FaFacebookF,
   FaInstagram,
@@ -8,7 +9,6 @@ import {
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
-import { influencer } from "@/constants/fakeInfluencers";
 import CommonSubHeading from "../common/CommonSubHeading";
 
 const TalentSection = () => {
@@ -19,7 +19,7 @@ const TalentSection = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-center flex-col mb-12 w-full">
-           <CommonSubHeading subHead="TELNETS" shouldCol/>
+          <CommonSubHeading subHead="TELNETS" shouldCol />
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -27,8 +27,8 @@ const TalentSection = () => {
             viewport={{ once: true, amount: 0.3 }}
             className="text-3xl md:text-5xl font-bold font-display mb-4 w-full md:max-w-5xl text-center"
           >
-            Elevating <span className="text-beast-purple-light">Brands</span> Through
-            Creator Excellence
+            Elevating <span className="text-beast-purple-light">Brands</span>{" "}
+            Through Creator Excellence
           </motion.h2>
 
           <motion.p
@@ -70,7 +70,6 @@ const FeaturedWork = () => {
     setPrevIndex(index);
     setIndex((prev) => (prev === 0 ? influencer.length - 1 : prev - 1));
   };
-  
 
   const nextSlide = () => {
     setIndex((prevIndex) =>
@@ -165,7 +164,7 @@ const FeaturedWork = () => {
             viewport={{ once: true, amount: 0.2 }}
             className="text-4xl md:text-6xl lg:text-[80px] md:leading-[90px] font-bold font-display mt-4"
           >
-            {current?.firstName} <br className="hidden md:block"/>
+            {current?.firstName} <br className="hidden md:block" />
             <span className="text-beast-purple-light">{current?.lastName}</span>
           </motion.h2>
 
