@@ -1,15 +1,15 @@
 import CommonHeading from "@/components/common/CommonHeading";
 import { icons } from "@/constants/fakeOurStory";
-import { motion } from "framer-motion"; 
+import { motion } from "framer-motion";
 
 const IntroSection = () => {
   return (
     <section className="py-10 md:py-20">
-      <div className="w-full md:container mx-auto">
+      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto">
         <div className="w-full md:max-w-5xl mx-auto mb-4 text-center">
           <CommonHeading
-            beforeHighlight="A Global Leader In"
-            highlight="Social Media Innovation"
+            beforeHighlight="A Global Leader In "
+            highlight="Social Media Innovation "
           />
         </div>
 
@@ -37,7 +37,11 @@ const IntroSection = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-4">
-                <item.icon size={20} className="text-beast-purple-light"strokeWidth={2.5} />
+                <item.icon
+                  size={20}
+                  className="text-beast-purple-light"
+                  strokeWidth={2.5}
+                />
               </div>
               <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
               <p className="text-white/80 text-sm">{item.description}</p>

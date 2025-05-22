@@ -1,4 +1,3 @@
- 
 import CareerHero from "@/components/about/Careers/CareerHero";
 import CultureAndCommunity from "@/components/about/Careers/CultureAndCommunity";
 import DiversityInclusion from "@/components/about/Careers/Diversity&Inclusion";
@@ -11,7 +10,7 @@ function Careers() {
   useScrollToTop();
   return (
     <>
-      <div className="max-w-7xl mx-auto px-4 md:px-0 w-full space-y-20 md:space-y-36 mb-10 md:mb-36">
+      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 md:px-0 w-full space-y-20 md:space-y-36 mb-10 md:mb-36">
         <CareerHero />
         <IntroSection />
         <WorkplaceBenefits />

@@ -1,6 +1,6 @@
 import CommonHeading from "@/components/common/CommonHeading";
-import { Users } from "lucide-react";
 import { motion } from "framer-motion";
+import { Users } from "lucide-react";
 
 function IntroSection() {
   const featureBlocks = [
@@ -63,7 +63,7 @@ function IntroSection() {
         <div className="text-center mb-16">
           <div className="mb-6">
             <CommonHeading
-              beforeHighlight="Living and Breathing"
+              beforeHighlight="Living and Breathing "
               highlight="Social Media"
             />
           </div>
@@ -91,15 +91,13 @@ function IntroSection() {
               viewport={{ once: true, amount: 0.3 }}
               key={block.title}
               style={{ animationDelay: `${index * 0.1}s` }}
-              className={`bg-white p-4 md:p-8 rounded-lg shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-xl`}
+              className={`p-4 md:p-8 rounded-lg shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-xl`}
             >
               <div className="mb-4 bg-beast-purple-light w-fit p-2 rounded-lg">
                 {block.icon}
               </div>
-              <h3 className="text-xl text-black font-bold mb-3">
-                {block.title}
-              </h3>
-              <p className="text-gray-600">{block.description}</p>
+              <h3 className="text-xl font-bold mb-3">{block.title}</h3>
+              <p className="text-gray-200">{block.description}</p>
             </motion.div>
           ))}
         </div>

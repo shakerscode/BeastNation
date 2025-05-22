@@ -1,6 +1,6 @@
-import React, { useEffect, useState, useRef } from "react";
-import { ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 
 const stats = [
   { value: 500, suffix: "+", label: "Successful Campaigns" },
@@ -70,13 +70,13 @@ const StatsSection = () => {
       {/* Abstract shape */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-beast-purple-dark opacity-10 blur-[100px]" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index*0.3 }}
+              transition={{ duration: 0.6, delay: index * 0.3 }}
               viewport={{ once: true, amount: 0.2 }}
               key={index}
               className="glass p-8 rounded-2xl relative group transition-all duration-500 hover:shadow-glow cursor-pointer"

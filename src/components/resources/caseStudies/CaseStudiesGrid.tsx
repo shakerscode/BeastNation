@@ -1,8 +1,8 @@
-import { MoveRight } from "lucide-react";
+import { detailedCaseStudies } from "@/constants/fakeCaseStudy";
 import { motion } from "framer-motion";
+import { MoveRight } from "lucide-react";
 import { useCallback } from "react";
 import { useNavigate } from "react-router";
-import { detailedCaseStudies } from "@/constants/fakeCaseStudy";
 
 const caseStudies = [
   {
@@ -78,7 +78,7 @@ function CaseStudiesGrid() {
   );
   return (
     <section className="md:p-5">
-      <div className="max-w-7xl mx-auto px-4 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {detailedCaseStudies.map((study, index) => (
           <motion.div
             onClick={() => handleNavigate(study?.slug)}

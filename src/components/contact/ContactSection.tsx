@@ -1,13 +1,9 @@
-import React from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import {
+  Award,
+  CheckCircle,
   HelpCircle,
   MessageSquare,
   Star,
-  Award,
-  CheckCircle,
 } from "lucide-react";
 import ContactForm from "./ContactForm";
 
@@ -19,7 +15,7 @@ const ContactSection = () => {
         <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-background to-transparent" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold font-display mb-4">
             Let's <span className="text-beast-purple-light">Collaborate</span>
@@ -32,46 +28,6 @@ const ContactSection = () => {
 
         <div className="glass border border-white/10 rounded-2xl overflow-hidden shadow-glow">
           <div className="grid grid-cols-1 lg:grid-cols-2">
-            {/* Left side: Form */}
-            {/* <div className="p-8 lg:p-12">
-              <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-white/70 mb-2">Name</label>
-                    <Input 
-                      placeholder="Your name" 
-                      className="bg-white/5 border-white/10 focus:border-beast-purple-light h-12"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-white/70 mb-2">Email</label>
-                    <Input 
-                      type="email" 
-                      placeholder="you@company.com" 
-                      className="bg-white/5 border-white/10 focus:border-beast-purple-light h-12"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-white/70 mb-2">Company</label>
-                  <Input 
-                    placeholder="Your company" 
-                    className="bg-white/5 border-white/10 focus:border-beast-purple-light h-12"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-white/70 mb-2">Message</label>
-                  <Textarea 
-                    placeholder="Tell us about your project..." 
-                    className="bg-white/5 border-white/10 focus:border-beast-purple-light min-h-[120px]"
-                  />
-                </div>
-                <Button className="w-full bg-primary-gradient shadow-glow hover:shadow-glow-lg transition-all duration-300">
-                  Send Message
-                </Button>
-              </form>
-            </div> */}
             <ContactForm />
 
             {/* Right side: Team photo and highlights */}

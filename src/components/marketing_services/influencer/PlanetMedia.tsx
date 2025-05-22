@@ -32,7 +32,7 @@ export const PlanetMedia = ({
 }: IPageProps) => {
   return (
     <section className="md:py-20">
-      <div className="md:container mx-auto px-4">
+      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left column - Text content */}
           <motion.div

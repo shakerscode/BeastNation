@@ -1,7 +1,6 @@
-import React from "react";
 import { Button } from "@/components/ui/button";
-import { Clock, ArrowUpRight, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { ArrowRight, ArrowUpRight, Clock } from "lucide-react";
 import CommonSubHeading from "../common/CommonSubHeading";
 
 const blogs = [
@@ -40,10 +39,10 @@ const blogs = [
 const BlogSection = () => {
   return (
     <section id="resources" className="py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-end">
           <div>
-            <CommonSubHeading subHead="Blog"/>
+            <CommonSubHeading subHead="Blog" />
             <div className="text-start mb-12">
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
@@ -52,8 +51,8 @@ const BlogSection = () => {
                 viewport={{ once: true, amount: 0.3 }}
                 className="text-3xl md:text-5xl font-bold font-display mb-4"
               >
-                Insights From the <span className="text-beast-purple-light">Creator</span>{" "}
-                Economy
+                Insights From the{" "}
+                <span className="text-beast-purple-light">Creator</span> Economy
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}

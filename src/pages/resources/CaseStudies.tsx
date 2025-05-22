@@ -1,13 +1,13 @@
+import CommonCTA from "@/components/common/CommonCTA";
 import CaseStudiesGrid from "@/components/resources/caseStudies/CaseStudiesGrid";
 import CaseStudiesHeader from "@/components/resources/caseStudies/CaseStudiesHeader";
-import CommonCTA from "@/components/common/CommonCTA";
 import useScrollToTop from "@/hooks/useScrollToTop";
 
 function CaseStudies() {
   useScrollToTop();
   return (
     <div className=" bg-gray-900/50 w-full space-y-8 md:space-y-12">
-      <div className="max-w-7xl mx-auto space-y-8 md:space-y-12">
+      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto space-y-8 md:space-y-12">
         {/* Hero Section */}
         <CaseStudiesHeader />
 

@@ -64,7 +64,7 @@ export const BlogPage = () => {
         <BlogsHeader />
 
         <div className="pb-12 pt-6">
-          <div className="container mx-auto px-4">
+          <div className="px-4">
             {/* Influencer Lists Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
               {currentItems.map((item) => (
