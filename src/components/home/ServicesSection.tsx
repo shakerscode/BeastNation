@@ -2,8 +2,10 @@ import { Button } from "@/components/ui/button";
 import { services } from "@/constants/fakeService";
 import { motion } from "framer-motion";
 import CommonSubHeading from "../common/CommonSubHeading";
+import { Link, useNavigate } from "react-router";
 
 const ServicesSection = () => {
+  const navigate = useNavigate();
   return (
     <section id="services" className="py-20 relative h-full">
       <div className="absolute right-0 top-0 w-1/3 h-full bg-gradient-to-l from-beast-purple-dark/10 to-transparent -z-10" />
@@ -55,6 +57,7 @@ const ServicesSection = () => {
                 <p className="text-white/70 flex-grow">{service.description}</p>
                 <div className="mt-6">
                   <Button
+                    onClick={() => navigate(service?.url)}
                     variant="ghost"
                     className="p-0 hover:bg-transparent hover:text-beast-purple-light"
                   >

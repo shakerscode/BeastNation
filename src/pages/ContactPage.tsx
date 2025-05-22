@@ -1,8 +1,11 @@
 import ContactSection from "@/components/contact/ContactSection";
 import { useToast } from "@/hooks/use-toast";
+import useScrollToTop from "@/hooks/useScrollToTop";
 import { useState } from "react";
 
 export const ContactPage = () => {
+  useScrollToTop();
+
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",

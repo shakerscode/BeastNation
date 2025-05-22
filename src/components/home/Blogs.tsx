@@ -2,41 +2,11 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ArrowRight, ArrowUpRight, Clock } from "lucide-react";
 import CommonSubHeading from "../common/CommonSubHeading";
-
-const blogs = [
-  {
-    title: "The Rise of Micro-Influencers in Brand Marketing",
-    excerpt:
-      "How smaller creators with highly engaged audiences are delivering better ROI than mega influencers.",
-    category: "Trends",
-    readTime: "5 min read",
-    image:
-      "https://images.unsplash.com/photo-1552581234-26160f608093?q=80&w=500&auto=format",
-    date: "May 2, 2025",
-  },
-  {
-    title: "AI in Influencer Marketing: Beyond the Hype",
-    excerpt:
-      "Practical applications of artificial intelligence that are transforming creator collaborations.",
-    category: "Technology",
-    readTime: "7 min read",
-    image:
-      "https://images.unsplash.com/photo-1535378620166-273708d44e4c?q=80&w=500&auto=format",
-    date: "April 28, 2025",
-  },
-  {
-    title: "Building Long-term Creator Partnerships",
-    excerpt:
-      "Why one-off collaborations are being replaced by strategic, long-term creator relationships.",
-    category: "Strategy",
-    readTime: "6 min read",
-    image:
-      "https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=500&auto=format",
-    date: "April 15, 2025",
-  },
-];
+import { useNavigate } from "react-router";
+import { blogs } from "@/constants/fakeBlogs";
 
 const BlogSection = () => {
+  const navigate = useNavigate();
   return (
     <section id="resources" className="py-20">
       <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -68,6 +38,7 @@ const BlogSection = () => {
             </div>
           </div>
           <motion.div
+            onClick={() => navigate("/resources/blogs")}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
