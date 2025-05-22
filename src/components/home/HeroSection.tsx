@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ChevronRight, Star } from "lucide-react";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router";
 
 const services = [
   {
@@ -25,6 +26,7 @@ const services = [
 ];
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   const [activeIndex, setActiveIndex] = useState(0);
 
   // Auto-rotate through services
@@ -93,11 +95,15 @@ const HeroSection = () => {
               viewport={{ once: true, amount: 0.2 }}
               className="flex flex-wrap gap-4 pt-4"
             >
-              <Button className="bg-primary-gradient shadow-glow hover:shadow-glow-lg text-white text-base px-6 transition-all ease-in-out duration-300">
+              <Button
+                onClick={() => navigate("/contact")}
+                className="bg-primary-gradient shadow-glow hover:shadow-glow-lg text-white text-base px-6 transition-all ease-in-out duration-300"
+              >
                 Get Started
                 <ChevronRight className="ml-2 h-4 w-4" />
               </Button>
               <Button
+                onClick={() => navigate("/services")}
                 variant="outline"
                 className="border-white/20 hover:bg-white/10 text-base transition-all ease-in-out duration-300"
               >

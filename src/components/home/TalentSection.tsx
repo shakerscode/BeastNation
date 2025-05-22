@@ -10,8 +10,10 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import CommonSubHeading from "../common/CommonSubHeading";
+import { useNavigate } from "react-router";
 
 const TalentSection = () => {
+  const navigate = useNavigate();
   return (
     <section id="talent" className="py-10 md:py-20 relative">
       {/* Gradient  */}
@@ -44,6 +46,7 @@ const TalentSection = () => {
           </motion.p>
 
           <motion.button
+          onClick={()=> navigate("/resources/influencer-lists")}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.7 }}

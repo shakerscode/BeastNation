@@ -123,7 +123,7 @@ const FeaturedContent = () => {
                 viewport={{ once: true, amount: 0.2 }}
                 key={data.id}
                 className="glass-dark bg-black/30 group relative cursor-pointer overflow-hidden rounded-xl h-[300px] md:h-[400px]"
-                // onClick={() => setSelectedVideo(video.id)}
+                onClick={() => navigate("/resources/news-and-press/trendynation-announces-strategic-partnership-with-tiktok-stars")}
               >
                 <div className="aspect-video overflow-hidden">
                   <img
