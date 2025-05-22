@@ -174,7 +174,7 @@ export default function ContactForm() {
       <div className="mt-6">
         <button
           type="submit"
-          className="px-6 py-2 border-2 border-beast-purple-light text-white hover:bg-beast-purple-light transition-all"
+          className="px-6 py-2 border-2 rounded-md border-beast-purple-light text-white hover:bg-beast-purple-light transition-all"
         >
           Submit
         </button>
