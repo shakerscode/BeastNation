@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { ChevronRight, Star } from "lucide-react";
 import { motion } from "framer-motion";
+import { ChevronRight, Star } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const services = [
   {
@@ -47,7 +47,7 @@ const HeroSection = () => {
         />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:h-[600px]">
+      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 md:h-[600px]">
         <div className="flex flex-col lg:flex-row items-center justify-between md:gap-12">
           {/* Left Column: Text Content */}
           <div className="w-full lg:w-1/2 space-y-1.5 mt-14">
@@ -69,8 +69,8 @@ const HeroSection = () => {
               viewport={{ once: true, amount: 0.2 }}
               className="text-4xl md:text-6xl font-bold font-display "
             >
-              <span className="text-beast-purple-light">Powering</span> The Next <br />{" "}
-              <p className="mt-2">Generation Of</p>{" "}
+              <span className="text-beast-purple-light">Powering</span> The Next{" "}
+              <br /> <p className="mt-2">Generation Of</p>{" "}
               <span className="text-beast-purple-light">Creators</span>
             </motion.h1>
 

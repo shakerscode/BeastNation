@@ -1,7 +1,7 @@
 import CommonBtn from "@/components/common/CommonBtn";
 import CommonHeading from "@/components/common/CommonHeading";
-import { CheckCircle } from "lucide-react";
 import { motion } from "framer-motion";
+import { CheckCircle } from "lucide-react";
 
 function WorkplaceBenefits() {
   // Workplace benefits
@@ -22,7 +22,7 @@ function WorkplaceBenefits() {
         <div className="flex justify-between md:flex-row-reverse flex-col gap-12 items-center">
           <div>
             <div className="mb-6">
-              <CommonHeading beforeHighlight="Our" highlight="Nation" />
+              <CommonHeading beforeHighlight="Our " highlight="Nation" />
             </div>
             <motion.p
               initial={{ opacity: 0, y: 20 }}

@@ -1,9 +1,8 @@
-import React from "react";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, MoveRight } from "lucide-react";
 import { motion } from "framer-motion";
-import CommonSubHeading from "../common/CommonSubHeading";
+import { ExternalLink, MoveRight } from "lucide-react";
 import { useNavigate } from "react-router";
+import CommonSubHeading from "../common/CommonSubHeading";
 
 const CaseStudy = () => {
   const navigate = useNavigate();
@@ -12,7 +11,7 @@ const CaseStudy = () => {
     <section id="case-studies" className="py-20 relative overflow-hidden">
       <div className="absolute inset-0 -z-10 bg-gradient-to-br from-beast-accent/20 to-background" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
             <div className="mb-6">

@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import CommonHeading from "@/components/common/CommonHeading";
 import { timelineItems } from "@/constants/fakeOurStory";
+import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const LandmarkSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -18,11 +18,11 @@ const LandmarkSection = () => {
 
   return (
     <section className="py-10 md:py-20">
-      <div className="w-full md:container mx-auto">
+      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto">
         <div className="mb-4">
           <CommonHeading
-            beforeHighlight="Landmark"
-            highlight="Moments"
+            beforeHighlight="Landmark "
+            highlight="Moments "
             afterHighlight="in Our Journey"
           />
         </div>
@@ -36,7 +36,7 @@ const LandmarkSection = () => {
         >
           {/* Left Panel: Portrait & Details */}
           <div className="w-full lg:w-1/2">
-            <div className="relative bg-gray-100 shadow-xl max-h-[520px] h-full overflow-hidden">
+            <div className="relative shadow-xl max-h-[520px] h-full overflow-hidden">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={activeIndex}
@@ -44,11 +44,12 @@ const LandmarkSection = () => {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -100 }}
                   transition={{ duration: 0.5 }}
+                  className="max-h-[450px]"
                 >
                   <img
                     src={activeItem.image}
                     alt={activeItem.detailedTitle}
-                    className="w-full max-h-96 h-full object-cover"
+                    className="w-full max-h-[450px] h-full object-cover"
                   />
                   <div className="p-4">
                     <h3 className="text-2xl md:text-3xl font-bold text-black mb-2">

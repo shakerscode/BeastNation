@@ -11,12 +11,10 @@ const TeamSection = () => {
         style={{ animationDelay: "1s" }}
       />
 
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-12 z-20">
+      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto grid md:grid-cols-2 items-center gap-12 z-20">
         {/* Left Text Content */}
         <div className="w-full">
-          <CommonSubHeading
-            subHead="Our Culture"
-          />
+          <CommonSubHeading subHead="Our Culture" />
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
