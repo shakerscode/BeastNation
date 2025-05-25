@@ -1,6 +1,7 @@
 import CommonLoading from "@/components/common/CommonLoading";
 import { RootLayout } from "@/components/layout/RootLayout";
 import ArticlePage from "@/components/resources/newsDetails/NewsArticleDetails";
+import Careers from "@/pages/about/Careers";
 import OurStory from "@/pages/about/OurStory";
 import { AboutPage } from "@/pages/AboutPage";
 import BlogPage from "@/pages/BlogPage";
@@ -22,9 +23,7 @@ import DetailedCaseStudy from "@/pages/resources/DetailedCaseStudy";
 import NewsAndPress from "@/pages/resources/NewsAndPress";
 import { TalentDetailPage } from "@/pages/TalentDetailPage";
 import { TalentPage } from "@/pages/TalentPage";
-import { createBrowserRouter } from "react-router"; 
-import Careers from "@/pages/about/Careers";
- 
+import { createBrowserRouter } from "react-router";
 
 export const router = createBrowserRouter([
   {
@@ -85,7 +84,7 @@ export const router = createBrowserRouter([
             Component: BusinessIntelligence,
           },
         ],
-      }, 
+      },
       {
         path: "influencer-marketing-trends-report",
         hydrateFallbackElement: <CommonLoading />,
@@ -139,6 +138,10 @@ export const router = createBrowserRouter([
           {
             path: "influencer-lists",
             Component: BlogPage,
+          },
+          {
+            path: "influencer-list/:id",
+            Component: BlogPostDetails,
           },
         ],
       },

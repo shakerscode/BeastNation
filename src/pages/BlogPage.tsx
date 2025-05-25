@@ -71,7 +71,11 @@ export const BlogPage = () => {
                 <Card
                   key={item?.id}
                   className="glass border border-white/10 rounded-xl overflow-hidden group transition-all duration-300 hover:shadow-glow cursor-pointer"
-                  onClick={() => navigate(`/resources/blog/${item.id}`)}
+                  onClick={() =>
+                    isBlogPage
+                      ? navigate(`/resources/blog/${item.id}`)
+                      : navigate(`/resources/influencer-lists`)
+                  }
                 >
                   <div className="bg-gray-100 aspect-[16/9] dark:bg-gray-800 flex items-center justify-center relative overflow-hidden">
                     <img
