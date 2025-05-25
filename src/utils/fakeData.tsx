@@ -128,7 +128,7 @@ export const influencerBlogs = [
 export const influencerList = [
   {
     id: 1,
-    name: "Sophia Ray",
+    name: "Tomas Ray",
     platform: "Instagram",
     followers: "1.2M",
     category: "Fashion",
@@ -208,7 +208,7 @@ export const influencerList = [
   },
   {
     id: 9,
-    name: "Ravi Sharma",
+    name: "Jesmine Nora",
     platform: "YouTube",
     followers: "1.1M",
     category: "Education",
@@ -218,7 +218,7 @@ export const influencerList = [
   },
   {
     id: 10,
-    name: "Nora Jensen",
+    name: "Ravi Sharm",
     platform: "Instagram",
     followers: "1.5M",
     category: "Lifestyle",
@@ -1226,7 +1226,8 @@ export const find_talent_categories = [
   },
   {
     title: "Professional Experts",
-    image: "https://img.freepik.com/free-photo/pensive-concentrated-managers-standing-modern-cafe_1262-17088.jpg",
+    image:
+      "https://img.freepik.com/free-photo/pensive-concentrated-managers-standing-modern-cafe_1262-17088.jpg",
   },
   {
     title: "Food",
