@@ -114,7 +114,12 @@ const CaseStudy = () => {
                 viewport={{ once: true, amount: 0.3 }}
                 className="pt-4 flex items-center gap-4"
               >
-                <Button className="bg-primary-gradient">
+                <Button
+                  onClick={() =>
+                    navigate("/resources/case-studies/holiday-resorts-growth")
+                  }
+                  className="bg-primary-gradient"
+                >
                   View Full Case Study
                   <ExternalLink className="ml-2 h-4 w-4" strokeWidth={2.5} />
                 </Button>

@@ -72,7 +72,7 @@ const Navbar = () => {
             TN
           </div>
           <div
-            className={`text-3xl font-bold font-display hidden md:block  ${
+            className={`text-3xl font-bold font-display hidden lg:block  ${
               isScrolled ? "text-beast-purple-light" : "text-gradient"
             }`}
           >
