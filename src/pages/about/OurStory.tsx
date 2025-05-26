@@ -20,7 +20,7 @@ function OurStory() {
             <span className="text-beast-purple-light"> the Making </span>
           </h2>
         }
-        subTitle="In just 10 years, Viral Nation has gone from two friends and a talent agency to the global leader in social-first transformation."
+        subTitle="In just 10 years, Trendy Nation has gone from two friends and a talent agency to the global leader in social-first transformation."
       />
     </>
   );

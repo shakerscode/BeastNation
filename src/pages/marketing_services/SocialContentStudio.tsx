@@ -1,3 +1,4 @@
+import CommonCTA from "@/components/common/CommonCTA";
 import ClientLogos from "@/components/home/ClientLogos";
 import MarketingHeroSection from "@/components/marketing_services/MarketingHeroSection";
 import { ContentTracks } from "@/components/marketing_services/performance_marketing/ContentTracks";
@@ -7,7 +8,6 @@ import { ServicesShowcaseSection } from "@/components/marketing_services/perform
 import { embeddingBrands, servicesShowcaseSocial } from "@/utils/fakeData";
 import InterviewStar from "/img/marketing_services/Interview_star.png";
 import SocialContentImg from "/img/services/social_content_studio.png";
-import CommonCTA from "@/components/common/CommonCTA";
 
 const SocialContentStudio = () => {
   return (
@@ -35,7 +35,7 @@ const SocialContentStudio = () => {
           </h1>
         }
         description={
-          "Strategizing angles, brainstorming creative, and iterating in production – Viral Nation Studio reaches millions of people across platforms and channels who share and amplify the message far and wide."
+          "Strategizing angles, brainstorming creative, and iterating in production – Trendy Nation Studio reaches millions of people across platforms and channels who share and amplify the message far and wide."
         }
         photo={InterviewStar}
       />

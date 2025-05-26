@@ -1,12 +1,11 @@
+import CommonCTA from "@/components/common/CommonCTA";
 import ClientLogos from "@/components/home/ClientLogos";
-import CommonSubFooter from "@/components/marketing_services/CommonSubFooter";
 import { DataPartners } from "@/components/marketing_services/DataPartners";
 import MarketingHeroSection from "@/components/marketing_services/MarketingHeroSection";
 import { PerformanceDriven } from "@/components/marketing_services/performance_marketing/PerformanceDriven";
 import { ServicesShowcaseSection } from "@/components/marketing_services/performance_marketing/ServicesShowcaseSection";
 import { analyticsStrategyData, measurementGoalsData } from "@/utils/fakeData";
 import BusinessImg from "/img/services/business_intelligence.png";
-import CommonCTA from "@/components/common/CommonCTA";
 
 const BusinessIntelligence = () => {
   return (
@@ -28,7 +27,7 @@ const BusinessIntelligence = () => {
           Track, Study, Optimize, Repeat
         </h2>
         <p className="text-lg text-center w-full">
-          Each campaign presents an opportunity to learn. Viral Nation builds
+          Each campaign presents an opportunity to learn. Trendy Nation builds
           upon custom brand playbooks through a continuous cycle of reporting
           and studies, to drive better future campaign performance.
         </p>

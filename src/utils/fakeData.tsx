@@ -883,28 +883,28 @@ export const influencerWorkData = [
     src: "/img/blog/Blog_Image_Template_B2B-Marketing_Feature.png",
     label: "7 Eleven Canada",
     description:
-      "For highly targeted and seasonally optimized campaigns, Viral Nation consistently delivers versatile content creation across various formats. With their ability to handle large-scale operations, 7-Eleven turned to Viral Nation to enhance our social presence across targeted markets and demographics. Their comprehensive and integrated service model reduces the need for multiple service providers, adding value at every step.",
+      "For highly targeted and seasonally optimized campaigns, Trendy Nation consistently delivers versatile content creation across various formats. With their ability to handle large-scale operations, 7-Eleven turned to Trendy Nation to enhance our social presence across targeted markets and demographics. Their comprehensive and integrated service model reduces the need for multiple service providers, adding value at every step.",
   },
   {
     id: 2,
     src: "/img/blog/Blog_Image_Template_Creators-Talent_Feature.png",
     label: "Chegg",
     description:
-      "Trendy Nation has propelled Chegg into the social-first era, helping to transform our channel into a vibrant hub that resonates with our audience. With a deep understanding of our mission and goals, Viral Nation captures the essence of today’s college life, curating influencers and user-generated content that leverages trends and cultural moments. With their expertise and alliance with our marketing team, they have helped Chegg become a significant voice in the #EduTok space delivering impactful, relatable, viral, and memorable content that authentically supports students on their academic journeys.",
+      "Trendy Nation has propelled Chegg into the social-first era, helping to transform our channel into a vibrant hub that resonates with our audience. With a deep understanding of our mission and goals, Trendy Nation captures the essence of today’s college life, curating influencers and user-generated content that leverages trends and cultural moments. With their expertise and alliance with our marketing team, they have helped Chegg become a significant voice in the #EduTok space delivering impactful, relatable, viral, and memorable content that authentically supports students on their academic journeys.",
   },
   {
     id: 3,
     src: "/img/blog/VN-Blog_LatinX-Thought-LeadershipFeature.png",
     label: "Dairy Management Inc.",
     description:
-      "Viral Nation transformed Undeniably Dairy’s approach to influencer content, identifying a diverse group of enthusiastic dairy-loving influencers for Undeniably Dairy’s roster as an ongoing partnership. The approach was all about identifying a wide breadth of authentic voices of all tiers and formalizing a partnership to bring their own, personal stories to life on an ongoing basis. Viral Nation coordinated with the influencers as they crafted innovative, seasonally relevant content and engaging activations transparently informed by the influencers’ own dairy-filled lives and storytelling angles, which Viral Nation supported with paid media amplification.",
+      "Trendy Nation transformed Undeniably Dairy’s approach to influencer content, identifying a diverse group of enthusiastic dairy-loving influencers for Undeniably Dairy’s roster as an ongoing partnership. The approach was all about identifying a wide breadth of authentic voices of all tiers and formalizing a partnership to bring their own, personal stories to life on an ongoing basis. Trendy Nation coordinated with the influencers as they crafted innovative, seasonally relevant content and engaging activations transparently informed by the influencers’ own dairy-filled lives and storytelling angles, which Trendy Nation supported with paid media amplification.",
   },
   {
     id: 4,
     src: "/img/blog/Blog_Image_Template_TikTok.png",
     label: "Modern States",
     description:
-      "It matters to us that our ambassadors represent our values as an organization. Viral Nation Secure™ lets us quickly review prospective ambassadors’ social presence, with their permission, and make better decisions about who represents us.",
+      "It matters to us that our ambassadors represent our values as an organization. Trendy Nation Secure™ lets us quickly review prospective ambassadors’ social presence, with their permission, and make better decisions about who represents us.",
   },
 ];
 
@@ -952,7 +952,7 @@ export const embeddingBrands = [
     icon: <Cpu className="" size={100} />,
     title: "Move At The Speed Of Culture",
     description:
-      "Social feeds are won with content that moves at the speed of trends. Viral Nation Studio team of designers, social experts, and strategists fuse stories with speed to amplify brand narrative.",
+      "Social feeds are won with content that moves at the speed of trends. Trendy Nation Studio team of designers, social experts, and strategists fuse stories with speed to amplify brand narrative.",
   },
   {
     icon: <Smartphone className="" size={100} />,
@@ -1027,7 +1027,7 @@ export const experientialMarketingData = [
     icon: <UsersRound className="w-8 h-8 text-beast-purple" />,
     title: "Experiential Halo Effect",
     description:
-      "Viral Nation’s Experiential Halo Effect creates wave after wave of virality during the live buzz of the event by partnering with some of the best-known icons in each vertical.",
+      "Trendy Nation’s Experiential Halo Effect creates wave after wave of virality during the live buzz of the event by partnering with some of the best-known icons in each vertical.",
   },
   {
     icon: <Cpu className="w-8 h-8 text-beast-purple" />,
@@ -1145,19 +1145,19 @@ export const measurementGoalsData = [
     icon: <SmartphoneCharging size={100} />,
     title: "Goal: Perception",
     description:
-      "Get a read on how your brand is perceived by your audience. Our suite of brand lift studies measures a campaign’s effect on brand advocacy, awareness, familiarity, and purchase intent. Viral Nation then narrows the gap between your brand goals and real-world perception.",
+      "Get a read on how your brand is perceived by your audience. Our suite of brand lift studies measures a campaign’s effect on brand advocacy, awareness, familiarity, and purchase intent. Trendy Nation then narrows the gap between your brand goals and real-world perception.",
   },
   {
     icon: <UsersIcon size={100} />,
     title: "Goal: Resonance",
     description:
-      "Measure the mental effect of a campaign and the steps that lead up to customer action. Using research into the neuroscience of emotion, attention, and memory, Viral Nation works to embed message internalization and steer decision-making.",
+      "Measure the mental effect of a campaign and the steps that lead up to customer action. Using research into the neuroscience of emotion, attention, and memory, Trendy Nation works to embed message internalization and steer decision-making.",
   },
   {
     icon: <CpuIcon size={100} />,
     title: "Goal: Custom Measurement",
     description:
-      "Take advantage of Viral Nation’s full suite of business intelligence capabilities. Our custom solutions combine data sets and research techniques to provide deeper insights into brand positioning across the social landscape.",
+      "Take advantage of Trendy Nation’s full suite of business intelligence capabilities. Our custom solutions combine data sets and research techniques to provide deeper insights into brand positioning across the social landscape.",
   },
 ];
 
@@ -1205,7 +1205,7 @@ export const analyticsStrategyData = [
     icon: <IdCardIcon className="w-8 h-8 text-beast-purple" />,
     title: "Differentiated Attribution",
     description:
-      "Go beyond traditional tracking and get a true read on your social ecosystem with Viral Nation’s sentiment, perception, and search modeling that feeds into an automated reporting dashboard.",
+      "Go beyond traditional tracking and get a true read on your social ecosystem with Trendy Nation’s sentiment, perception, and search modeling that feeds into an automated reporting dashboard.",
   },
   {
     icon: <SparkleIcon className="w-8 h-8 text-beast-purple" />,
@@ -1255,29 +1255,29 @@ export const for_talent_data = [
   {
     id: 1,
     src: "/img/marketing_services/fitness.jpeg",
-    label: "Dalton Chandler",
+    label: "Malton Chandler",
     description:
-      "Having trust in my agent to negotiate terms that protect me and my personal brand is a huge priority. Viral Nation brings partnerships onboard and navigates incoming opportunities to ensure all details are buttoned up. I feel so lucky to be working with an incredible agent and his team of people that all have my best interests at heart.",
+      "Having trust in my agent to negotiate terms that protect me and my personal brand is a huge priority. Trendy Nation brings partnerships onboard and navigates incoming opportunities to ensure all details are buttoned up. I feel so lucky to be working with an incredible agent and his team of people that all have my best interests at heart.",
   },
   {
     id: 2,
     src: "/img/marketing_services/professional-expart.jpeg",
-    label: "Steven He",
+    label: "Steven Smith",
     description:
-      "Viral Nation is the best influencer agency I’ve come across. They have been extremely effective in procuring opportunities, monetization, and providing support. On a personal level, my agent has become one of my closest friends. I’m grateful to be working with VN.",
+      "Trendy Nation is the best influencer agency I’ve come across. They have been extremely effective in procuring opportunities, monetization, and providing support. On a personal level, my agent has become one of my closest friends. I’m grateful to be working with VN.",
   },
   {
     id: 3,
     src: "/img/marketing_services/creator.png",
-    label: "Gab Chappel",
+    label: "Gab Chappele",
     description:
       "This team has been incredibly supportive in helping me to achieve my professional goals, and has even helped me dream bigger as I enter into a new phase of my career. I am so grateful for the hard work they put into supporting my creative endeavors.",
   },
   {
     id: 4,
     src: "/img/marketing_services/beauty.jpeg",
-    label: "Nadia Aidi",
+    label: "Nadia Aidim",
     description:
-      "Viral Nation’s connections have helped me land my dream partnerships while also working closely with me strategizing and developing my content. I love Viral Nation’s cutting edge and avant-garde approach to the influencer marketing industry. They’re constantly exploring new ways to utilize social media platforms and trends to ensure the success of their creators.",
+      "Trendy Nation’s connections have helped me land my dream partnerships while also working closely with me strategizing and developing my content. I love Trendy Nation’s cutting edge and avant-garde approach to the influencer marketing industry. They’re constantly exploring new ways to utilize social media platforms and trends to ensure the success of their creators.",
   },
 ];

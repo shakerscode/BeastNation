@@ -11,7 +11,6 @@ import { cn } from "@/lib/utils";
 import useCarousel from "embla-carousel-react";
 import { motion } from "framer-motion";
 import { useCallback, useEffect, useState } from "react";
-import CommonSubHeading from "../common/CommonSubHeading";
 
 interface ClientImage {
   id: number;
@@ -30,6 +29,7 @@ const OurWork = ({
   const [api, setApi] = useState<ReturnType<typeof useCarousel>[1]>(null);
   const [current, setCurrent] = useState(0);
   const images: ClientImage[] = data;
+
   // Handle slide change
   const onSelect = useCallback(() => {
     if (!api) return;
@@ -39,10 +39,8 @@ const OurWork = ({
   // Set up the carousel
   useEffect(() => {
     if (!api) return;
-
     api.on("select", onSelect);
     api.on("reInit", onSelect);
-
     return () => {
       api.off("select", onSelect);
       api.off("reInit", onSelect);
@@ -69,7 +67,7 @@ const OurWork = ({
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-               Our <span className="text-beast-purple-light">Works</span>
+              Our <span className="text-beast-purple-light">Works</span>
             </motion.h2>
             <motion.p
               className="text-white/80 max-w-2xl mx-auto"
@@ -102,7 +100,7 @@ const OurWork = ({
                   <CarouselItem
                     key={image.id}
                     className={cn(
-                      "transition-opacity duration-300 h-[700px]",
+                      "transition-opacity duration-300 aspect-video",
                       isActive
                         ? "basis-[calc(100%/2+200px)]"
                         : "md:basis-1/2 lg:basis-2/5"
@@ -110,7 +108,7 @@ const OurWork = ({
                   >
                     <div
                       className={cn(
-                        "h-full transition-all duration-500 transform",
+                        "w-full h-full transition-all duration-500 transform",
                         isActive
                           ? "scale-100 opacity-100"
                           : "scale-90 opacity-70"
@@ -119,16 +117,16 @@ const OurWork = ({
                     >
                       <Card className="bg-transparent border-0 overflow-hidden h-full">
                         <CardContent className="p-0 h-full">
-                          <div className="relative group cursor-pointer h-full">
-                            <div className="bg-gray-900 rounded-lg overflow-hidden h-full">
+                          <div className="relative group cursor-pointer w-full h-full">
+                            <div className="bg-gray-900 rounded-lg overflow-hidden w-full h-full">
                               <img
                                 src={image.src}
                                 alt={image.label}
-                                className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
-                                onError={(e) => {
-                                  const target = e.target as HTMLImageElement;
-                                  target.src = "/placeholder.svg";
-                                }}
+                                className="object-contain w-full h-full transition-transform duration-500 group-hover:scale-105"
+                                onError={(e) =>
+                                  ((e.target as HTMLImageElement).src =
+                                    "/placeholder.svg")
+                                }
                               />
                             </div>
 
