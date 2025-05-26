@@ -26,7 +26,7 @@ export const ContentTracks = () => {
               Agency-Led Content
             </h3>
             <p className="text-gray-300 text-base leading-relaxed">
-              Brand-focused content, produced by Viral Nation Studio,
+              Brand-focused content, produced by Trendy Nation Studio,
               specifically for owned channels. <br />
               Strategically, influencers can be featured in this content in
               alignment with bespoke briefs.
