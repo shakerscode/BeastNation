@@ -5,7 +5,6 @@ import Hero from "@/components/resources/caseStudyDetails/Hero";
 import StatsStrip from "@/components/resources/caseStudyDetails/Stats";
 import { detailedCaseStudies } from "@/constants/fakeCaseStudy";
 import { motion } from "framer-motion";
-import { Check, CircleCheckBig, MoveLeft, MoveRight } from "lucide-react";
 import { Link, useParams } from "react-router";
 
 const DetailedCaseStudy = () => {
@@ -102,7 +101,7 @@ const DetailedCaseStudy = () => {
             <span className="text-beast-purple-light"> Brand's Influence</span>
           </h2>
         }
-        subTitle="Viral Nation accelerates the transition to social-first with end-to-end social marketing at scale."
+        subTitle="Trendy Nation accelerates the transition to social-first with end-to-end social marketing at scale."
       />
     </div>
   );
