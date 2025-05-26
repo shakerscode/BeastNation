@@ -1,3 +1,4 @@
+import CommonCard from "@/components/common/CommonCard";
 import { newsItems } from "@/constants/fakeNews";
 import useScrollToTop from "@/hooks/useScrollToTop";
 import { motion, useInView } from "framer-motion";
@@ -69,44 +70,12 @@ function NewsAndPressArticles() {
           className="grid md:grid-cols-2 gap-8 pt-0  max-w-7xl mx-auto "
         >
           {currentItems.map((item, i) => (
-            <motion.div
-              key={`${item.title}-${i}`} // Better key strategy
-              whileHover={{ scale: 1.02 }}
-              onClick={() => handleNavigate(item?.title)}
-              className="group cursor-pointer rounded-xl overflow-hidden border border-white hover:border-beast-purple-light transition-all ease-in-out duration-500"
-            >
-              <div className="aspect-[3/2] w-full overflow-hidden">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).src = "/fallback-image.jpg";
-                  }}
-                />
-              </div>
-
-              {/* Text Content */}
-              <div className="flex flex-col justify-between overflow-hidden p-4 h-[210px] md:h-[180px] transition-all duration-500  group-hover:bg-white">
-                <div>
-                  <p className="text-xs text-beast-purple-light font-display font-semibold uppercase mb-1">
-                    {item.category}
-                  </p>
-                  <h3 className="text-lg font-semibold text-white group-hover:text-black/80 mb-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-white/70 group-hover:text-black/80">
-                    {item.excerpt}
-                  </p>
-                </div>
-
-                <div className="flex justify-between items-center text-beast-purple-light">
-                  <span className="text-xs">{item.date}</span>
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-all" />
-                </div>
-              </div>
-            </motion.div>
+            <CommonCard
+              key={i}
+              item={item}
+              index={i}
+              onClick={(title) => handleNavigate(title)}
+            />
           ))}
         </motion.div>
       )}

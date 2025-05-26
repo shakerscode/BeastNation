@@ -13,7 +13,7 @@ export const AgencyValueSection = () => {
     <section className="py-16 md:py-24 text-white">
       <div className="container mx-auto px-4">  
         <motion.h2
-          className="text-3xl md:text-4xl lg:text-5xl lg:text-6xl font-bold mb-8 text-center max-w-5xl mx-auto"
+          className="text-3xl md:text-5xl lg:text-6xl font-bold mb-8 text-center max-w-5xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -113,7 +113,7 @@ export const AgencyValueSection = () => {
                   Custom Campaign Scalability
                 </h4>
                 <p className="text-gray-300">
-                  From micro-targeted initiatives to global rollouts, we adapt
+                  From micro-targeted initiatives to global rollout, we adapt
                   to meet the needs of brands with diverse goals.
                 </p>
               </div>
