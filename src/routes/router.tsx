@@ -20,6 +20,8 @@ import NotFound from "@/pages/NotFound";
 import BlogPostDetails from "@/pages/resources/BlogPostDetails";
 import CaseStudies from "@/pages/resources/CaseStudies";
 import DetailedCaseStudy from "@/pages/resources/DetailedCaseStudy";
+import InfluencerDetails from "@/pages/resources/InfluencerDetails";
+import InfluencerList from "@/pages/resources/InfluencerList";
 import NewsAndPress from "@/pages/resources/NewsAndPress";
 import { TalentDetailPage } from "@/pages/TalentDetailPage";
 import { TalentPage } from "@/pages/TalentPage";
@@ -137,11 +139,11 @@ export const router = createBrowserRouter([
           },
           {
             path: "influencer-lists",
-            Component: BlogPage,
+            Component: InfluencerList,
           },
           {
-            path: "influencer-list/:id",
-            Component: BlogPostDetails,
+            path: "influencer-lists/:slug",
+            Component: InfluencerDetails,
           },
         ],
       },
