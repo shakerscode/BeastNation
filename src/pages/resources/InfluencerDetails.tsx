@@ -1,30 +1,184 @@
 import CommonCTA from "@/components/common/CommonCTA";
 import ArticleBox from "@/components/resources/influencers/ArticleBox";
 import HeroSection from "@/components/resources/influencers/HeroSection";
+import { InfoBox } from "@/components/resources/influencers/InfoBox";
+import ShareButtons from "@/components/resources/influencers/ShareButton";
+import SimilarPosts from "@/components/resources/influencers/SimilarPosts";
+import SubscriptionSection from "@/components/resources/influencers/SubscriptionSection";
+import { TOC } from "@/components/resources/influencers/TOC";
+import { article } from "@/constants/fakeInfluencers";
+import { useScrollSpy } from "@/hooks/useScrollSpy";
+import useScrollToTop from "@/hooks/useScrollToTop";
+import { useEffect, useRef, useState } from "react";
 
-function InfluencerDetails() {
+// export default function InfluencerDetails() {
+//   useScrollToTop();
+//   const { influencers, tags, title, date, key_points, intro } = article;
+//   const activeId = useScrollSpy(influencers.map((i) => i.id));
+//   const asideRef = useRef(null);
+//   const containerRef = useRef(null);
+//   const [isFixed, setIsFixed] = useState(false);
+
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       if (!asideRef.current || !containerRef.current) return;
+//       const containerRect = containerRef.current.getBoundingClientRect();
+
+//       if (containerRect.top <= 150 && containerRect.bottom - 200 >= 300) {
+//         setIsFixed(true);
+//       } else {
+//         setIsFixed(false);
+//       }
+//     };
+
+//     window.addEventListener("scroll", handleScroll);
+//     return () => window.removeEventListener("scroll", handleScroll);
+//   }, []);
+
+//   return (
+//     <section>
+//       <HeroSection
+//         tags={tags}
+//         title={title}
+//         date={date}
+//         key_points={key_points}
+//       />
+//       <section className="px-4 md:px-0 py-10 bg-black">
+//         <div
+//           className="max-w-7xl 2xl:max-w-[1536px] mx-auto grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-10"
+//           ref={containerRef}
+//         >
+//           <article className="max-h-[900px] overflow-scroll scrollbar-hidden">
+//             <ArticleBox influencers={influencers} intro={intro} />
+//           </article>
+//           <aside className="h-fit">
+//              <InfoBox />
+//             <div
+//               className={`flex flex-col mt-5 gap-4 space-y-2`}
+//               ref={asideRef}
+//             >
+//               <TOC items={influencers} activeId={activeId} />
+//               <ShareButtons/>
+//               <SubscriptionSection/>
+//             </div>
+//           </aside>
+//         </div>
+//       </section>
+//       <CommonCTA
+//         title={
+//           <h2 className="text-3xl text-white md:text-5xl lg:text-6xl font-bold font-display mb-4">
+//             The Largest{" "}
+//             <span className="text-beast-purple-light">Creator Agency</span> in
+//             the World
+//           </h2>
+//         }
+//         subTitle="Partner with top-tier influencers and unlock authentic brand growth through powerful storytelling, strategy, and data."
+//       />
+//     </section>
+//   );
+// }
+
+export default function InfluencerDetails() {
+  useScrollToTop();
+  const { influencers, tags, title, date, key_points, intro } = article;
+
+  const containerRef = useRef<HTMLDivElement>(null);
+  const articleRef = useRef<HTMLDivElement>(null);
+  const activeId = useScrollSpy(influencers.map((i) => i.id));
+
+  useEffect(() => {
+    const handleWheel = (e: WheelEvent) => {
+      const container = containerRef.current;
+      const article = articleRef.current;
+      if (!container || !article) return;
+
+      const containerRect = container.getBoundingClientRect();
+      const containerTop = containerRect.top;
+      const containerBottom = containerRect.bottom;
+
+      // Only apply this logic if container is in viewport
+      if (containerTop <= 0 && containerBottom >= window.innerHeight) {
+        const delta = e.deltaY;
+
+        const atTop = article.scrollTop === 0;
+        const atBottom =
+          article.scrollTop + article.clientHeight >= article.scrollHeight - 1;
+
+        const shouldScrollArticle =
+          (delta > 0 && !atBottom) || (delta < 0 && !atTop);
+
+        if (shouldScrollArticle) {
+          e.preventDefault();
+          article.scrollBy({ top: delta, behavior: "auto" });
+        }
+      }
+    };
+
+    window.addEventListener("wheel", handleWheel, { passive: false });
+
+    return () => {
+      window.removeEventListener("wheel", handleWheel);
+    };
+  }, []);
+
+  const handleTOCClick = (id: string) => {
+    if (!articleRef.current) return;
+    const el = articleRef.current.querySelector(`#${id}`);
+    if (el) {
+      const top =
+        el.getBoundingClientRect().top -
+        articleRef.current.getBoundingClientRect().top +
+        articleRef.current.scrollTop;
+
+      articleRef.current.scrollTo({ top, behavior: "smooth" });
+    }
+  };
+
   return (
-    <section className="relative">
-      <HeroSection />
-      {/* Main content container - NO overflow restrictions here */}
-      <section className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 md:px-0 flex gap-10 py-10">
-        {/* Article content (scrolls with page) */}
-        <article className="w-2/3">
-          <ArticleBox />
-        </article>
+    <section>
+      <HeroSection
+        tags={tags}
+        title={title}
+        date={date}
+        key_points={key_points}
+      />
+      <div className="block md:hidden px-4">
+        <TOC
+          items={influencers}
+          activeId={activeId}
+          onItemClick={handleTOCClick}
+        />
+      </div>
+      <section
+        ref={containerRef}
+        className="px-4 md:px-0 py-10 bg-black h-full overflow-hidden"
+      >
+        <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-10 h-full">
+          <article
+            ref={articleRef}
+            className="overflow-y-scroll pr-4 scrollbar-hidden h-[1100px]"
+          >
+            <ArticleBox influencers={influencers} intro={intro} />
+          </article>
 
-        {/* Sidebar with sticky TOC */}
-        <aside className="w-1/3">
-          <div className="sticky top-4 space-y-4">
-            <InfoBox />
-            <div className="sticky top-[calc(4rem+1rem)] z-10">
-              {" "}
-              {/* Adjust based on InfoBox height */}
-              <TOC />
+          <aside className="h-full overflow-hidden">
+            <div className="sticky top-0 space-y-6">
+              <InfoBox />
+              <div className="hidden md:block">
+                <TOC
+                  items={influencers}
+                  activeId={activeId}
+                  onItemClick={handleTOCClick}
+                />
+              </div>
+
+              <ShareButtons />
+              <SubscriptionSection />
             </div>
-          </div>
-        </aside>
+          </aside>
+        </div>
       </section>
+
       <CommonCTA
         title={
           <h2 className="text-3xl text-white md:text-5xl lg:text-6xl font-bold font-display mb-4">
@@ -35,67 +189,10 @@ function InfluencerDetails() {
         }
         subTitle="Partner with top-tier influencers and unlock authentic brand growth through powerful storytelling, strategy, and data."
       />
+
+      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 md:px-0">
+        <SimilarPosts />
+      </div>
     </section>
   );
 }
-export default InfluencerDetails;
-
-const InfoBox = () => {
-  return (
-    <div className="flex items-start gap-4  bg-white/10 backdrop-blur-xl rounded-lg p-4">
-      <img
-        src="/LOGO.png"
-        alt="Trendy_nation_logo"
-        className="w-20 h-20 rounded-full"
-      />
-      <div>
-        <h2 className="text-lg font-medium">Trendy Nation</h2>
-        <p className="text-sm text-white/90">
-          Trendy Nation is a leading global social media agency powering
-          cultural relevance for brands with a social-first approach to
-          marketing.{" "}
-        </p>
-      </div>
-    </div>
-  );
-};
-
-const TOC = () => {
-  return (
-    <div className="bg-white/10 backdrop-blur-xl rounded-lg p-4">
-      <h2 className="text-2xl font-medium">Table of Contents </h2>
-      <div className="h-0.5 bg-white w-full mt-2.5"></div>
-      <ul className="list-disc space-y-2 text-white/90 p-4">
-        <li className="hover:underline cursor-pointer">
-          Doug the Pug – The Original Dogfluencer Magnus the Therapy Dog –
-          Healing Hearts One Visit at a Time
-        </li>
-        <li className="hover:underline cursor-pointer">
-          Robby and Penny – The Dynamic Dachshund Duo
-        </li>
-        <li className="hover:underline cursor-pointer">
-          Lumi the Samoyed – The Arctic Beauty Queen
-        </li>
-        <li className="hover:underline cursor-pointer">
-          Pearl the Golden Girl – Senior Dog Advocate
-        </li>
-        <li className="hover:underline cursor-pointer">
-          My Dogs Dope – The Streetwear Icon{" "}
-        </li>
-        <li className="hover:underline cursor-pointer">
-          Tika the Iggy – Fashion Forward Canine{" "}
-        </li>
-        <li className="hover:underline cursor-pointer">
-          Crusoe the Celebrity Dachshund – The Storytelling Sensation
-        </li>
-        <li className="hover:underline cursor-pointer">
-          Maui the Golden Doodle{" "}
-        </li>
-        <li className="hover:underline cursor-pointer">Loki the Wolfdog</li>
-        <li className="hover:underline cursor-pointer">
-          Conclusion: Why These Dog Influencers Matter To Marketers
-        </li>
-      </ul>
-    </div>
-  );
-};
