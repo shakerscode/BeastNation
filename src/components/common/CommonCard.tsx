@@ -37,7 +37,7 @@ export default function CommonCard({ item, index, onClick }: CardItemProps) {
     >
       <div
         className={`${
-          excerpt ? "aspect-[3/2]" : "h-[420px]"
+          excerpt ? "aspect-[3/2]" : "h-fit md:h-[420px]"
         } w-full overflow-hidden`}
       >
         <img
@@ -52,9 +52,9 @@ export default function CommonCard({ item, index, onClick }: CardItemProps) {
       </div>
 
       <div
-        className={`flex flex-col justify-between overflow-hidden p-4 h-[210px] md:h-[${
-          excerpt ? "180px" : "150px"
-        }] transition-all duration-500 group-hover:bg-white`}
+        className={`flex flex-col justify-between overflow-hidden p-4  ${
+          excerpt ? "h-[210px] md:h-[180px]" : "md:h-[150px] h-[150px]"
+        } transition-all duration-500 group-hover:bg-white`}
       >
         <div>
           <p className="text-xs text-beast-purple-light font-display font-semibold uppercase mb-1">
