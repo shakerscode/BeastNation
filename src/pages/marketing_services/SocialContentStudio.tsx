@@ -5,11 +5,13 @@ import { ContentTracks } from "@/components/marketing_services/performance_marke
 import { PerformanceDriven } from "@/components/marketing_services/performance_marketing/PerformanceDriven";
 import { PhoneShowcase } from "@/components/marketing_services/performance_marketing/PhoneShowcase";
 import { ServicesShowcaseSection } from "@/components/marketing_services/performance_marketing/ServicesShowcaseSection";
+import useScrollToTop from "@/hooks/useScrollToTop";
 import { embeddingBrands, servicesShowcaseSocial } from "@/utils/fakeData";
 import InterviewStar from "/img/marketing_services/Interview_star.png";
 import SocialContentImg from "/img/services/social_content_studio.png";
 
 const SocialContentStudio = () => {
+  useScrollToTop();
   return (
     <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto">
       <MarketingHeroSection

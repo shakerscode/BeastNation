@@ -1,15 +1,16 @@
+import CommonCTA from "@/components/common/CommonCTA";
 import ClientLogos from "@/components/home/ClientLogos";
-import CommonSubFooter from "@/components/marketing_services/CommonSubFooter";
 import MarketingHeroSection from "@/components/marketing_services/MarketingHeroSection";
 import { PerformanceDriven } from "@/components/marketing_services/performance_marketing/PerformanceDriven";
 import { PhoneShowcase } from "@/components/marketing_services/performance_marketing/PhoneShowcase";
 import { ServicesShowcaseSection } from "@/components/marketing_services/performance_marketing/ServicesShowcaseSection";
+import useScrollToTop from "@/hooks/useScrollToTop";
 import { brandEngagementData, socialSolutionsData } from "@/utils/fakeData";
 import NEW_Rooted from "/img/marketing_services/NEW_Rooted.png";
 import CommunityImg from "/img/services/community_management.png";
-import CommonCTA from "@/components/common/CommonCTA";
 
 const CommunityManagement = () => {
+  useScrollToTop();
   return (
     <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto">
       <MarketingHeroSection

@@ -2,6 +2,7 @@ import BlogsHeader from "@/components/resources/blogs/BlogsHeader";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import useScrollToTop from "@/hooks/useScrollToTop";
 import {
   Blog,
   Influencer,
@@ -13,6 +14,7 @@ import { useState } from "react";
 import { useLocation, useNavigate } from "react-router";
 
 export const BlogPage = () => {
+  useScrollToTop();
   const { pathname } = useLocation();
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState("");

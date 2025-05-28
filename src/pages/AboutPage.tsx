@@ -1,6 +1,8 @@
+import useScrollToTop from "@/hooks/useScrollToTop";
 import { motion } from "framer-motion";
 
 export const AboutPage = () => {
+  useScrollToTop();
   const teamImage =
     "https://images.pexels.com/photos/2467506/pexels-photo-2467506.jpeg";
 

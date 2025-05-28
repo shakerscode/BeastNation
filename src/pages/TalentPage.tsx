@@ -3,12 +3,14 @@ import CommonCTA from "@/components/common/CommonCTA";
 import MarketingHeroSection from "@/components/marketing_services/MarketingHeroSection";
 import CategorySection from "@/components/talent/find_talent/CategorySection";
 import CreatorSection from "@/components/talent/find_talent/CreatorSection";
+import CreatorWithBrand from "@/components/talent/find_talent/CreatorWithBrand";
+import useScrollToTop from "@/hooks/useScrollToTop";
 import { useTalentStore } from "@/store/useTalentStore";
 import { useEffect } from "react";
 import heroImg from "/img/marketing_services/FindTalent.png";
-import CreatorWithBrand from "@/components/talent/find_talent/CreatorWithBrand";
 
 export const TalentPage = () => {
+  useScrollToTop();
   const {
     talents,
     setTalents,

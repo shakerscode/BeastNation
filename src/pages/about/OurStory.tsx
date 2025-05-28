@@ -3,8 +3,10 @@ import LandmarkSection from "@/components/about/OurStory/LandmarkSection";
 import LeadershipSection from "@/components/about/OurStory/LeadershipSection";
 import HeroSection from "@/components/about/OurStory/OurStoryHeader";
 import CommonCTA from "@/components/common/CommonCTA";
+import useScrollToTop from "@/hooks/useScrollToTop";
 
 function OurStory() {
+  useScrollToTop();
   return (
     <>
       <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 md:px-0">
