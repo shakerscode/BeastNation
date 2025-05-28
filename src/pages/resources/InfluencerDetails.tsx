@@ -9,74 +9,7 @@ import { TOC } from "@/components/resources/influencers/TOC";
 import { article } from "@/constants/fakeInfluencers";
 import { useScrollSpy } from "@/hooks/useScrollSpy";
 import useScrollToTop from "@/hooks/useScrollToTop";
-import { useEffect, useRef, useState } from "react";
-
-// export default function InfluencerDetails() {
-//   useScrollToTop();
-//   const { influencers, tags, title, date, key_points, intro } = article;
-//   const activeId = useScrollSpy(influencers.map((i) => i.id));
-//   const asideRef = useRef(null);
-//   const containerRef = useRef(null);
-//   const [isFixed, setIsFixed] = useState(false);
-
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       if (!asideRef.current || !containerRef.current) return;
-//       const containerRect = containerRef.current.getBoundingClientRect();
-
-//       if (containerRect.top <= 150 && containerRect.bottom - 200 >= 300) {
-//         setIsFixed(true);
-//       } else {
-//         setIsFixed(false);
-//       }
-//     };
-
-//     window.addEventListener("scroll", handleScroll);
-//     return () => window.removeEventListener("scroll", handleScroll);
-//   }, []);
-
-//   return (
-//     <section>
-//       <HeroSection
-//         tags={tags}
-//         title={title}
-//         date={date}
-//         key_points={key_points}
-//       />
-//       <section className="px-4 md:px-0 py-10 bg-black">
-//         <div
-//           className="max-w-7xl 2xl:max-w-[1536px] mx-auto grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-10"
-//           ref={containerRef}
-//         >
-//           <article className="max-h-[900px] overflow-scroll scrollbar-hidden">
-//             <ArticleBox influencers={influencers} intro={intro} />
-//           </article>
-//           <aside className="h-fit">
-//              <InfoBox />
-//             <div
-//               className={`flex flex-col mt-5 gap-4 space-y-2`}
-//               ref={asideRef}
-//             >
-//               <TOC items={influencers} activeId={activeId} />
-//               <ShareButtons/>
-//               <SubscriptionSection/>
-//             </div>
-//           </aside>
-//         </div>
-//       </section>
-//       <CommonCTA
-//         title={
-//           <h2 className="text-3xl text-white md:text-5xl lg:text-6xl font-bold font-display mb-4">
-//             The Largest{" "}
-//             <span className="text-beast-purple-light">Creator Agency</span> in
-//             the World
-//           </h2>
-//         }
-//         subTitle="Partner with top-tier influencers and unlock authentic brand growth through powerful storytelling, strategy, and data."
-//       />
-//     </section>
-//   );
-// }
+import { useEffect, useRef } from "react";
 
 export default function InfluencerDetails() {
   useScrollToTop();
@@ -156,7 +89,7 @@ export default function InfluencerDetails() {
         <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-10 h-full">
           <article
             ref={articleRef}
-            className="overflow-y-scroll pr-4 scrollbar-hidden h-[1100px]"
+            className="overflow-y-scroll pr-4 scrollbar-hidden"
           >
             <ArticleBox influencers={influencers} intro={intro} />
           </article>
