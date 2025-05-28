@@ -10,7 +10,7 @@ export function TOC({ items, activeId, onItemClick }) {
                 onClick={() => onItemClick(item.id)}
                 className={`block text-left w-full hover:underline ${
                   activeId === item.id
-                    ? "text-beast-purple-light font-semibold"
+                    ? ""
                     : ""
                 }`}
               >
