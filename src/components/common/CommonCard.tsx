@@ -30,7 +30,7 @@ export default function CommonCard({ item, index, onClick }: CardItemProps) {
       key={`${title}-${index}`}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 0.2 * index }}
+      transition={{ duration: 0.6, delay: 0.1 * index }}
       whileHover={{ scale: 1.02 }}
       onClick={handleNavigate}
       className="group cursor-pointer rounded-xl overflow-hidden border-2 border-white hover:border-beast-purple-light transition-all ease-in-out duration-500"
