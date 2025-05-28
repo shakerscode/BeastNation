@@ -4,10 +4,12 @@ import { DataPartners } from "@/components/marketing_services/DataPartners";
 import MarketingHeroSection from "@/components/marketing_services/MarketingHeroSection";
 import { PerformanceDriven } from "@/components/marketing_services/performance_marketing/PerformanceDriven";
 import { ServicesShowcaseSection } from "@/components/marketing_services/performance_marketing/ServicesShowcaseSection";
+import useScrollToTop from "@/hooks/useScrollToTop";
 import { analyticsStrategyData, measurementGoalsData } from "@/utils/fakeData";
 import BusinessImg from "/img/services/business_intelligence.png";
 
 const BusinessIntelligence = () => {
+  useScrollToTop();
   return (
     <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto">
       <MarketingHeroSection

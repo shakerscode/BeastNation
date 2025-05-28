@@ -4,10 +4,12 @@ import ContentCarousel from "@/components/resources/caseStudyDetails/ContentCaro
 import Hero from "@/components/resources/caseStudyDetails/Hero";
 import StatsStrip from "@/components/resources/caseStudyDetails/Stats";
 import { detailedCaseStudies } from "@/constants/fakeCaseStudy";
+import useScrollToTop from "@/hooks/useScrollToTop";
 import { motion } from "framer-motion";
 import { Link, useParams } from "react-router";
 
 const DetailedCaseStudy = () => {
+  useScrollToTop();
   const { slug } = useParams();
 
   const title = slug?.replace("-", " ");

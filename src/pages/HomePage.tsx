@@ -9,8 +9,10 @@ import ServicesSection from "@/components/home/ServicesSection";
 import StatsSection from "@/components/home/StatsSection";
 import TalentSection from "@/components/home/TalentSection";
 import TeamSection from "@/components/home/TeamSection";
+import useScrollToTop from "@/hooks/useScrollToTop";
 
 export const HomePage = () => {
+  useScrollToTop();
   return (
     <div className="min-h-screen w-full">
       <HeroSection />
@@ -22,7 +24,7 @@ export const HomePage = () => {
       <TalentSection />
       <ProductFeatures />
       <BlogSection />
-      <TeamSection/>
+      <TeamSection />
       <Contact />
     </div>
   );

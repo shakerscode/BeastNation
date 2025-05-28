@@ -1,15 +1,16 @@
+import CommonCTA from "@/components/common/CommonCTA";
+import CommonHeading from "@/components/common/CommonHeading";
 import ClientLogos from "@/components/home/ClientLogos";
-import CommonSubFooter from "@/components/marketing_services/CommonSubFooter";
 import { PlanetMedia } from "@/components/marketing_services/influencer/PlanetMedia";
 import MarketingHeroSection from "@/components/marketing_services/MarketingHeroSection";
 import { PerformanceDriven } from "@/components/marketing_services/performance_marketing/PerformanceDriven";
 import { ServicesShowcaseSection } from "@/components/marketing_services/performance_marketing/ServicesShowcaseSection";
+import useScrollToTop from "@/hooks/useScrollToTop";
 import { performanceDrivenData, servicesShowcase } from "@/utils/fakeData";
 import PerformanceImg from "/img/services/performance_marketing.png";
-import CommonCTA from "@/components/common/CommonCTA";
-import CommonHeading from "@/components/common/CommonHeading";
 
 const PerformanceMarketing = () => {
+  useScrollToTop();
   return (
     <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto">
       <MarketingHeroSection
@@ -24,7 +25,7 @@ const PerformanceMarketing = () => {
         img={PerformanceImg}
       />
       <ClientLogos />
-      <PlanetMedia 
+      <PlanetMedia
         jsxTitle={
           <div className="mb-6">
             <CommonHeading

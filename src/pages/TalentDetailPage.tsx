@@ -1,6 +1,7 @@
 import { talentService } from "@/api/talentService";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import useScrollToTop from "@/hooks/useScrollToTop";
 import { Talent } from "@/types/talent";
 import { formatNumber } from "@/utils/formatters";
 import { motion } from "framer-motion";
@@ -17,6 +18,7 @@ import {
 import { Link, useParams } from "react-router";
 
 export const TalentDetailPage = () => {
+  useScrollToTop();
   const { id } = useParams<{ id: string }>();
   const [talent, setTalent] = useState<Talent | null>(null);
   const [isLoading, setIsLoading] = useState(true);

@@ -1,19 +1,13 @@
 import { ReportContent } from "@/components/reports/ReportContent";
 import { ReportHeading } from "@/components/reports/ReportHeading";
 import { SocialFirstGrowthForm } from "@/components/reports/SocialFirstGrowthForm";
-import { useEffect } from "react";
+import useScrollToTop from "@/hooks/useScrollToTop";
 import { useLocation } from "react-router";
 import { Toaster } from "sonner";
 
 const InfluencerMarketingTrendsReport = () => {
+  useScrollToTop();
   const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }, [pathname]);
 
   return (
     <div className="bg-black text-white min-h-screen overflow-x-hidden pt-24">

@@ -9,7 +9,7 @@ import { TOC } from "@/components/resources/influencers/TOC";
 import { useScrollSpy } from "@/hooks/useScrollSpy";
 import useScrollToTop from "@/hooks/useScrollToTop";
 import { useInfluencerStore } from "@/store/useInfluencerStore";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { useParams } from "react-router";
 
 export default function InfluencerDetails() {
@@ -18,7 +18,6 @@ export default function InfluencerDetails() {
   const article = useInfluencerStore((s) => s.getDetailedArticle(slug));
 
   const { influencers, tags, title, date, key_points, intro, image } = article;
- 
 
   const containerRef = useRef<HTMLDivElement>(null);
   const articleRef = useRef<HTMLDivElement>(null);

@@ -1,10 +1,12 @@
 import { BlogSubFooter } from "@/components/resources/blogs/SubFooter";
+import useScrollToTop from "@/hooks/useScrollToTop";
 import NotFound from "@/pages/NotFound";
 import { blogPosts } from "@/utils/fakeBlogPost";
 import { motion } from "framer-motion";
 import { useParams } from "react-router";
 
 const BlogPostDetails = () => {
+  useScrollToTop();
   const { id } = useParams();
   const post = blogPosts.find((p) => p.id === Number(id));
 
