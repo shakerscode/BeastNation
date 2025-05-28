@@ -5,10 +5,12 @@ import { PerformanceDriven } from "@/components/marketing_services/performance_m
 import CreatorWithBrand from "@/components/talent/find_talent/CreatorWithBrand";
 import Representation from "@/components/talent/for_talent/Representation";
 import SecondSection from "@/components/talent/for_talent/SecondSection";
+import useScrollToTop from "@/hooks/useScrollToTop";
 import { for_talent_data, serviceSupportData } from "@/utils/fakeData";
 import heroImg from "/img/marketing_services/for-talent.png";
 
 const ForTalentPage = () => {
+  useScrollToTop();
   return (
     <>
       <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto">

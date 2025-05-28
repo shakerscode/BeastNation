@@ -5,10 +5,12 @@ import { AICapabilitiesSection } from "@/components/marketing_services/influence
 import { PlanetMedia } from "@/components/marketing_services/influencer/PlanetMedia";
 import MarketingHeroSection from "@/components/marketing_services/MarketingHeroSection";
 import OurWork from "@/components/marketing_services/OurWork";
+import useScrollToTop from "@/hooks/useScrollToTop";
 import { influencerWorkData } from "@/utils/fakeData";
 import InfluencerMarketingImg from "/img/services/influencer_markting.png";
 
 const InfluencerMarketing = () => {
+  useScrollToTop();
   return (
     <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto pt-28 md:pt-0">
       <MarketingHeroSection

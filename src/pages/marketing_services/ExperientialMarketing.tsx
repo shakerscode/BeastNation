@@ -1,16 +1,17 @@
+import CommonCTA from "@/components/common/CommonCTA";
 import ClientLogos from "@/components/home/ClientLogos";
-import CommonSubFooter from "@/components/marketing_services/CommonSubFooter";
 import MarketingHeroSection from "@/components/marketing_services/MarketingHeroSection";
 import { PerformanceDriven } from "@/components/marketing_services/performance_marketing/PerformanceDriven";
 import { ServicesShowcaseSection } from "@/components/marketing_services/performance_marketing/ServicesShowcaseSection";
+import useScrollToTop from "@/hooks/useScrollToTop";
 import {
   experienceExecutionData,
   experientialMarketingData,
 } from "@/utils/fakeData";
 import ExperientialImg from "/img/services/experiential_marketing.png";
-import CommonCTA from "@/components/common/CommonCTA";
 
 const ExperientialMarketing = () => {
+  useScrollToTop();
   return (
     <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto">
       <MarketingHeroSection
@@ -28,7 +29,8 @@ const ExperientialMarketing = () => {
 
       <section className="">
         <h2 className="text-3xl pt-16 md:pt-24 -pb-16 md:-pb-14 w-full md:max-w-5xl mx-auto text-center md:text-5xl lg:text-6xl font-bold font-display mb-6">
-          Shattering Traditional <span className="text-beast-purple-light">Experiential</span>
+          Shattering Traditional{" "}
+          <span className="text-beast-purple-light">Experiential</span>
         </h2>
         <p className="text-lg text-center w-full md:max-w-5xl mx-auto">
           Leverage the world’s largest influencer network to bring the offline

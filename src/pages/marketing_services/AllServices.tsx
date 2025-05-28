@@ -1,13 +1,14 @@
+import CommonCTA from "@/components/common/CommonCTA";
 import ClientLogos from "@/components/home/ClientLogos";
-import CommonSubFooter from "@/components/marketing_services/CommonSubFooter";
 import MarketingHeroSection from "@/components/marketing_services/MarketingHeroSection";
 import OurWork from "@/components/marketing_services/OurWork";
 import WhatWeOffer from "@/components/marketing_services/WhatWeOffer";
+import useScrollToTop from "@/hooks/useScrollToTop";
 import { ourWorkData } from "@/utils/fakeData";
 import AllServiceImg from "/img/services/main_services.png";
-import CommonCTA from "@/components/common/CommonCTA";
 
 const AllServices = () => {
+  useScrollToTop();
   return (
     <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto">
       <MarketingHeroSection
