@@ -1,9 +1,10 @@
-import CommonCard from "@/components/common/CommonCard";
-import { influencerList } from "@/constants/fakeInfluencers";
+import CommonCard from "@/components/common/CommonCard"; 
+import { useInfluencerStore } from "@/store/useInfluencerStore";
 import React, { useCallback } from "react";
 import { useNavigate } from "react-router";
 
 function SimilarPosts() {
+    const {list} = useInfluencerStore();
   const navigate = useNavigate();
   const handleNavigate = useCallback(
     (title: string) => {
@@ -32,7 +33,7 @@ function SimilarPosts() {
       <h2 className="text-4xl font-semibold font-display mb-10">Similar Posts</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-        {influencerList.slice(0, 3).map((influencer, index) => (
+        {list?.slice(0, 3).map((influencer, index) => (
           <CommonCard
             key={index}
             item={influencer}

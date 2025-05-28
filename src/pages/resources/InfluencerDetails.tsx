@@ -6,10 +6,11 @@ import ShareButtons from "@/components/resources/influencers/ShareButton";
 import SimilarPosts from "@/components/resources/influencers/SimilarPosts";
 import SubscriptionSection from "@/components/resources/influencers/SubscriptionSection";
 import { TOC } from "@/components/resources/influencers/TOC";
-import { article } from "@/constants/fakeInfluencers";
 import { useScrollSpy } from "@/hooks/useScrollSpy";
 import useScrollToTop from "@/hooks/useScrollToTop";
+import { useInfluencerStore } from "@/store/useInfluencerStore";
 import { useEffect, useRef, useState } from "react";
+import { useParams } from "react-router";
 
 // export default function InfluencerDetails() {
 //   useScrollToTop();
@@ -80,7 +81,11 @@ import { useEffect, useRef, useState } from "react";
 
 export default function InfluencerDetails() {
   useScrollToTop();
-  const { influencers, tags, title, date, key_points, intro } = article;
+  const { slug } = useParams();
+  const article = useInfluencerStore((s) => s.getDetailedArticle(slug));
+
+  const { influencers, tags, title, date, key_points, intro, image } = article;
+ 
 
   const containerRef = useRef<HTMLDivElement>(null);
   const articleRef = useRef<HTMLDivElement>(null);
@@ -141,6 +146,7 @@ export default function InfluencerDetails() {
         title={title}
         date={date}
         key_points={key_points}
+        image={image}
       />
       <div className="block md:hidden px-4">
         <TOC
@@ -151,7 +157,7 @@ export default function InfluencerDetails() {
       </div>
       <section
         ref={containerRef}
-        className="px-4 md:px-0 py-10 bg-black h-full overflow-hidden"
+        className="px-4 lg:px-0 py-10 bg-black h-full overflow-hidden"
       >
         <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-10 h-full">
           <article
@@ -190,7 +196,7 @@ export default function InfluencerDetails() {
         subTitle="Partner with top-tier influencers and unlock authentic brand growth through powerful storytelling, strategy, and data."
       />
 
-      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 md:px-0">
+      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 lg:px-0">
         <SimilarPosts />
       </div>
     </section>
