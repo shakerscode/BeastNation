@@ -7,10 +7,12 @@ interface IComponentProps {
   tags: string[];
   date: string;
   key_points: string[];
+  image: string;
 }
 
 function HeroSection(props: IComponentProps) {
-  const { title, tags, date, key_points } = props;
+  const { title, tags, date, key_points, image } = props;
+  console.log(image)
 
   return (
     <section className="bg-black text-white py-36 px-4 md:px-0">
@@ -65,7 +67,7 @@ function HeroSection(props: IComponentProps) {
         <div className="relative w-full max-w-2xl h-full mx-auto md:mx-0 mt-10">
           <div className="absolute inset-0 rounded-full bg-gradient-to-t from-orange-500 via-beast-purple to-beast-accent opacity-30 blur-2xl"></div>
           <img
-            src="/img/influencers/real-estate.png"
+            src={image}
             alt="Influencer"
             className="relative z-10 w-[400px] h-[400px] rounded-full object-cover border-4 border-black mx-auto"
           />
