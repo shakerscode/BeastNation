@@ -38,7 +38,7 @@ function SimilarPosts() {
             key={index}
             item={influencer}
             index={index}
-            onClick={(title) => handleNavigate(title)}
+            onClick={(title) => handleNavigate(influencer?.slug)}
           />
         ))}
       </div>

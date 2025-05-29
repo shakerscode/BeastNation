@@ -13,7 +13,7 @@ import { useEffect, useRef } from "react";
 import { useParams } from "react-router";
 
 export default function InfluencerDetails() {
-  useScrollToTop();
+  
   const { slug } = useParams();
   const article = useInfluencerStore((s) => s.getDetailedArticle(slug));
 
@@ -22,6 +22,14 @@ export default function InfluencerDetails() {
   const containerRef = useRef<HTMLDivElement>(null);
   const articleRef = useRef<HTMLDivElement>(null);
   const activeId = useScrollSpy(influencers.map((i) => i.id));
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth", // or "auto"
+    });
+  }, [slug]);
 
   useEffect(() => {
     const handleWheel = (e: WheelEvent) => {
