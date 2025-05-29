@@ -1,10 +1,12 @@
 import CommonCard from "@/components/common/CommonCard";
 import BlogsHeader from "@/components/resources/blogs/BlogsHeader";
+import useScrollToTop from "@/hooks/useScrollToTop";
 import { useInfluencerStore } from "@/store/useInfluencerStore";
 import { useCallback } from "react";
 import { useNavigate } from "react-router";
 
 function InfluencerList() {
+  useScrollToTop();
   const navigate = useNavigate();
   const { list } = useInfluencerStore();
 
