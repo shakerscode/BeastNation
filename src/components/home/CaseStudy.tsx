@@ -115,21 +115,11 @@ const CaseStudy = () => {
                 className="pt-4 flex items-center gap-4"
               >
                 <Button
-                  onClick={() =>
-                    navigate("/resources/case-studies/holiday-resorts-growth")
-                  }
+                  onClick={() => navigate("/resources/case-studies")}
                   className="bg-primary-gradient"
                 >
-                  View Full Case Study
-                  <ExternalLink className="ml-2 h-4 w-4" strokeWidth={2.5} />
-                </Button>
-                <Button
-                  onClick={() => navigate("/resources/case-studies")}
-                  variant="outline"
-                  className="group border-white/20 hover:bg-white/10 text-base transition-all ease-in-out duration-300 flex items-center"
-                >
-                  See More
-                  <MoveRight className="ml-2 h-4 w-4 transform transition-transform duration-300 group-hover:translate-x-1 " />
+                  View All Case Studies
+                  <ExternalLink className="ml-1 h-4 w-4" strokeWidth={2.5} />
                 </Button>
               </motion.div>
             </div>
