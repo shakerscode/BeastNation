@@ -1,7 +1,7 @@
 export const featuredResources = [
   {
     name: "Influencer Lists",
-    path: "/influencer-lists",
+    path: "/resources/influencer-lists",
   },
   {
     name: "Influencer Blogs",
@@ -86,7 +86,7 @@ export const navLinks = [
     name: "Resources",
     path: "#",
     children: [
-      { name: "Influencer List", path: "/resources/influencer-lists" },
+      // { name: "Influencer List", path: "/resources/influencer-lists" },
       { name: "Case Studies", path: "/resources/case-studies" },
       { name: "News & Press", path: "/resources/news-and-press" },
       { name: "Blogs", path: "/resources/blogs" },
